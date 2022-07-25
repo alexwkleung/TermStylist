@@ -5,7 +5,24 @@
 #include <string>
 
 namespace termstylist {
-    //foreground colours - 8/16 colours
+    //attributes
+    struct Attributes {
+        public:
+            const std::string ATTR_Bold = "\033[1m"; //1
+            const std::string ATTR_Underline = "\033[4m"; //4
+            const std::string ATTR_Reverse = "\033[7m"; //7
+    };
+
+    //reset
+    struct Reset {
+        public:
+            const std::string RESET_All = "\033[0m"; //0
+            const std::string RESET_Bold = "\033[21m"; //21
+            const std::string RESET_Underline = "\033[24m"; //24
+            const std::string RESET_Reverse = "\033[27m"; //27
+    };
+
+    //foreground colours - 8/16 colours (normal, light, bold)
     struct FGColours816 {
         public:
             const std::string FG_Default = "\033[39m"; //39
@@ -27,7 +44,7 @@ namespace termstylist {
             const std::string FG_White = "\033[97m"; //97
     };
 
-    //background colours - 8/16 colours
+    //background colours - 8/16 colours (normal)
     struct BGColours816 {
         public:
             const std::string BG_Default = "\033[49m"; //49
@@ -48,16 +65,82 @@ namespace termstylist {
             const std::string BG_LightCyan = "\033[106m"; //106
             const std::string BG_White = "\033[107m"; //107
     };
-    
+
     //namespace obj holds created objects from structs
     //this is here as an extra layer to "prevent" access of the struct members directly
     //NOTE: namespace obj is not meant for use outside of namespace termstylist
     namespace obj {
-        //object colours of FGColours816 struct
+        //object ATTRS of Attributes struct
+        Attributes ATTRS;
+
+        //object RESET of Reset struct
+        Reset RESET;
+
+        //object FG816 of FGColours816 struct
         FGColours816 FG816;
 
-        //object colours of BGColours816 struct
+        //object BG816 of BGColours816 struct
         BGColours816 BG816;
+    }
+
+    /* * * ATTRIBUTES * * */
+
+    //1: attr bold
+    template<typename ATTRBold>
+    std::basic_ostream<ATTRBold> & ATTR_Bold(std::basic_ostream<ATTRBold> &os) {
+        os << obj::ATTRS.ATTR_Bold;
+
+        return os;
+    }
+
+    //4: attr underline
+    template<typename ATTRUnderline>
+    std::basic_ostream<ATTRUnderline> & ATTR_Underline(std::basic_ostream<ATTRUnderline> &os) {
+        os << obj::ATTRS.ATTR_Underline;
+
+        return os;
+    }
+
+    //7: attr reverse
+    template<typename ATTRReverse>
+    std::basic_ostream<ATTRReverse> & ATTR_Reverse(std::basic_ostream<ATTRReverse> &os) {
+        os << obj::ATTRS.ATTR_Reverse;
+
+        return os;
+    }
+
+    /* * * RESET * * */
+
+    //0: reset all
+    template<typename RESETAll>
+    std::basic_ostream<RESETAll> & RESET_All(std::basic_ostream<RESETAll> &os) {
+        os << obj::RESET.RESET_All;
+
+        return os;
+    }
+
+    //21: reset bold
+    template<typename RESETBold>
+    std::basic_ostream<RESETBold> & RESET_Bold(std::basic_ostream<RESETBold> &os) {
+        os << obj::RESET.RESET_Bold;
+
+        return os;
+    }
+
+    //24: reset underline
+    template<typename RESETUnderline>
+    std::basic_ostream<RESETUnderline> & RESET_Underline(std::basic_ostream<RESETUnderline> &os) {
+        os << obj::RESET.RESET_Underline;
+
+        return os;
+    }
+
+    //27: reset reverse
+    template<typename RESETReverse>
+    std::basic_ostream<RESETReverse> & RESET_Reverse(std::basic_ostream<RESETReverse> &os) {
+        os << obj::RESET.RESET_Reverse;
+
+        return os;
     }
 
     /* * * FOREGROUND COLOUR TEMPLATES (8/16 COLOURS) * * */

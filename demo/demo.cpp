@@ -44,5 +44,11 @@ int main() {
 
     std::cout << '\n' << '\n';
 
+    std::cout << termstylist::ATTR_Bold << "Bold" << termstylist::RESET_All << " ";
+    std::cout << termstylist::ATTR_Underline << "Underline" << termstylist::RESET_Underline << " ";
+    std::cout << termstylist::ATTR_Reverse << "Reverse" << termstylist::RESET_All << " ";
+    
+    std::cout << '\n' << '\n';
+
     return 0;
 }
