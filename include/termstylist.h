@@ -104,6 +104,111 @@ namespace termstylist {
             const std::string BG_BoldLightCyan = "\033[106;1m"; //106;1
     };
 
+    struct FGColours256 {
+        public:
+            const std::string FG256_0 = "\033[38;5;0m"; //38;5;0
+            const std::string FG256_1 = "\033[38;5;1m"; //38;5;1
+            const std::string FG256_2 = "\033[38;5;2m"; //38;5;2
+            const std::string FG256_3 = "\033[38;5;3m"; //38;5;3
+            const std::string FG256_4 = "\033[38;5;4m"; //38;5;4
+            const std::string FG256_5 = "\033[38;5;5m"; //38;5;5
+            const std::string FG256_6 = "\033[38;5;6m"; //38;5;6
+            const std::string FG256_7 = "\033[38;5;7m"; //38;5;7
+            const std::string FG256_8 = "\033[38;5;8m"; //38;5;8
+            const std::string FG256_9 = "\033[38;5;9m"; //38;5;9
+            const std::string FG256_10 = "\033[38;5;10m"; //38;5;10
+            const std::string FG256_11 = "\033[38;5;11m"; //38;5;11
+            const std::string FG256_12 = "\033[38;5;12m"; //38;5;12
+            const std::string FG256_13 = "\033[38;5;13m"; //38;5;13
+            const std::string FG256_14 = "\033[38;5;14m"; //38;5;14
+            const std::string FG256_15 = "\033[38;5;15m"; //38;5;15
+            const std::string FG256_16 = "\033[38;5;16m"; //38;5;16
+            const std::string FG256_17 = "\033[38;5;17m"; //38;5;17
+            const std::string FG256_18 = "\033[38;5;18m"; //38;5;18
+            const std::string FG256_19 = "\033[38;5;19m"; //38;5;19
+            const std::string FG256_20 = "\033[38;5;20m"; //38;5;20
+            const std::string FG256_21 = "\033[38;5;21m"; //38;5;21
+            const std::string FG256_22 = "\033[38;5;22m"; //38;5;22
+            const std::string FG256_23 = "\033[38;5;23m"; //38;5;23
+            const std::string FG256_24 = "\033[38;5;24m"; //38;5;24
+            const std::string FG256_25 = "\033[38;5;25m"; //38;5;25
+            const std::string FG256_26 = "\033[38;5;26m"; //38;5;26
+            const std::string FG256_27 = "\033[38;5;27m"; //38;5;27
+            const std::string FG256_28 = "\033[38;5;28m"; //38;5;28
+            const std::string FG256_29 = "\033[38;5;29m"; //38;5;29
+            const std::string FG256_30 = "\033[38;5;30m"; //38;5;30
+            const std::string FG256_31 = "\033[38;5;31m"; //38;5;31
+            const std::string FG256_32 = "\033[38;5;32m"; //38;5;32
+            const std::string FG256_33 = "\033[38;5;33m"; //38;5;33
+            const std::string FG256_34 = "\033[38;5;34m"; //38;5;34
+            const std::string FG256_35 = "\033[38;5;35m"; //38;5;35
+            const std::string FG256_36 = "\033[38;5;36m"; //38;5;36
+            const std::string FG256_37 = "\033[38;5;37m"; //38;5;37
+            const std::string FG256_38 = "\033[38;5;38m"; //38;5;38
+            const std::string FG256_39 = "\033[38;5;39m"; //38;5;39
+            const std::string FG256_40 = "\033[38;5;40m"; //38;5;40
+            const std::string FG256_41 = "\033[38;5;41m"; //38;5;41
+            const std::string FG256_42 = "\033[38;5;42m"; //38;5;42
+            const std::string FG256_43 = "\033[38;5;43m"; //38;5;43
+            const std::string FG256_44 = "\033[38;5;44m"; //38;5;44
+            const std::string FG256_45 = "\033[38;5;45m"; //38;5;45
+            const std::string FG256_46 = "\033[38;5;46m"; //38;5;46
+            const std::string FG256_47 = "\033[38;5;47m"; //38;5;47
+            const std::string FG256_48 = "\033[38;5;48m"; //38;5;48
+            const std::string FG256_49 = "\033[38;5;49m"; //38;5;49
+            const std::string FG256_50 = "\033[38;5;50m"; //38;5;50
+            const std::string FG256_51 = "\033[38;5;51m"; //38;5;51
+            const std::string FG256_52 = "\033[38;5;52m"; //38;5;52
+            const std::string FG256_53 = "\033[38;5;53m"; //38;5;53
+            const std::string FG256_54 = "\033[38;5;54m"; //38;5;54
+            const std::string FG256_55 = "\033[38;5;55m"; //38;5;55
+            const std::string FG256_56 = "\033[38;5;56m"; //38;5;56
+            const std::string FG256_57 = "\033[38;5;57m"; //38;5;57
+            const std::string FG256_58 = "\033[38;5;58m"; //38;5;58
+            const std::string FG256_59 = "\033[38;5;59m"; //38;5;59
+            const std::string FG256_60 = "\033[38;5;60m"; //38;5;60
+            const std::string FG256_61 = "\033[38;5;61m"; //38;5;61
+            const std::string FG256_62 = "\033[38;5;62m"; //38;5;62
+            const std::string FG256_63 = "\033[38;5;63m"; //38;5;63
+            const std::string FG256_64 = "\033[38;5;64m"; //38;5;64
+            const std::string FG256_65 = "\033[38;5;65m"; //38;5;65
+            const std::string FG256_66 = "\033[38;5;66m"; //38;5;66
+            const std::string FG256_67 = "\033[38;5;67m"; //38;5;67
+            const std::string FG256_68 = "\033[38;5;68m"; //38;5;68
+            const std::string FG256_69 = "\033[38;5;69m"; //38;5;69
+            const std::string FG256_70 = "\033[38;5;70m"; //38;5;70
+            const std::string FG256_71 = "\033[38;5;71m"; //38;5;71
+            const std::string FG256_72 = "\033[38;5;72m"; //38;5;72
+            const std::string FG256_73 = "\033[38;5;73m"; //38;5;73
+            const std::string FG256_74 = "\033[38;5;74m"; //38;5;74
+            const std::string FG256_75 = "\033[38;5;75m"; //38;5;75
+            const std::string FG256_76 = "\033[38;5;76m"; //38;5;76
+            const std::string FG256_77 = "\033[38;5;77m"; //38;5;77
+            const std::string FG256_78 = "\033[38;5;78m"; //38;5;78
+            const std::string FG256_79 = "\033[38;5;79m"; //38;5;79
+            const std::string FG256_80 = "\033[38;5;80m"; //38;5;80
+            const std::string FG256_81 = "\033[38;5;81m"; //38;5;81
+            const std::string FG256_82 = "\033[38;5;82m"; //38;5;82
+            const std::string FG256_83 = "\033[38;5;83m"; //38;5;83
+            const std::string FG256_84 = "\033[38;5;84m"; //38;5;84
+            const std::string FG256_85 = "\033[38;5;85m"; //38;5;85
+            const std::string FG256_86 = "\033[38;5;86m"; //38;5;86
+            const std::string FG256_87 = "\033[38;5;87m"; //38;5;87
+            const std::string FG256_88 = "\033[38;5;88m"; //38;5;88
+            const std::string FG256_89 = "\033[38;5;89m"; //38;5;89
+            const std::string FG256_90 = "\033[38;5;90m"; //38;5;90
+            const std::string FG256_91 = "\033[38;5;91m"; //38;5;91
+            const std::string FG256_92 = "\033[38;5;92m"; //38;5;92
+            const std::string FG256_93 = "\033[38;5;93m"; //38;5;93
+            const std::string FG256_94 = "\033[38;5;94m"; //38;5;94
+            const std::string FG256_95 = "\033[38;5;95m"; //38;5;95
+            const std::string FG256_96 = "\033[38;5;96m"; //38;5;96
+            const std::string FG256_97 = "\033[38;5;97m"; //38;5;97
+            const std::string FG256_98 = "\033[38;5;98m"; //38;5;98
+            const std::string FG256_99 = "\033[38;5;99m"; //38;5;99
+            const std::string FG256_100 = "\033[38;5;100m"; //37;5;100
+    };
+
     //namespace obj holds created objects from structs
     //this is here as an extra layer to "prevent" access of the struct members directly
     //NOTE: namespace obj is not meant for use outside of namespace termstylist
@@ -119,6 +224,9 @@ namespace termstylist {
 
         //object BG816 of BGColours816 struct
         BGColours816 BG816;
+
+        //object FG256 of FGColours256 struct
+        FGColours256 FG256;
     }
 
     /* * * ATTRIBUTES * * */
@@ -716,5 +824,17 @@ namespace termstylist {
 
         return os;
     }
+
+    /* * * FOREGROUND COLOUR TEMPLATES (256 COLOURS) * * */
+
+    //38;5;0
+    template<typename FG256_0>
+    std::basic_ostream<FG256_0> & FG256_202(std::basic_ostream<FG256_0> &os) {
+        os << obj::FG256.FG256_0;
+
+        return os;
+    }
+
+
 }
 #endif
