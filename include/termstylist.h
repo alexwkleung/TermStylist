@@ -22,9 +22,10 @@ namespace termstylist {
             const std::string RESET_Reverse = "\033[27m"; //27
     };
 
-    //foreground colours - 8/16 colours (normal, light, bold)
+    //foreground colours - 8/16 colours (normal, light, bright/bold)
     struct FGColours816 {
         public:
+            //8 colours
             const std::string FG_Default = "\033[39m"; //39
             const std::string FG_Black = "\033[30m"; //30
             const std::string FG_Red = "\033[31m"; //31
@@ -33,6 +34,7 @@ namespace termstylist {
             const std::string FG_Blue = "\033[34m"; //34
             const std::string FG_Magenta = "\033[35m"; //35
             const std::string FG_Cyan = "\033[36m"; //36
+            const std::string FG_White = "\033[97m"; //97
             const std::string FG_LightGrey = "\033[37m"; //37
             const std::string FG_DarkGrey = "\033[90m"; //90
             const std::string FG_LightRed = "\033[91m"; //91
@@ -41,12 +43,30 @@ namespace termstylist {
             const std::string FG_LightBlue = "\033[94m"; //94
             const std::string FG_LightMagenta = "\033[95m"; //95
             const std::string FG_LightCyan = "\033[96m"; //96
-            const std::string FG_White = "\033[97m"; //97
+
+            //16 colours
+            const std::string FG_BoldBlack = "\033[30;1m"; //30;1
+            const std::string FG_BoldRed = "\033[31;1m"; //31;1
+            const std::string FG_BoldGreen = "\033[32;1m"; //32;1
+            const std::string FG_BoldYellow = "\033[33;1m"; //33;1
+            const std::string FG_BoldBlue = "\033[34;1m"; //34;1
+            const std::string FG_BoldMagenta = "\033[35;1m"; //35;1
+            const std::string FG_BoldCyan = "\033[36;1m"; //36;1
+            const std::string FG_BoldWhite = "\033[97;1m"; //97;1
+            const std::string FG_BoldLightGrey = "\033[37;1m"; //37;1
+            const std::string FG_BoldDarkGrey = "\033[90;1m"; //90;1
+            const std::string FG_BoldLightRed = "\033[91;1m"; //91;1
+            const std::string FG_BoldLightGreen = "\033[92;1m"; //92;1
+            const std::string FG_BoldLightYellow = "\033[93;1m"; //93;1
+            const std::string FG_BoldLightBlue = "\033[94;1m"; //94;1
+            const std::string FG_BoldLightMagenta = "\033[95;1m"; //95;1
+            const std::string FG_BoldLightCyan = "\033[96;1m"; //96;1
     };
 
     //background colours - 8/16 colours (normal)
     struct BGColours816 {
         public:
+            //8 colours
             const std::string BG_Default = "\033[49m"; //49
             const std::string BG_Black = "\033[40m"; //40
             const std::string BG_Red = "\033[41m"; //41
@@ -55,6 +75,7 @@ namespace termstylist {
             const std::string BG_Blue = "\033[44m"; //44
             const std::string BG_Magenta = "\033[45m"; //45
             const std::string BG_Cyan = "\033[46m"; //46
+            const std::string BG_White = "\033[107m"; //107
             const std::string BG_LightGrey = "\033[47m"; //47
             const std::string BG_DarkGrey = "\033[100m"; //100
             const std::string BG_LightRed = "\033[101m"; //101
@@ -63,7 +84,6 @@ namespace termstylist {
             const std::string BG_LightBlue = "\033[104m"; //104
             const std::string BG_LightMagenta = "\033[105m"; //105
             const std::string BG_LightCyan = "\033[106m"; //106
-            const std::string BG_White = "\033[107m"; //107
     };
 
     //namespace obj holds created objects from structs
@@ -143,7 +163,7 @@ namespace termstylist {
         return os;
     }
 
-    /* * * FOREGROUND COLOUR TEMPLATES (8/16 COLOURS) * * */
+    /* * * FOREGROUND COLOUR TEMPLATES (8 COLOURS) * * */
 
     //39: fg default
     template<typename FGDefault>
@@ -205,6 +225,14 @@ namespace termstylist {
     template<typename FGCyan>
     std::basic_ostream<FGCyan> & FG_Cyan(std::basic_ostream<FGCyan> &os) {
         os << obj::FG816.FG_Cyan;
+
+        return os;
+    }
+
+    //97: fg white
+    template<typename FGWhite>
+    std::basic_ostream<FGWhite> & FG_White(std::basic_ostream<FGWhite> &os) {
+        os << obj::FG816.FG_White;
 
         return os;
     }
@@ -273,15 +301,137 @@ namespace termstylist {
         return os;
     }
 
-    //97: fg white
-    template<typename FGWhite>
-    std::basic_ostream<FGWhite> & FG_White(std::basic_ostream<FGWhite> &os) {
-        os << obj::FG816.FG_White;
+    /* * * FOREGROUND COLOUR TEMPLATES (16 COLOURS) * * */
+
+    //30;1: fg bold black
+    template<typename FGBoldBlack>
+    std::basic_ostream<FGBoldBlack> & FG_BoldBlack(std::basic_ostream<FGBoldBlack> &os) {
+        os << obj::FG816.FG_BoldBlack;
 
         return os;
     }
 
-    /* * * BACKGROUND COLOUR TEMPLATES (8/16 COLOURS) * * */
+    //31;1: fg bold red
+    template<typename FGBoldRed>
+    std::basic_ostream<FGBoldRed> & FG_BoldRed(std::basic_ostream<FGBoldRed> &os) {
+        os << obj::FG816.FG_BoldRed;
+
+        return os;
+    }
+
+    //32;1: fg bold green
+    template<typename FGBoldGreen>
+    std::basic_ostream<FGBoldGreen> & FG_BoldGreen(std::basic_ostream<FGBoldGreen> &os) {
+        os << obj::FG816.FG_BoldGreen;
+
+        return os;
+    }
+
+    //33;1: fg bold yellow
+    template<typename FGBoldYellow>
+    std::basic_ostream<FGBoldYellow> & FG_BoldYellow(std::basic_ostream<FGBoldYellow> &os) {
+        os << obj::FG816.FG_BoldYellow;
+        
+        return os;
+    }
+
+    //34;1: fg bold blue
+    template<typename FGBoldBlue>
+    std::basic_ostream<FGBoldBlue> & FG_BoldBlue(std::basic_ostream<FGBoldBlue> &os) {
+        os << obj::FG816.FG_BoldBlue;
+
+        return os;
+    }
+
+    //35;1: fg bold magenta
+    template<typename FGBoldMagenta>
+    std::basic_ostream<FGBoldMagenta> & FG_BoldMagenta(std::basic_ostream<FGBoldMagenta> &os) {
+        os << obj::FG816.FG_BoldMagenta;
+
+        return os;
+    }
+
+    //36;1: fg bold cyan
+    template<typename FGBoldCyan>
+    std::basic_ostream<FGBoldCyan> & FG_BoldCyan(std::basic_ostream<FGBoldCyan> &os) {
+        os << obj::FG816.FG_BoldCyan;
+
+        return os;
+    }
+
+    //97;1: fg bold white
+    template<typename FGBoldWhite>
+    std::basic_ostream<FGBoldWhite> & FG_BoldWhite(std::basic_ostream<FGBoldWhite> &os) {
+        os << obj::FG816.FG_BoldWhite;
+
+        return os;
+    }
+
+    //37;1: fg bold light grey
+    template<typename FGBoldLightGrey>
+    std::basic_ostream<FGBoldLightGrey> & FG_BoldLightGrey(std::basic_ostream<FGBoldLightGrey> &os) {
+        os << obj::FG816.FG_BoldLightGrey;
+        
+        return os;
+    }
+
+    //90;1: fg bold dark grey
+    template<typename FGBoldDarkGrey>
+    std::basic_ostream<FGBoldDarkGrey> & FG_BoldDarkGrey(std::basic_ostream<FGBoldDarkGrey> &os) {
+        os << obj::FG816.FG_BoldDarkGrey;
+
+        return os;
+    }
+
+    //91;1 fg bold light red
+    template<typename FGBoldLightRed>
+    std::basic_ostream<FGBoldLightRed> & FG_BoldLightRed(std::basic_ostream<FGBoldLightRed> &os) {
+        os << obj::FG816.FG_BoldLightRed;
+
+        return os;
+    }
+
+    //92;1: fg bold light green
+    template<typename FGBoldLightGreen>
+    std::basic_ostream<FGBoldLightGreen> & FG_BoldLightGreen(std::basic_ostream<FGBoldLightGreen> &os) {
+        os << obj::FG816.FG_BoldLightGreen;
+
+        return os;
+    }
+
+    //93;1: fg bold light yellow
+    template<typename FGBoldLightYellow>
+    std::basic_ostream<FGBoldLightYellow> & FG_BoldLightYellow(std::basic_ostream<FGBoldLightYellow> &os) {
+        os << obj::FG816.FG_BoldLightYellow;
+
+        return os;
+    }
+
+    //94;1: fg bold light blue
+    template<typename FGBoldLightBlue>
+    std::basic_ostream<FGBoldLightBlue> & FG_BoldLightBlue(std::basic_ostream<FGBoldLightBlue> &os) {
+        os << obj::FG816.FG_BoldLightBlue;
+
+        return os;
+    }
+
+    //95;1: fg bold light magenta
+    template<typename FGBoldLightMagenta>
+    std::basic_ostream<FGBoldLightMagenta> & FG_BoldLightMagenta(std::basic_ostream<FGBoldLightMagenta> &os) {
+        os << obj::FG816.FG_BoldLightMagenta;
+
+        return os;
+    }
+
+    //96;1: fg bold light cyan
+    template<typename FGBoldLightCyan>
+    std::basic_ostream<FGBoldLightCyan> & FG_BoldLightCyan(std::basic_ostream<FGBoldLightCyan> &os) {
+        os << obj::FG816.FG_BoldLightCyan;
+
+        return os;
+    }
+
+    /* * * BACKGROUND COLOUR TEMPLATES (8 COLOURS) * * */
 
     //49: bg default
     template<typename BGDefault>
@@ -343,6 +493,14 @@ namespace termstylist {
     template<typename BGCyan>
     std::basic_ostream<BGCyan> & BG_Cyan(std::basic_ostream<BGCyan> &os) {
         os << obj::BG816.BG_Cyan;
+
+        return os;
+    }
+
+    //107: bg white
+    template<typename BGWhite>
+    std::basic_ostream<BGWhite> & BG_White(std::basic_ostream<BGWhite> &os) {
+        os << obj::BG816.BG_White;
 
         return os;
     }
@@ -411,12 +569,6 @@ namespace termstylist {
         return os;
     }
 
-    //107: bg white
-    template<typename BGWhite>
-    std::basic_ostream<BGWhite> & BG_White(std::basic_ostream<BGWhite> &os) {
-        os << obj::BG816.BG_White;
-
-        return os;
-    }
+    /* * * BACKGROUND COLOUR TEMPLATES (16 COLOURS) * * */
 }
 #endif
