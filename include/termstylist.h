@@ -32,7 +32,7 @@ namespace termstylist {
     /* * * FOREGROUND COLOUR TEMPLATES * * */
 
     //39: fg default
-    template<class FGDefault>
+    template<typename FGDefault>
     std::basic_ostream<FGDefault> & FG_Default(std::basic_ostream<FGDefault> &os) {
         os << colours.FG_Default;
 
@@ -40,7 +40,7 @@ namespace termstylist {
     }
 
     //30: fg black
-    template<class FGBlack>
+    template<typename FGBlack>
     std::basic_ostream<FGBlack> & FG_Black(std::basic_ostream<FGBlack> &os) {
         os << colours.FG_Black;
 
@@ -48,7 +48,7 @@ namespace termstylist {
     }
 
     //31: fg red
-    template<class FGRed>
+    template<typename FGRed>
     std::basic_ostream<FGRed> & FG_Red(std::basic_ostream<FGRed> &os) {
         os << colours.FG_Red;
 
@@ -56,7 +56,7 @@ namespace termstylist {
     }
 
     //32: fg green
-    template<class FGGreen>
+    template<typename FGGreen>
     std::basic_ostream<FGGreen> & FG_Green(std::basic_ostream<FGGreen> &os) {
         os << colours.FG_Green;
 
@@ -64,7 +64,7 @@ namespace termstylist {
     }
 
     //33: fg yellow
-    template<class FGYellow>
+    template<typename FGYellow>
     std::basic_ostream<FGYellow> & FG_Yellow(std::basic_ostream<FGYellow> &os) {
         os << colours.FG_Yellow;
 
@@ -72,7 +72,7 @@ namespace termstylist {
     }
 
     //34: fg blue
-    template<class FGBlue>
+    template<typename FGBlue>
     std::basic_ostream<FGBlue> & FG_Blue(std::basic_ostream<FGBlue> &os) {
         os << colours.FG_Blue;
 
@@ -80,7 +80,7 @@ namespace termstylist {
     }
 
     //35: fg magenta
-    template<class FGMagenta>
+    template<typename FGMagenta>
     std::basic_ostream<FGMagenta> & FG_Magenta(std::basic_ostream<FGMagenta> &os) {
         os << colours.FG_Magenta;
 
@@ -88,7 +88,7 @@ namespace termstylist {
     }
 
     //36: fg cyan
-    template<class FGCyan>
+    template<typename FGCyan>
     std::basic_ostream<FGCyan> & FG_Cyan(std::basic_ostream<FGCyan> &os) {
         os << colours.FG_Cyan;
 
@@ -104,7 +104,7 @@ namespace termstylist {
     }
 
     //90: fg dark grey
-    template<class FGDarkGrey>
+    template<typename FGDarkGrey>
     std::basic_ostream<FGDarkGrey> & FG_DarkGrey(std::basic_ostream<FGDarkGrey> &os) {
         os << colours.FG_DarkGrey;
 
@@ -112,7 +112,7 @@ namespace termstylist {
     }
 
     //91: fg light red
-    template<class FGLightRed>
+    template<typename FGLightRed>
     std::basic_ostream<FGLightRed> & FG_LightRed(std::basic_ostream<FGLightRed> &os) {
         os << colours.FG_LightRed;
 
@@ -120,7 +120,7 @@ namespace termstylist {
     }
 
     //92: fg light green
-    template<class FGLightGreen>
+    template<typename FGLightGreen>
     std::basic_ostream<FGLightGreen> & FG_LightGreen(std::basic_ostream<FGLightGreen> &os) {
         os << colours.FG_LightGreen;
 
@@ -128,7 +128,7 @@ namespace termstylist {
     }
 
     //93: fg light yellow
-    template<class FGLightYellow>
+    template<typename FGLightYellow>
     std::basic_ostream<FGLightYellow> & FG_LightYellow(std::basic_ostream<FGLightYellow> &os) {
         os << colours.FG_LightYellow;
 
@@ -136,7 +136,7 @@ namespace termstylist {
     }
 
     //94: fg light blue
-    template<class FGLightBlue>
+    template<typename FGLightBlue>
     std::basic_ostream<FGLightBlue> & FG_LightBlue(std::basic_ostream<FGLightBlue> &os) {
         os << colours.FG_LightBlue;
 
@@ -144,7 +144,7 @@ namespace termstylist {
     }
 
     //95: fg light magenta
-    template<class FGLightMagenta>
+    template<typename FGLightMagenta>
     std::basic_ostream<FGLightMagenta> & FG_LightMagenta(std::basic_ostream<FGLightMagenta> &os) {
         os << colours.FG_LightMagenta;
 
@@ -152,7 +152,7 @@ namespace termstylist {
     }
 
     //96: fg light cyan
-    template<class FGLightCyan>
+    template<typename FGLightCyan>
     std::basic_ostream<FGLightCyan> & FG_LightCyan(std::basic_ostream<FGLightCyan> &os) {
         os << colours.FG_LightCyan;
 
@@ -160,7 +160,7 @@ namespace termstylist {
     }
 
     //97: fg white
-    template<class FGWhite>
+    template<typename FGWhite>
     std::basic_ostream<FGWhite> & FG_White(std::basic_ostream<FGWhite> &os) {
         os << colours.FG_White;
 
