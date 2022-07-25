@@ -49,18 +49,23 @@ namespace termstylist {
             const std::string BG_White = "\033[107m"; //107
     };
     
-    //object colours of FGColours816 struct
-    FGColours816 FG816;
+    //namespace obj holds created objects from structs
+    //this is here as an extra layer to "prevent" access of the struct members directly
+    //NOTE: namespace obj is not meant for use outside of namespace termstylist
+    namespace obj {
+        //object colours of FGColours816 struct
+        FGColours816 FG816;
 
-    //object colours of BGColours816 struct
-    BGColours816 BG816;
+        //object colours of BGColours816 struct
+        BGColours816 BG816;
+    }
 
     /* * * FOREGROUND COLOUR TEMPLATES (8/16 COLOURS) * * */
 
     //39: fg default
     template<typename FGDefault>
     std::basic_ostream<FGDefault> & FG_Default(std::basic_ostream<FGDefault> &os) {
-        os << FG816.FG_Default;
+        os << obj::FG816.FG_Default;
 
         return os;
     }
@@ -68,7 +73,7 @@ namespace termstylist {
     //30: fg black
     template<typename FGBlack>
     std::basic_ostream<FGBlack> & FG_Black(std::basic_ostream<FGBlack> &os) {
-        os << FG816.FG_Black;
+        os << obj::FG816.FG_Black;
 
         return os;
     }
@@ -76,7 +81,7 @@ namespace termstylist {
     //31: fg red
     template<typename FGRed>
     std::basic_ostream<FGRed> & FG_Red(std::basic_ostream<FGRed> &os) {
-        os << FG816.FG_Red;
+        os << obj::FG816.FG_Red;
 
         return os;
     }
@@ -84,7 +89,7 @@ namespace termstylist {
     //32: fg green
     template<typename FGGreen>
     std::basic_ostream<FGGreen> & FG_Green(std::basic_ostream<FGGreen> &os) {
-        os << FG816.FG_Green;
+        os << obj::FG816.FG_Green;
 
         return os;
     }
@@ -92,7 +97,7 @@ namespace termstylist {
     //33: fg yellow
     template<typename FGYellow>
     std::basic_ostream<FGYellow> & FG_Yellow(std::basic_ostream<FGYellow> &os) {
-        os << FG816.FG_Yellow;
+        os << obj::FG816.FG_Yellow;
 
         return os;
     }
@@ -100,7 +105,7 @@ namespace termstylist {
     //34: fg blue
     template<typename FGBlue>
     std::basic_ostream<FGBlue> & FG_Blue(std::basic_ostream<FGBlue> &os) {
-        os << FG816.FG_Blue;
+        os << obj::FG816.FG_Blue;
 
         return os;
     }
@@ -108,7 +113,7 @@ namespace termstylist {
     //35: fg magenta
     template<typename FGMagenta>
     std::basic_ostream<FGMagenta> & FG_Magenta(std::basic_ostream<FGMagenta> &os) {
-        os << FG816.FG_Magenta;
+        os << obj::FG816.FG_Magenta;
 
         return os;
     }
@@ -116,7 +121,7 @@ namespace termstylist {
     //36: fg cyan
     template<typename FGCyan>
     std::basic_ostream<FGCyan> & FG_Cyan(std::basic_ostream<FGCyan> &os) {
-        os << FG816.FG_Cyan;
+        os << obj::FG816.FG_Cyan;
 
         return os;
     }
@@ -124,7 +129,7 @@ namespace termstylist {
     //37: fg light grey
     template<class FGLightGrey>
     std::basic_ostream<FGLightGrey> & FG_LightGrey(std::basic_ostream<FGLightGrey> &os) {
-        os << FG816.FG_LightGrey;
+        os << obj::FG816.FG_LightGrey;
 
         return os;
     }
@@ -132,7 +137,7 @@ namespace termstylist {
     //90: fg dark grey
     template<typename FGDarkGrey>
     std::basic_ostream<FGDarkGrey> & FG_DarkGrey(std::basic_ostream<FGDarkGrey> &os) {
-        os << FG816.FG_DarkGrey;
+        os << obj::FG816.FG_DarkGrey;
 
         return os;
     }
@@ -140,7 +145,7 @@ namespace termstylist {
     //91: fg light red
     template<typename FGLightRed>
     std::basic_ostream<FGLightRed> & FG_LightRed(std::basic_ostream<FGLightRed> &os) {
-        os << FG816.FG_LightRed;
+        os << obj::FG816.FG_LightRed;
 
         return os;
     }
@@ -148,7 +153,7 @@ namespace termstylist {
     //92: fg light green
     template<typename FGLightGreen>
     std::basic_ostream<FGLightGreen> & FG_LightGreen(std::basic_ostream<FGLightGreen> &os) {
-        os << FG816.FG_LightGreen;
+        os << obj::FG816.FG_LightGreen;
 
         return os;
     }
@@ -156,7 +161,7 @@ namespace termstylist {
     //93: fg light yellow
     template<typename FGLightYellow>
     std::basic_ostream<FGLightYellow> & FG_LightYellow(std::basic_ostream<FGLightYellow> &os) {
-        os << FG816.FG_LightYellow;
+        os << obj::FG816.FG_LightYellow;
 
         return os;
     }
@@ -164,7 +169,7 @@ namespace termstylist {
     //94: fg light blue
     template<typename FGLightBlue>
     std::basic_ostream<FGLightBlue> & FG_LightBlue(std::basic_ostream<FGLightBlue> &os) {
-        os << FG816.FG_LightBlue;
+        os << obj::FG816.FG_LightBlue;
 
         return os;
     }
@@ -172,7 +177,7 @@ namespace termstylist {
     //95: fg light magenta
     template<typename FGLightMagenta>
     std::basic_ostream<FGLightMagenta> & FG_LightMagenta(std::basic_ostream<FGLightMagenta> &os) {
-        os << FG816.FG_LightMagenta;
+        os << obj::FG816.FG_LightMagenta;
 
         return os;
     }
@@ -180,7 +185,7 @@ namespace termstylist {
     //96: fg light cyan
     template<typename FGLightCyan>
     std::basic_ostream<FGLightCyan> & FG_LightCyan(std::basic_ostream<FGLightCyan> &os) {
-        os << FG816.FG_LightCyan;
+        os << obj::FG816.FG_LightCyan;
 
         return os;
     }
@@ -188,7 +193,7 @@ namespace termstylist {
     //97: fg white
     template<typename FGWhite>
     std::basic_ostream<FGWhite> & FG_White(std::basic_ostream<FGWhite> &os) {
-        os << FG816.FG_White;
+        os << obj::FG816.FG_White;
 
         return os;
     }
@@ -198,7 +203,7 @@ namespace termstylist {
     //49: bg default
     template<typename BGDefault>
     std::basic_ostream<BGDefault> & BG_Default(std::basic_ostream<BGDefault> &os) {
-        os << BG816.BG_Default;
+        os << obj::BG816.BG_Default;
 
         return os;
     }
@@ -206,7 +211,7 @@ namespace termstylist {
     //40: bg black
     template<typename BGBlack>
     std::basic_ostream<BGBlack> & BG_Black(std::basic_ostream<BGBlack> &os) {
-        os << BG816.BG_Black;
+        os << obj::BG816.BG_Black;
 
         return os;
     }
@@ -214,7 +219,7 @@ namespace termstylist {
     //41: bg red
     template<typename BGRed>
     std::basic_ostream<BGRed> & BG_Red(std::basic_ostream<BGRed> &os) {
-        os << BG816.BG_Red;
+        os << obj::BG816.BG_Red;
 
         return os;
     }
@@ -222,7 +227,7 @@ namespace termstylist {
     //42: bg green
     template<typename BGGreen>
     std::basic_ostream<BGGreen> & BG_Green(std::basic_ostream<BGGreen> &os) {
-        os << BG816.BG_Green;
+        os << obj::BG816.BG_Green;
 
         return os;
     }
@@ -230,7 +235,7 @@ namespace termstylist {
     //43: bg yellow
     template<typename BGYellow>
     std::basic_ostream<BGYellow> & BG_Yellow(std::basic_ostream<BGYellow> &os) {
-        os << BG816.BG_Yellow;
+        os << obj::BG816.BG_Yellow;
 
         return os;
     }
@@ -238,7 +243,7 @@ namespace termstylist {
     //44: bg blue
     template<typename BGBlue>
     std::basic_ostream<BGBlue> & BG_Blue(std::basic_ostream<BGBlue> &os) {
-        os << BG816.BG_Blue;
+        os << obj::BG816.BG_Blue;
 
         return os;
     }
@@ -246,7 +251,7 @@ namespace termstylist {
     //45: bg magenta
     template<typename BGMagenta>
     std::basic_ostream<BGMagenta> & BG_Magenta(std::basic_ostream<BGMagenta> &os) {
-        os << BG816.BG_Magenta;
+        os << obj::BG816.BG_Magenta;
 
         return os;
     }
@@ -254,7 +259,7 @@ namespace termstylist {
     //46: bg cyan
     template<typename BGCyan>
     std::basic_ostream<BGCyan> & BG_Cyan(std::basic_ostream<BGCyan> &os) {
-        os << BG816.BG_Cyan;
+        os << obj::BG816.BG_Cyan;
 
         return os;
     }
@@ -262,7 +267,7 @@ namespace termstylist {
     //47: bg light grey
     template<typename BGLightGrey>
     std::basic_ostream<BGLightGrey> & BG_LightGrey(std::basic_ostream<BGLightGrey> &os) {
-        os << BG816.BG_LightGrey;
+        os << obj::BG816.BG_LightGrey;
 
         return os;
     }
@@ -270,7 +275,7 @@ namespace termstylist {
     //100: bg dark grey
     template<typename BGDarkGrey>
     std::basic_ostream<BGDarkGrey> & BG_DarkGrey(std::basic_ostream<BGDarkGrey> &os) {
-        os << BG816.BG_DarkGrey;
+        os << obj::BG816.BG_DarkGrey;
 
         return os;
     }
@@ -278,7 +283,7 @@ namespace termstylist {
     //101: bg light red
     template<typename BGLightRed>
     std::basic_ostream<BGLightRed> & BG_LightRed(std::basic_ostream<BGLightRed> &os) {
-        os << BG816.BG_LightRed;
+        os << obj::BG816.BG_LightRed;
 
         return os;
     }
@@ -286,7 +291,7 @@ namespace termstylist {
     //102: bg light green
     template<typename BGLightGreen>
     std::basic_ostream<BGLightGreen> & BG_LightGreen(std::basic_ostream<BGLightGreen> &os) {
-        os << BG816.BG_LightGreen;
+        os << obj::BG816.BG_LightGreen;
 
         return os;
     }
@@ -294,7 +299,7 @@ namespace termstylist {
     //103: bg light yellow
     template <typename BGLightYellow>
     std::basic_ostream<BGLightYellow> & BG_LightYellow(std::basic_ostream<BGLightYellow> &os) {
-        os << BG816.BG_LightYellow;
+        os << obj::BG816.BG_LightYellow;
 
         return os;
     }
@@ -302,7 +307,7 @@ namespace termstylist {
     //104: bg light blue
     template<typename BGLightBlue>
     std::basic_ostream<BGLightBlue> & BG_LightBlue(std::basic_ostream<BGLightBlue> &os) {
-        os << BG816.BG_LightBlue;
+        os << obj::BG816.BG_LightBlue;
 
         return os;
     }
@@ -310,7 +315,7 @@ namespace termstylist {
     //105: bg light magenta
     template<typename BGLightMagenta>
     std::basic_ostream<BGLightMagenta> & BG_LightMagenta(std::basic_ostream<BGLightMagenta> &os) {
-        os << BG816.BG_LightMagenta;
+        os << obj::BG816.BG_LightMagenta;
 
         return os;
     }
@@ -318,7 +323,7 @@ namespace termstylist {
     //106: bg light cyan
     template<typename BGLightCyan>
     std::basic_ostream<BGLightCyan> & BG_LightCyan(std::basic_ostream<BGLightCyan> &os) {
-        os << BG816.BG_LightCyan;
+        os << obj::BG816.BG_LightCyan;
 
         return os;
     }
@@ -326,7 +331,7 @@ namespace termstylist {
     //107: bg white
     template<typename BGWhite>
     std::basic_ostream<BGWhite> & BG_White(std::basic_ostream<BGWhite> &os) {
-        os << BG816.BG_White;
+        os << obj::BG816.BG_White;
 
         return os;
     }
