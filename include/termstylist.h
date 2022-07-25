@@ -84,6 +84,24 @@ namespace termstylist {
             const std::string BG_LightBlue = "\033[104m"; //104
             const std::string BG_LightMagenta = "\033[105m"; //105
             const std::string BG_LightCyan = "\033[106m"; //106
+
+            //16 colours
+            const std::string BG_BoldBlack = "\033[40;1m"; //40;1
+            const std::string BG_BoldRed = "\033[41;1m"; //41;1
+            const std::string BG_BoldGreen = "\033[42;1m"; //42;1
+            const std::string BG_BoldYellow = "\033[43;1m"; //43;1
+            const std::string BG_BoldBlue = "\033[44;1m"; //44;1
+            const std::string BG_BoldMagenta = "\033[45;1m"; //45;1
+            const std::string BG_BoldCyan = "\033[46;1m"; //46;1
+            const std::string BG_BoldWhite = "\033[107;1m"; //107;1
+            const std::string BG_BoldLightGrey = "\033[47;1m"; //47;1
+            const std::string BG_BoldDarkGrey = "\033[100;1m"; //100;1
+            const std::string BG_BoldLightRed = "\033[101;1m"; //101;1
+            const std::string BG_BoldLightGreen = "\033[102;1m"; //102;1
+            const std::string BG_BoldLightYellow = "\033[103;1m"; //103;1
+            const std::string BG_BoldLightBlue = "\033[104;1m"; //104;1
+            const std::string BG_BoldLightMagenta = "\033[105;1m"; //105;1
+            const std::string BG_BoldLightCyan = "\033[106;1m"; //106;1
     };
 
     //namespace obj holds created objects from structs
@@ -570,5 +588,133 @@ namespace termstylist {
     }
 
     /* * * BACKGROUND COLOUR TEMPLATES (16 COLOURS) * * */
+
+    //40;1: bg bold black
+    template<typename BGBoldBlack>
+    std::basic_ostream<BGBoldBlack> & BG_BoldBlack(std::basic_ostream<BGBoldBlack> &os) {
+        os << obj::BG816.BG_BoldBlack;
+
+        return os;
+    }
+
+    //41;1: bg bold red
+    template<typename BGBoldRed>
+    std::basic_ostream<BGBoldRed> & BG_BoldRed(std::basic_ostream<BGBoldRed> &os) {
+        os << obj::BG816.BG_BoldRed;
+
+        return os;
+    }
+
+    //42;1: bg bold green
+    template<typename BGBoldGreen>
+    std::basic_ostream<BGBoldGreen> & BG_BoldGreen(std::basic_ostream<BGBoldGreen> &os) {
+        os << obj::BG816.BG_BoldGreen;
+
+        return os;
+    }
+
+    //43;1: bg bold yellow
+    template<typename BGBoldYellow>
+    std::basic_ostream<BGBoldYellow> & BG_BoldYellow(std::basic_ostream<BGBoldYellow> &os) {
+        os << obj::BG816.BG_BoldYellow;
+
+        return os;
+    }
+
+    //44;1: bg bold blue
+    template<typename BGBoldBlue>
+    std::basic_ostream<BGBoldBlue> & BG_BoldBlue(std::basic_ostream<BGBoldBlue> &os) {
+        os << obj::BG816.BG_BoldBlue;
+
+        return os;
+    }
+
+    //45;1: bg bold magenta
+    template<typename BGBoldMagenta>
+    std::basic_ostream<BGBoldMagenta> & BG_BoldMagenta(std::basic_ostream<BGBoldMagenta> &os) {
+        os << obj::BG816.BG_BoldMagenta;
+
+        return os;
+    }
+    
+    //46;1: bg bold cyan
+    template<typename BGBoldCyan>
+    std::basic_ostream<BGBoldCyan> & BG_BoldCyan(std::basic_ostream<BGBoldCyan> &os) {
+        os << obj::BG816.BG_BoldCyan;
+
+        return os;
+    }
+
+    //107;1: bg bold white
+    template<typename BGBoldWhite>
+    std::basic_ostream<BGBoldWhite> & BG_BoldWhite(std::basic_ostream<BGBoldWhite> &os) {
+        os << obj::BG816.BG_BoldWhite;
+
+        return os;
+    }
+
+    //47;1: bg bold light grey
+    template<typename BGBoldLightGrey>
+    std::basic_ostream<BGBoldLightGrey> & BG_BoldLightGrey(std::basic_ostream<BGBoldLightGrey> &os) {
+        os << obj::BG816.BG_BoldLightGrey;
+
+        return os;
+    }
+
+    //100;1: bg bold dark grey
+    template<typename BGBoldDarkGrey>
+    std::basic_ostream<BGBoldDarkGrey> & BG_BoldDarkGrey(std::basic_ostream<BGBoldDarkGrey> &os) {
+        os << obj::BG816.BG_BoldDarkGrey;
+
+        return os;
+    }
+
+    //101;1: bg bold light red
+    template<typename BGBoldLightRed>
+    std::basic_ostream<BGBoldLightRed> & BG_BoldLightRed(std::basic_ostream<BGBoldLightRed> &os) {
+        os << obj::BG816.BG_BoldLightRed;
+
+        return os;
+    }
+    
+    //102;1: bg bold light green
+    template<typename BGBoldLightGreen>
+    std::basic_ostream<BGBoldLightGreen> & BG_BoldLightGreen(std::basic_ostream<BGBoldLightGreen> &os) {
+        os << obj::BG816.BG_BoldLightGreen;
+
+        return os;
+    }
+
+    //103;1: bg bold light yellow
+    template<typename BGBoldLightYellow>
+    std::basic_ostream<BGBoldLightYellow> & BG_BoldLightYellow(std::basic_ostream<BGBoldLightYellow> &os) {
+        os << obj::BG816.BG_BoldLightYellow;
+
+        return os;
+    }
+
+    //104;1: bg bold light blue
+    template<typename BGLightBlue>
+    std::basic_ostream<BGLightBlue> & BG_BoldLightBlue(std::basic_ostream<BGLightBlue> &os) {
+        os << obj::BG816.BG_BoldLightBlue;
+
+        return os;
+    }
+
+    //105;1: bg bold light magenta
+    template<typename BGBoldLightMagenta>
+    std::basic_ostream<BGBoldLightMagenta> & BG_BoldLightMagenta(std::basic_ostream<BGBoldLightMagenta> &os) {
+        os << obj::BG816.BG_BoldLightMagenta;
+
+        return os;
+    }
+
+    //106;1: bg bold light cyan
+    template<typename BGBoldLightCyan>
+    std::basic_ostream<BGBoldLightCyan> & BG_BoldLightCyan(std::basic_ostream<BGBoldLightCyan> &os) {
+        os << obj::BG816.BG_BoldLightCyan;
+
+        return os;
+    }
 }
 #endif
