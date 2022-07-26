@@ -366,6 +366,62 @@ namespace termstylist {
             const std::string FG256_256 = "\033[38;5;256m"; //38;5;256
     };
 
+    //background colours - 256 colours
+    struct BGColours256 {
+        public:
+            const std::string BG256_0 = "\033[48;5;0m"; //48;5;0
+            const std::string BG256_1 = "\033[48;5;1m"; //48;5;1
+            const std::string BG256_2 = "\033[48;5;2m"; //48;5;2
+            const std::string BG256_3 = "\033[48;5;3m"; //48;5;3
+            const std::string BG256_4 = "\033[48;5;4m"; //48;5;4
+            const std::string BG256_5 = "\033[48;5;5m"; //48;5;5
+            const std::string BG256_6 = "\033[48;5;6m"; //48;5;6
+            const std::string BG256_7 = "\033[48;5;7m"; //48;5;7
+            const std::string BG256_8 = "\033[48;5;8m"; //48;5;8
+            const std::string BG256_9 = "\033[48;5;9m"; //48;5;9
+            const std::string BG256_10 = "\033[48;5;10m"; //48;5;10
+            const std::string BG256_11 = "\033[48;5;11m"; //48;5;11
+            const std::string BG256_12 = "\033[48;5;12m"; //48;5;12
+            const std::string BG256_13 = "\033[48;5;13m"; //48;5;13
+            const std::string BG256_14 = "\033[48;5;14m"; //48;5;14
+            const std::string BG256_15 = "\033[48;5;15m"; //48;5;15
+            const std::string BG256_16 = "\033[48;5;16m"; //48;5;16
+            const std::string BG256_17 = "\033[48;5;17m"; //48;5;17
+            const std::string BG256_18 = "\033[48;5;18m"; //48;5;18
+            const std::string BG256_19 = "\033[48;5;19m"; //48;5;19
+            const std::string BG256_20 = "\033[48;5;20m"; //48;5;20
+            const std::string BG256_21 = "\033[48;5;21m"; //48;5;21
+            const std::string BG256_22 = "\033[48;5;22m"; //48;5;22
+            const std::string BG256_23 = "\033[48;5;23m"; //48;5;23
+            const std::string BG256_24 = "\033[48;5;24m"; //48;5;24
+            const std::string BG256_25 = "\033[48;5;25m"; //48;5;25
+            const std::string BG256_26 = "\033[48;5;26m"; //48;5;26
+            const std::string BG256_27 = "\033[48;5;27m"; //48;5;27
+            const std::string BG256_28 = "\033[48;5;28m"; //48;5;28 
+            const std::string BG256_29 = "\033[48;5;29m"; //48;5;29 
+            const std::string BG256_30 = "\033[48;5;30m"; //48;5;30
+            const std::string BG256_31 = "\033[48;5;31m"; //48;5;31
+            const std::string BG256_32 = "\033[48;5;32m"; //48;5;32 
+            const std::string BG256_33 = "\033[48;5;33m"; //48;5;33
+            const std::string BG256_34 = "\033[48;5;34m"; //48;5;34
+            const std::string BG256_35 = "\033[48;5;35m"; //48;5;35
+            const std::string BG256_36 = "\033[48;5;36m"; //48;5;36
+            const std::string BG256_37 = "\033[48;5;37m"; //48;5;37
+            const std::string BG256_38 = "\033[48;5;38m"; //48;5;38
+            const std::string BG256_39 = "\033[48;5;39m"; //48;5;39
+            const std::string BG256_40 = "\033[48;5;40m"; //48;5;40
+            const std::string BG256_41 = "\033[48;5;41m"; //48;5;41
+            const std::string BG256_42 = "\033[48;5;42m"; //48;5;42
+            const std::string BG256_43 = "\033[48;5;43m"; //48;5;43 
+            const std::string BG256_44 = "\033[48;5;44m"; //48;5;44
+            const std::string BG256_45 = "\033[48;5;45m"; //48;5;45 
+            const std::string BG256_46 = "\033[48;5;46m"; //48;5;46
+            const std::string BG256_47 = "\033[48;5;47m"; //48;5;47
+            const std::string BG256_48 = "\033[48;5;48m"; //48;5;48
+            const std::string BG256_49 = "\033[48;5;49m"; //48;5;49
+            const std::string BG256_50 = "\033[48;5;50m"; //48;5;50
+    };  
+
     //namespace obj holds created objects from structs (ostream manipulators will use them)
     //this is here as an extra layer to "prevent/hide" access of the struct members via using the object externally
     //NOTE: namespace obj_internal is not meant for use outside of namespace termstylist
