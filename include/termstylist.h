@@ -2590,5 +2590,453 @@ namespace termstylist {
 
         return os;
     }
+
+    //38;5;201
+    template<typename FG256_201>
+    std::basic_ostream<FG256_201> & FG256_201(std::basic_ostream<FG256_201> &os) {
+        os << obj_internal::FG256.FG256_201;
+
+        return os;
+    }
+
+    //38;5;202
+    template<typename FG256_202>
+    std::basic_ostream<FG256_202> & FG256_202(std::basic_ostream<FG256_202> &os) {
+        os << obj_internal::FG256.FG256_202;
+
+        return os;
+    }
+
+    //38;5;203
+    template<typename FG256_203>
+    std::basic_ostream<FG256_203> & FG256_203(std::basic_ostream<FG256_203> &os) {
+        os << obj_internal::FG256.FG256_203;
+
+        return os;
+    }
+
+    //38;5;204
+    template<typename FG256_204>
+    std::basic_ostream<FG256_204> & FG256_204(std::basic_ostream<FG256_204> &os) {
+        os << obj_internal::FG256.FG256_204;
+
+        return os;
+    }
+
+    //38;5;205
+    template<typename FG256_205>
+    std::basic_ostream<FG256_205> & FG256_205(std::basic_ostream<FG256_205> &os) {
+        os << obj_internal::FG256.FG256_205;
+
+        return os;
+    }
+
+    //38;5;206
+    template<typename FG256_206>
+    std::basic_ostream<FG256_206> & FG256_206(std::basic_ostream<FG256_206> &os) {
+        os << obj_internal::FG256.FG256_206;
+
+        return os;
+    }
+
+    //38;5;207
+    template<typename FG256_207>
+    std::basic_ostream<FG256_207> & FG256_207(std::basic_ostream<FG256_207> &os) {
+        os << obj_internal::FG256.FG256_207;
+
+        return os;
+    }
+
+    //38;5;208
+    template<typename FG256_208>
+    std::basic_ostream<FG256_208> & FG256_208(std::basic_ostream<FG256_208> &os) {
+        os << obj_internal::FG256.FG256_207;
+
+        return os;
+    }
+
+    //38;5;209
+    template<typename FG256_209>
+    std::basic_ostream<FG256_209> & FG256_209(std::basic_ostream<FG256_209> &os) {
+        os << obj_internal::FG256.FG256_209;
+
+        return os;
+    }
+
+    //38;5;210
+    template<typename FG256_210>
+    std::basic_ostream<FG256_210> & FG256_210(std::basic_ostream<FG256_210> &os) {
+        os << obj_internal::FG256.FG256_210;
+
+        return os;
+    }
+
+    //38;5;211
+    template<typename FG256_211>
+    std::basic_ostream<FG256_211> & FG256_211(std::basic_ostream<FG256_211> &os) {
+        os << obj_internal::FG256.FG256_211;
+
+        return os;
+    }
+
+    //38;5;212
+    template<typename FG256_212>
+    std::basic_ostream<FG256_212> & FG256_212(std::basic_ostream<FG256_212> &os) {
+        os << obj_internal::FG256.FG256_212;
+
+        return os;
+    }
+
+    //38;5;213
+    template<typename FG256_213>
+    std::basic_ostream<FG256_213> & FG256_213(std::basic_ostream<FG256_213> &os) {
+        os << obj_internal::FG256.FG256_213;
+
+        return os;
+    }
+
+    //38;5;214
+    template<typename FG256_214>
+    std::basic_ostream<FG256_214> & FG256_214(std::basic_ostream<FG256_214> &os) {
+        os << obj_internal::FG256.FG256_214;
+
+        return os;
+    }
+
+    //38;5;215
+    template<typename FG256_215>
+    std::basic_ostream<FG256_215> & FG256_215(std::basic_ostream<FG256_215> &os) {
+        os << obj_internal::FG256.FG256_215;
+
+        return os;
+    }
+
+    //38;5;216
+    template<typename FG256_216>
+    std::basic_ostream<FG256_216> & FG256_216(std::basic_ostream<FG256_216> &os) {
+        os << obj_internal::FG256.FG256_216;
+
+        return os;
+    }
+
+    //38;5;217
+    template<typename FG256_217> 
+    std::basic_ostream<FG256_217> & FG256_217(std::basic_ostream<FG256_217> &os) {
+        os << obj_internal::FG256.FG256_217;
+
+        return os;
+    }
+
+    //38;5;218
+    template<typename FG256_218>
+    std::basic_ostream<FG256_218> & FG256_218(std::basic_ostream<FG256_218> &os) {
+        os << obj_internal::FG256.FG256_218;
+
+        return os;
+    }
+
+    //38;5;219
+    template<typename FG256_219>
+    std::basic_ostream<FG256_219> & FG256_219(std::basic_ostream<FG256_219> &os) {
+        os << obj_internal::FG256.FG256_219;
+
+        return os;
+    }
+
+    //38;5;220
+    template<typename FG256_220>
+    std::basic_ostream<FG256_220> & FG256_220(std::basic_ostream<FG256_220> &os) {
+        os << obj_internal::FG256.FG256_220;
+
+        return os;
+    }
+
+    //38;5;221
+    template<typename FG256_221>
+    std::basic_ostream<FG256_221> & FG256_2219(std::basic_ostream<FG256_221> &os) {
+        os << obj_internal::FG256.FG256_221;
+
+        return os;
+    }
+
+    //38;5;222
+    template<typename FG256_222>
+    std::basic_ostream<FG256_222> & FG256_222(std::basic_ostream<FG256_222> &os) {
+        os << obj_internal::FG256.FG256_222;
+
+        return os;
+    }
+
+    //38;5;223
+    template<typename FG256_223>
+    std::basic_ostream<FG256_223> & FG256_223(std::basic_ostream<FG256_223> &os) {
+        os << obj_internal::FG256.FG256_223;
+
+        return os;
+    }
+
+    //38;5;224
+    template<typename FG256_224>
+    std::basic_ostream<FG256_224> & FG256_224(std::basic_ostream<FG256_224> &os) {
+        os << obj_internal::FG256.FG256_224;
+
+        return os;
+    }
+
+    //38;5;225
+    template<typename FG256_225>
+    std::basic_ostream<FG256_225> & FG256_225(std::basic_ostream<FG256_225> &os) {
+        os << obj_internal::FG256.FG256_225;
+
+        return os;
+    }
+
+    //38;5;226
+    template<typename FG256_226>
+    std::basic_ostream<FG256_226> & FG256_226(std::basic_ostream<FG256_226> &os) {
+        os << obj_internal::FG256.FG256_226;
+
+        return os;
+    }
+
+    //38;5;227
+    template<typename FG256_227>
+    std::basic_ostream<FG256_227> & FG256_227(std::basic_ostream<FG256_227> &os) {
+        os << obj_internal::FG256.FG256_227;
+
+        return os;
+    }
+
+    //38;5;228
+    template<typename FG256_228>
+    std::basic_ostream<FG256_228> & FG256_228(std::basic_ostream<FG256_228> &os) {
+        os << obj_internal::FG256.FG256_228;
+
+        return os;
+    }
+
+    //38;5;229
+    template<typename FG256_229>
+    std::basic_ostream<FG256_229> & FG256_229(std::basic_ostream<FG256_229> &os) {
+        os << obj_internal::FG256.FG256_229;
+
+        return os;
+    }
+
+    //38;5;230
+    template<typename FG256_230>
+    std::basic_ostream<FG256_230> & FG256_230(std::basic_ostream<FG256_230> &os) {
+        os << obj_internal::FG256.FG256_230;
+
+        return os;
+    }
+
+    //38;5;231
+    template<typename FG256_231> 
+    std::basic_ostream<FG256_231> & FG256_231(std::basic_ostream<FG256_231> &os) {
+        os << obj_internal::FG256.FG256_231;
+
+        return os;
+    }
+
+    //38;5;232
+    template<typename FG256_232>
+    std::basic_ostream<FG256_232> & FG256_232(std::basic_ostream<FG256_232> &os) {
+        os << obj_internal::FG256.FG256_232;
+
+        return os;
+    }
+
+    //38;5;233
+    template<typename FG256_233>
+    std::basic_ostream<FG256_233> & FG256_233(std::basic_ostream<FG256_233> &os) {
+        os << obj_internal::FG256.FG256_233;
+
+        return os;
+    }
+
+    //38;5;234
+    template<typename FG256_234> 
+    std::basic_ostream<FG256_234> & FG256_234(std::basic_ostream<FG256_234> &os) {
+        os << obj_internal::FG256.FG256_234;
+
+        return os;
+    }
+
+    //38;5;235
+    template<typename FG256_235>
+    std::basic_ostream<FG256_235> & FG256_235(std::basic_ostream<FG256_235> &os) {
+        os << obj_internal::FG256.FG256_235;
+
+        return os;
+    }
+
+    //38;5;236
+    template<typename FG256_236>
+    std::basic_ostream<FG256_236> & FG256_236(std::basic_ostream<FG256_236> &os) {
+        os << obj_internal::FG256.FG256_236;
+
+        return os;
+    }
+
+    //38;5;237
+    template<typename FG256_237>
+    std::basic_ostream<FG256_237> & FG256_237(std::basic_ostream<FG256_237> &os) {
+        os << obj_internal::FG256.FG256_237;
+
+        return os;
+    }
+
+    //38;5;238
+    template<typename FG256_238>
+    std::basic_ostream<FG256_238> & FG256_238(std::basic_ostream<FG256_238> &os) {
+        os << obj_internal::FG256.FG256_238;
+
+        return os;
+    }
+
+    //38;5;239
+    template<typename FG256_239>
+    std::basic_ostream<FG256_239> & FG256_239(std::basic_ostream<FG256_239> &os) {
+        os << obj_internal::FG256.FG256_239;
+
+        return os;
+    }
+
+    //38;5;240
+    template<typename FG256_240>
+    std::basic_ostream<FG256_240> & FG256_240(std::basic_ostream<FG256_240> &os) {
+        os << obj_internal::FG256.FG256_240;
+
+        return os;
+    }
+
+    //38;5;241
+    template<typename FG256_241>
+    std::basic_ostream<FG256_241> & FG256_241(std::basic_ostream<FG256_241> &os) {
+        os << obj_internal::FG256.FG256_241;
+
+        return os;
+    }
+
+    //38;5;242
+    template<typename FG256_242>
+    std::basic_ostream<FG256_242> & FG256_242(std::basic_ostream<FG256_242> &os) {
+        os << obj_internal::FG256.FG256_242;
+
+        return os;
+    }
+
+    //38;5;243
+    template<typename FG256_243>
+    std::basic_ostream<FG256_243> & FG256_243(std::basic_ostream<FG256_243> &os) {
+        os << obj_internal::FG256.FG256_243;
+
+        return os;
+    }
+
+    //38;5;244
+    template<typename FG256_244>
+    std::basic_ostream<FG256_244> & FG256_244(std::basic_ostream<FG256_244> &os) {
+        os << obj_internal::FG256.FG256_244;
+
+        return os;
+    }
+
+    //38;5;245
+    template<typename FG256_245>
+    std::basic_ostream<FG256_245> & FG256_245(std::basic_ostream<FG256_245> &os) {
+        os << obj_internal::FG256.FG256_245;
+
+        return os;
+    }
+
+    //38;5;246
+    template<typename FG256_246>
+    std::basic_ostream<FG256_246> & FG256_246(std::basic_ostream<FG256_246> &os) {
+        os << obj_internal::FG256.FG256_246;
+
+        return os;
+    }
+
+    //38;5;247
+    template<typename FG256_247>
+    std::basic_ostream<FG256_247> & FG256_247(std::basic_ostream<FG256_247> &os) {
+        os << obj_internal::FG256.FG256_247;
+
+        return os;
+    }
+
+    //38;5;248
+    template<typename FG256_248>
+    std::basic_ostream<FG256_248> & FG256_248(std::basic_ostream<FG256_248> &os) {
+        os << obj_internal::FG256.FG256_248;
+
+        return os;
+    }
+
+    //38;5;249
+    template<typename FG256_249>
+    std::basic_ostream<FG256_249> & FG256_249(std::basic_ostream<FG256_249> &os) {
+        os << obj_internal::FG256.FG256_249;
+
+        return os;
+    }
+
+    //38;5;250
+    template<typename FG256_250>
+    std::basic_ostream<FG256_250> & FG256_250(std::basic_ostream<FG256_250> &os) {
+        os << obj_internal::FG256.FG256_250;
+
+        return os;
+    }
+
+    //38;5;251
+    template<typename FG256_251> 
+    std::basic_ostream<FG256_251> & FG256_251(std::basic_ostream<FG256_251> &os) {
+        os << obj_internal::FG256.FG256_251;
+
+        return os;
+    }
+
+    //38;5;252
+    template<typename FG256_252>
+    std::basic_ostream<FG256_252> & FG256_252(std::basic_ostream<FG256_252> &os) {
+        os << obj_internal::FG256.FG256_252;
+
+        return os;
+    }
+
+    //38;5;253
+    template<typename FG256_253>
+    std::basic_ostream<FG256_253> & FG256_253(std::basic_ostream<FG256_253> &os) {
+        os << obj_internal::FG256.FG256_253;
+
+        return os;
+    }
+
+    //38;5;254
+    template<typename FG256_254>
+    std::basic_ostream<FG256_254> & FG256_254(std::basic_ostream<FG256_254> &os) {
+        os << obj_internal::FG256.FG256_254;
+
+        return os;
+    }
+    
+    //38;5;255
+    template<typename FG256_255>
+    std::basic_ostream<FG256_255> & FG256_255(std::basic_ostream<FG256_255> &os) {
+        os << obj_internal::FG256.FG256_255;
+
+        return os;
+    }
+    
+    //38;5;256
+    template<typename FG256_256>
+    std::basic_ostream<FG256_256> & FG256_256(std::basic_ostream<FG256_256> &os) {
+        os << obj_internal::FG256.FG256_256;
+
+        return os;
+    }
 }
 #endif
