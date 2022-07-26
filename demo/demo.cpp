@@ -4,12 +4,14 @@
 int main() {
     std::cout << '\n';
 
+    //attributes
     std::cout << termstylist::ATTR_Bold << "Bold" << termstylist::RESET_All << " ";
     std::cout << termstylist::ATTR_Underline << "Underline" << termstylist::RESET_Underline << " ";
     std::cout << termstylist::ATTR_Reverse << "Reverse" << termstylist::RESET_All << " ";
 
     std::cout << '\n' << '\n';
     
+    //foreground colours (8 colours)
     std::cout << termstylist::FG_Default << "FG Default" << " ";
     std::cout << termstylist::FG_Black << "FG Black" << termstylist::FG_Default << " ";
     std::cout << termstylist::FG_Red << "FG Red" << termstylist::FG_Default << " ";
@@ -30,6 +32,7 @@ int main() {
 
     std::cout << '\n' << '\n';
 
+    //foreground colours (16 colours)
     std::cout << termstylist::FG_BoldBlack << "FG Bold Black" << termstylist::RESET_All << " ";
     std::cout << termstylist::FG_BoldRed << "FG Bold Red" << termstylist::RESET_All << " ";
     std::cout << termstylist::FG_BoldGreen << "FG Bold Green" << termstylist::RESET_All << " ";
@@ -49,6 +52,7 @@ int main() {
  
     std::cout << '\n' << '\n';
 
+    //background colours (8 colours)
     std::cout << termstylist::BG_Default << "BG Default" << " ";
     std::cout << termstylist::BG_Black << "BG Black" << termstylist::BG_Default << " ";
     std::cout << termstylist::BG_Red << "BG Red" << termstylist::BG_Default << " ";
@@ -69,6 +73,7 @@ int main() {
     
     std::cout << '\n' << '\n';
 
+    //background colours (16 colours)
     std::cout << termstylist::BG_BoldBlack << "BG Bold Black" << termstylist::RESET_All << " ";
     std::cout << termstylist::BG_BoldRed << "BG Bold Red" << termstylist::RESET_All << " ";
     std::cout << termstylist::BG_BoldGreen << "BG Bold Green" << termstylist::RESET_All << " ";
