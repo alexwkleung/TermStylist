@@ -1152,5 +1152,87 @@ namespace termstylist {
 
         return os;
     }
+
+    //38;5;21
+    template<typename FG256_21>
+    std::basic_ostream<FG256_21> & FG256_21(std::basic_ostream<FG256_21> &os) {
+        os << obj_internal::FG256.FG256_21;
+        
+        return os;
+    }
+
+    //38;5;22
+    template<typename FG256_22>
+    std::basic_ostream<FG256_22> & FG256_22(std::basic_ostream<FG256_22> &os) {
+        os << obj_internal::FG256.FG256_22;
+
+        return os;
+    }
+
+    //38;5;23
+    template<typename FG256_23>
+    std::basic_ostream<FG256_23> & FG256_23(std::basic_ostream<FG256_23> &os) {
+        os << obj_internal::FG256.FG256_23;
+
+        return os;
+    }
+
+    //38;5;24
+    template<typename FG256_24>
+    std::basic_ostream<FG256_24> & FG256_24(std::basic_ostream<FG256_24> &os) {
+        os << obj_internal::FG256.FG256_24;
+
+        return os;
+    }
+
+    //38;5;25
+    template<typename FG256_25>
+    std::basic_ostream<FG256_25> & FG256_25(std::basic_ostream<FG256_25> &os) {
+        os << obj_internal::FG256.FG256_25;
+
+        return os;
+    }
+
+    //38;5;26
+    template<typename FG256_26>
+    std::basic_ostream<FG256_26> & FG256_26(std::basic_ostream<FG256_26> &os) {
+        os << obj_internal::FG256.FG256_26;
+
+        return os;
+    }
+
+    //38;5;27
+    template<typename FG256_27>
+    std::basic_ostream<FG256_27> & FG256_27(std::basic_ostream<FG256_27> &os) {
+        os << obj_internal::FG256.FG256_27;
+
+        return os;
+    }
+
+    //38;5;28
+    template<typename FG256_28>
+    std::basic_ostream<FG256_28> & FG256_28(std::basic_ostream<FG256_28> &os) {
+        os << obj_internal::FG256.FG256_28;
+
+        return os;
+    }
+
+    //38;5;29
+    template<typename FG256_29>
+    std::basic_ostream<FG256_29> & FG256_29(std::basic_ostream<FG256_29> &os) {
+        os << obj_internal::FG256.FG256_29;
+
+        return os;
+    }
+
+    //38;5;30
+    template<typename FG256_30>
+    std::basic_ostream<FG256_30> & FG256_30(std::basic_ostream<FG256_30> &os) {
+        os << obj_internal::FG256.FG256_30;
+
+        return os;
+    } 
+
+
 }
 #endif
