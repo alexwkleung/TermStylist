@@ -206,7 +206,27 @@ namespace termstylist {
             const std::string FG256_97 = "\033[38;5;97m"; //38;5;97
             const std::string FG256_98 = "\033[38;5;98m"; //38;5;98
             const std::string FG256_99 = "\033[38;5;99m"; //38;5;99
-            const std::string FG256_100 = "\033[38;5;100m"; //37;5;100
+            const std::string FG256_100 = "\033[38;5;100m"; //38;5;100
+            const std::string FG256_101 = "\033[38;5;101m"; //38;5;101
+            const std::string FG256_102 = "\033[38;5;102m"; //38;5;102
+            const std::string FG256_103 = "\033[38;5;103m"; //38;5;103
+            const std::string FG256_104 = "\033[38;5;104m"; //38;5;104
+            const std::string FG256_105 = "\033[38;5;105m"; //38;5;105 
+            const std::string FG256_106 = "\033[38;5;106m"; //38;5;106
+            const std::string FG256_107 = "\033[38;5;107m"; //38;5;107
+            const std::string FG256_108 = "\033[38;5;108m"; //38;5;108
+            const std::string FG256_109 = "\033[38;5;109m"; //38;5;109
+            const std::string FG256_110 = "\033[38;5;110m"; //38;5;110
+            const std::string FG256_111 = "\033[38;5;111m"; //38;5;111
+            const std::string FG256_112 = "\033[38;5;112m"; //38;5;112
+            const std::string FG256_113 = "\033[38;5;113m"; //38;5;113
+            const std::string FG256_114 = "\033[38;5;113m"; //38;5;114
+            const std::string FG256_115 = "\033[38;5;115m"; //38;5;115
+            const std::string FG256_116 = "\033[38;5;116m"; //38;5;116 
+            const std::string FG256_117 = "\033[38;5;117m"; //38;5;117
+            const std::string FG256_118 = "\033[38;5;118m"; //38;5;118
+            const std::string FG256_119 = "\033[38;5;119m"; //38;5;119
+            const std::string FG256_120 = "\033[38;5;120m"; //38;5;120
     };
 
     //namespace obj holds created objects from structs
