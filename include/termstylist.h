@@ -3475,5 +3475,85 @@ namespace termstylist {
 
         return os;
     }
+
+    //48;5;21
+    template<typename BG256_21>
+    std::basic_ostream<BG256_21> & BG256_21(std::basic_ostream<BG256_21> &os) {
+        os << obj_internal::BG256.BG256_21;
+
+        return os;
+    }
+
+    //48;5;22
+    template<typename BG256_22>
+    std::basic_ostream<BG256_22> & BG256_22(std::basic_ostream<BG256_22> &os) {
+        os << obj_internal::BG256.BG256_22;
+
+        return os;
+    }
+
+    //48;5;23
+    template<typename BG256_23> 
+    std::basic_ostream<BG256_23> & BG256_23(std::basic_ostream<BG256_23> &os) {
+        os << obj_internal::BG256.BG256_23;
+
+        return os;
+    }
+
+    //48;5;24
+    template<typename BG256_24>
+    std::basic_ostream<BG256_24> & BG256_24(std::basic_ostream<BG256_24> &os) {
+        os << obj_internal::BG256.BG256_24;
+
+        return os;
+    }
+
+    //48;5;25
+    template<typename BG256_25>
+    std::basic_ostream<BG256_25> & BG256_25(std::basic_ostream<BG256_25> &os) {
+        os << obj_internal::BG256.BG256_25;
+
+        return os;
+    }
+
+    //48;5;26
+    template<typename BG256_26>
+    std::basic_ostream<BG256_26> & BG256_26(std::basic_ostream<BG256_26> &os) {
+        os << obj_internal::BG256.BG256_26;
+
+        return os;
+    }
+
+    //48;5;27
+    template<typename BG256_27>
+    std::basic_ostream<BG256_27> & BG256_27(std::basic_ostream<BG256_27> &os) {
+        os << obj_internal::BG256.BG256_27;
+
+        return os;
+    }
+
+    //48;5;28
+    template<typename BG256_28>
+    std::basic_ostream<BG256_28> & BG256_28(std::basic_ostream<BG256_28> &os) {
+        os << obj_internal::BG256.BG256_28;
+
+        return os;
+    }
+
+    //48;5;29
+    template<typename BG256_29>
+    std::basic_ostream<BG256_29> & BG256_29(std::basic_ostream<BG256_29> &os) {
+        os << obj_internal::BG256.BG256_29;
+        
+        return os;
+    }
+
+    //48;5;30
+    template<typename BG256_30>
+    std::basic_ostream<BG256_30> & BG256_30(std::basic_ostream<BG256_30> &os) {
+        os << obj_internal::BG256.BG256_30;
+
+        return os;
+    }
 }
 #endif
