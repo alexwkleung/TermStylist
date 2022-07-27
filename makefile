@@ -10,11 +10,13 @@ OUT_TEST = test/test.o
 # demo 
 .PHONY: build
 build:
+	clear
 	${CXX} ${CPPFLAGS} ${VAR_DEMO} -o ${OUT_DEMO} && ./${OUT_DEMO}
 
 # test
 .PHONY: test
 test:
+	clear
 	${CXX} ${CPPFLAGS} ${VAR_TEST} -o ${OUT_TEST} && ./${OUT_TEST}
 
 # clean
