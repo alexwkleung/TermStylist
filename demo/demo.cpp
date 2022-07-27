@@ -5,9 +5,9 @@ int main() {
     std::cout << '\n';
 
     //attributes
-    std::cout << termstylist::ATTR_Bold << "Bold" << termstylist::RESET_All << " ";
+    std::cout << termstylist::ATTR_Bold << "Bold" << termstylist::RESET_Default << " ";
     std::cout << termstylist::ATTR_Underline << "Underline" << termstylist::RESET_Underline << " ";
-    std::cout << termstylist::ATTR_Reverse << "Reverse" << termstylist::RESET_All << " ";
+    std::cout << termstylist::ATTR_Reverse << "Reverse" << termstylist::RESET_Default << " ";
 
     std::cout << '\n' << '\n';
     
@@ -33,22 +33,22 @@ int main() {
     std::cout << '\n' << '\n';
 
     //foreground colours (16 colours)
-    std::cout << termstylist::FG_BoldBlack << "FG Bold Black" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldRed << "FG Bold Red" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldGreen << "FG Bold Green" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldYellow << "FG Bold Yellow" << termstylist::RESET_All << '\n';
-    std::cout << termstylist::FG_BoldBlue << "FG Bold Blue" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldMagenta << "FG Bold Magenta" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldCyan << "FG Bold Cyan" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldWhite << "FG Bold White" << termstylist::RESET_All << '\n';
-    std::cout << termstylist::FG_BoldLightGrey << "FG Bold Light Grey" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldDarkGrey << "FG Bold Dark Grey" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldLightRed << "FG Bold Light Red" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldLightGreen << "FG Bold Light Green" << termstylist::RESET_All << '\n';
-    std::cout << termstylist::FG_BoldLightYellow << "FG Bold Light Yellow" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldLightBlue << "FG Bold Light Blue" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldLightMagenta << "FG Bold Light Magenta" << termstylist::RESET_All << " ";
-    std::cout << termstylist::FG_BoldLightCyan << "FG Bold Light Cyan" << termstylist::RESET_All << " ";
+    std::cout << termstylist::FG_BoldBlack << "FG Bold Black" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldRed << "FG Bold Red" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldGreen << "FG Bold Green" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldYellow << "FG Bold Yellow" << termstylist::RESET_Default << '\n';
+    std::cout << termstylist::FG_BoldBlue << "FG Bold Blue" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldMagenta << "FG Bold Magenta" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldCyan << "FG Bold Cyan" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldWhite << "FG Bold White" << termstylist::RESET_Default << '\n';
+    std::cout << termstylist::FG_BoldLightGrey << "FG Bold Light Grey" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldDarkGrey << "FG Bold Dark Grey" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldLightRed << "FG Bold Light Red" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldLightGreen << "FG Bold Light Green" << termstylist::RESET_Default << '\n';
+    std::cout << termstylist::FG_BoldLightYellow << "FG Bold Light Yellow" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldLightBlue << "FG Bold Light Blue" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldLightMagenta << "FG Bold Light Magenta" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::FG_BoldLightCyan << "FG Bold Light Cyan" << termstylist::RESET_Default << " ";
  
     std::cout << '\n' << '\n';
 
@@ -74,22 +74,22 @@ int main() {
     std::cout << '\n' << '\n';
 
     //background colours (16 colours)
-    std::cout << termstylist::BG_BoldBlack << "BG Bold Black" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldRed << "BG Bold Red" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldGreen << "BG Bold Green" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldYellow << "BG Bold Yellow" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldBlue << "BG Bold Blue" << termstylist::RESET_All << '\n';
-    std::cout << termstylist::BG_BoldMagenta << "BG Bold Magenta" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldCyan << "BG Bold Cyan" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldWhite << "BG Bold White" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldLightGrey << "BG Bold Light Grey" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldDarkGrey << "BG Bold Dark Grey" << termstylist::RESET_All << '\n';
-    std::cout << termstylist::BG_BoldLightRed << "BG Bold Light Red" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldLightGreen << "BG Bold Light Green" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldLightYellow << "BG Bold Light Yellow" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldLightBlue << "BG Bold Light Blue" << termstylist::RESET_All << '\n';
-    std::cout << termstylist::BG_BoldLightMagenta << "BG Bold Light Magenta" << termstylist::RESET_All << " ";
-    std::cout << termstylist::BG_BoldLightCyan << "BG Bold Light Cyan" << termstylist::RESET_All << " ";
+    std::cout << termstylist::BG_BoldBlack << "BG Bold Black" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldRed << "BG Bold Red" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldGreen << "BG Bold Green" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldYellow << "BG Bold Yellow" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldBlue << "BG Bold Blue" << termstylist::RESET_Default << '\n';
+    std::cout << termstylist::BG_BoldMagenta << "BG Bold Magenta" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldCyan << "BG Bold Cyan" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldWhite << "BG Bold White" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldLightGrey << "BG Bold Light Grey" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldDarkGrey << "BG Bold Dark Grey" << termstylist::RESET_Default << '\n';
+    std::cout << termstylist::BG_BoldLightRed << "BG Bold Light Red" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldLightGreen << "BG Bold Light Green" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldLightYellow << "BG Bold Light Yellow" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldLightBlue << "BG Bold Light Blue" << termstylist::RESET_Default << '\n';
+    std::cout << termstylist::BG_BoldLightMagenta << "BG Bold Light Magenta" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::BG_BoldLightCyan << "BG Bold Light Cyan" << termstylist::RESET_Default << " ";
 
     std::cout << '\n' << '\n';
 

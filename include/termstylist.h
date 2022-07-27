@@ -16,7 +16,7 @@ namespace termstylist {
     //reset
     struct Reset {
         public:
-            const std::string RESET_All = "\033[0m"; //0
+            const std::string RESET_Default = "\033[0m"; //0
             const std::string RESET_Bold = "\033[21m"; //21
             const std::string RESET_Underline = "\033[24m"; //24
             const std::string RESET_Reverse = "\033[27m"; //27
@@ -680,10 +680,10 @@ namespace termstylist {
 
     /* * * RESET * * */
 
-    //0: reset all
-    template<typename RESETAll>
-    std::basic_ostream<RESETAll> & RESET_All(std::basic_ostream<RESETAll> &os) {
-        os << obj_internal::RESET.RESET_All;
+    //0: reset default
+    template<typename RESETDefault>
+    std::basic_ostream<RESETDefault> & RESET_Default(std::basic_ostream<RESETDefault> &os) {
+        os << obj_internal::RESET.RESET_Default;
 
         return os;
     }
