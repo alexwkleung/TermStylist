@@ -3555,5 +3555,333 @@ namespace termstylist {
 
         return os;
     }
+
+    //48;5;31
+    template<typename BG256_31>
+    std::basic_ostream<BG256_31> & BG256_31(std::basic_ostream<BG256_31> &os) {
+        os << obj_internal::BG256.BG256_31;
+
+        return os;
+    }
+
+    //48;5;32
+    template<typename BG256_32>
+    std::basic_ostream<BG256_32> & BG256_32(std::basic_ostream<BG256_32> &os) {
+        os << obj_internal::BG256.BG256_32;
+
+        return os;
+    }
+    
+    //48;5;33
+    template<typename BG256_33>
+    std::basic_ostream<BG256_33> & BG256_33(std::basic_ostream<BG256_33> &os) {
+        os << obj_internal::BG256.BG256_33;
+        
+        return os;
+    }
+
+    //48;5;34
+    template<typename BG256_34>
+    std::basic_ostream<BG256_34> & BG256_34(std::basic_ostream<BG256_34> &os) {
+        os << obj_internal::BG256.BG256_34;
+
+        return os;
+    }
+
+    //48;5;35
+    template<typename BG256_35> 
+    std::basic_ostream<BG256_35> & BG256_35(std::basic_ostream<BG256_35> &os) {
+        os << obj_internal::BG256.BG256_35;
+
+        return os;
+    }
+
+    //48;5;36
+    template<typename BG256_36>
+    std::basic_ostream<BG256_36> & BG256_36(std::basic_ostream<BG256_36> &os) {
+        os << obj_internal::BG256.BG256_36;
+
+        return os;
+    }
+
+    //48;5;37
+    template<typename BG256_37>
+    std::basic_ostream<BG256_37> & BG256_37(std::basic_ostream<BG256_37> &os) {
+        os << obj_internal::BG256.BG256_37;
+        
+        return os;
+    }
+
+    //48;5;38
+    template<typename BG256_38>
+    std::basic_ostream<BG256_38> & BG256_38(std::basic_ostream<BG256_38> &os) {
+        os << obj_internal::BG256.BG256_38;
+
+        return os;
+    }
+
+    //48;5;39
+    template<typename BG256_39>
+    std::basic_ostream<BG256_39> & BG256_39(std::basic_ostream<BG256_39> &os) {
+        os << obj_internal::BG256.BG256_39;
+
+        return os;
+    }
+
+    //48;5;40
+    template<typename BG256_40>
+    std::basic_ostream<BG256_40> & BG256_40(std::basic_ostream<BG256_40> &os) {
+        os << obj_internal::BG256.BG256_40;
+
+        return os;
+    }
+
+    //48;5;41
+    template<typename BG256_41>
+    std::basic_ostream<BG256_41> & BG256_41(std::basic_ostream<BG256_41> &os) {
+        os << obj_internal::BG256.BG256_41;
+
+        return os;
+    }
+
+    //48;5;42
+    template<typename BG256_42>
+    std::basic_ostream<BG256_42> & BG256_42(std::basic_ostream<BG256_42> &os) {
+        os << obj_internal::BG256.BG256_42;
+
+        return os;
+    }
+
+    //48;5;43
+    template<typename BG256_43>
+    std::basic_ostream<BG256_43> & BG256_43(std::basic_ostream<BG256_43> &os) {
+        os << obj_internal::BG256.BG256_43;
+
+        return os;
+    }
+
+    //48;5;44
+    template<typename BG256_44>
+    std::basic_ostream<BG256_44> & BG256_44(std::basic_ostream<BG256_44> &os) {
+        os << obj_internal::BG256.BG256_44;
+
+        return os;
+    }
+
+    //48;5;45
+    template<typename BG256_45>
+    std::basic_ostream<BG256_45> & BG256_45(std::basic_ostream<BG256_45> &os) {
+        os << obj_internal::BG256.BG256_45;
+
+        return os;
+    }
+
+    //48;5;46
+    template<typename BG256_46>
+    std::basic_ostream<BG256_46> & BG256_46(std::basic_ostream<BG256_46> &os) {
+        os << obj_internal::BG256.BG256_46;
+
+        return os;
+    }
+
+    //48;5;47
+    template<typename BG256_47>
+    std::basic_ostream<BG256_47> & BG256_47(std::basic_ostream<BG256_47> &os) {
+        os << obj_internal::BG256.BG256_47;
+
+        return os;
+    }
+
+    //48;5;48
+    template<typename BG256_48>
+    std::basic_ostream<BG256_48> & BG256_48(std::basic_ostream<BG256_48> &os) {
+        os << obj_internal::BG256.BG256_48;
+
+        return os;
+    }
+
+    //48;5;49
+    template<typename BG256_49>
+    std::basic_ostream<BG256_49> & BG256_49(std::basic_ostream<BG256_49> &os) {
+        os << obj_internal::BG256.BG256_49;
+
+        return os;
+    }
+
+    //48;5;50
+    template<typename BG256_50>
+    std::basic_ostream<BG256_50> & BG256_50(std::basic_ostream<BG256_50> &os) {
+        os << obj_internal::BG256.BG256_50;
+
+        return os;
+    }
+
+    //48;5;51
+    template<typename BG256_51>
+    std::basic_ostream<BG256_51> & BG256_51(std::basic_ostream<BG256_51> &os) {
+        os << obj_internal::BG256.BG256_51;
+
+        return os;
+    }
+
+    //48;5;52
+    template<typename BG256_52> 
+    std::basic_ostream<BG256_52> & BG256_52(std::basic_ostream<BG256_52> &os) {
+        os << obj_internal::BG256.BG256_52;
+
+        return os;
+    }
+
+    //48;5;53
+    template<typename BG256_53>
+    std::basic_ostream<BG256_53> & BG256_53(std::basic_ostream<BG256_53> &os) {
+        os << obj_internal::BG256.BG256_53;
+
+        return os;
+    }
+
+    //48;5;54
+    template<typename BG256_54>
+    std::basic_ostream<BG256_54> & BG256_54(std::basic_ostream<BG256_54> &os) {
+        os << obj_internal::BG256.BG256_54;
+
+        return os;
+    }
+
+    //48;5;55
+    template<typename BG256_55>
+    std::basic_ostream<BG256_55> & BG256_55(std::basic_ostream<BG256_55> &os) {
+        os << obj_internal::BG256.BG256_55;
+
+        return os;
+    }
+
+    //48;5;56
+    template<typename BG256_56>
+    std::basic_ostream<BG256_56> & BG256_56(std::basic_ostream<BG256_56> &os) {
+        os << obj_internal::BG256.BG256_56;
+
+        return os;
+    }
+
+    //48;5;57
+    template<typename BG256_57>
+    std::basic_ostream<BG256_57> & BG256_57(std::basic_ostream<BG256_57> &os) {
+        os << obj_internal::BG256.BG256_57;
+
+        return os;
+    }
+
+    //48;5;58
+    template<typename BG256_58>
+    std::basic_ostream<BG256_58> & BG256_58(std::basic_ostream<BG256_58> &os) {
+        os << obj_internal::BG256.BG256_58;
+
+        return os;
+    }
+
+    //48;5;59
+    template<typename BG256_59>
+    std::basic_ostream<BG256_59> & BG256_59(std::basic_ostream<BG256_59> &os) {
+        os << obj_internal::BG256.BG256_59;
+
+        return os;
+    }
+
+    //48;5;60
+    template<typename BG256_60>
+    std::basic_ostream<BG256_60> & BG256_60(std::basic_ostream<BG256_60> &os) {
+        os << obj_internal::BG256.BG256_60;
+
+        return os;
+    }
+
+    //48;5;61
+    template<typename BG256_61>
+    std::basic_ostream<BG256_61> & BG256_61(std::basic_ostream<BG256_61> &os) {
+        os << obj_internal::BG256.BG256_61;
+
+        return os;
+    }
+
+    //48;5;62
+    template<typename BG256_62>
+    std::basic_ostream<BG256_62> & BG256_62(std::basic_ostream<BG256_62> &os) {
+        os << obj_internal::BG256.BG256_62;
+
+        return os;
+    }
+
+    //48;5;63
+    template<typename BG256_63> 
+    std::basic_ostream<BG256_63> & BG256_63(std::basic_ostream<BG256_63> &os) {
+        os << obj_internal::BG256.BG256_63;
+
+        return os;
+    }
+
+    //48;5;64
+    template<typename BG256_64>
+    std::basic_ostream<BG256_64> & BG256_64(std::basic_ostream<BG256_64> &os) {
+        os << obj_internal::BG256.BG256_64;
+
+        return os;
+    }
+
+    //48;5;65
+    template<typename BG256_65>
+    std::basic_ostream<BG256_65> & BG256_65(std::basic_ostream<BG256_65> &os) {
+        os << obj_internal::BG256.BG256_63;
+
+        return os;
+    }
+
+    //48;5;66
+    template<typename BG256_66>
+    std::basic_ostream<BG256_66> & BG256_66(std::basic_ostream<BG256_66> &os) {
+        os << obj_internal::BG256.BG256_66;
+
+        return os;
+    }
+
+    //48;5;67
+    template<typename BG256_67>
+    std::basic_ostream<BG256_67> & BG256_67(std::basic_ostream<BG256_67> &os) {
+        os << obj_internal::BG256.BG256_67;
+
+        return os;
+    }
+
+    //48;5;68
+    template<typename BG256_68>
+    std::basic_ostream<BG256_68> & BG256_68(std::basic_ostream<BG256_68> &os) {
+        os << obj_internal::BG256.BG256_68;
+
+        return os;
+    }
+
+    //48;5;69
+    template<typename BG256_69>
+    std::basic_ostream<BG256_69> & BG256_69(std::basic_ostream<BG256_69> &os) {
+        os << obj_internal::BG256.BG256_69;
+
+        return os;
+    }
+
+    //48;5;70
+    template<typename BG256_70> 
+    std::basic_ostream<BG256_70> & BG256_70(std::basic_ostream<BG256_70> &os) {
+        os << obj_internal::BG256.BG256_70;
+
+        return os;
+    }
+
+    //48;5;71
+    template<typename BG256_71>
+    std::basic_ostream<BG256_71> & BG256_71(std::basic_ostream<BG256_71> &os) {
+        os << obj_internal::BG256.BG256_71;
+
+        return;
+    }
 }
 #endif
