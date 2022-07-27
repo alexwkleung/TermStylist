@@ -354,5 +354,12 @@ int main() {
 
     std::cout << '\n' << '\n';
 
+    //background colours (256 colours)
+    std::cout << termstylist::BG256_0 << "0" << termstylist::BG_Default << " ";
+    std::cout << termstylist::BG256_1 << "1" << termstylist::BG_Default << " ";
+    std::cout << termstylist::BG256_2 << "2" << termstylist::BG_Default << " ";
+    
+    std::cout << '\n' << '\n';
+
     return 0;
 }
