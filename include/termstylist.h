@@ -4422,7 +4422,7 @@ namespace termstylist {
 
     //48;5;139
     template<typename BG256_139> 
-    std::basic_ostream<BG256_139> * BG256_139(std::basic_ostream<BG256_139> &os) {
+    std::basic_ostream<BG256_139> & BG256_139(std::basic_ostream<BG256_139> &os) {
         os << obj_internal::BG256.BG256_139;
 
         return os;

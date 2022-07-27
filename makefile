@@ -1,12 +1,14 @@
 CXX = g++
 CPPFLAGS = -std=c++17 -Wall -Wextra -g 
-VAR = demo/demo.cpp
-OUT = demo/a.o
 
+VAR_DEMO = demo/demo.cpp
+OUT_DEMO = demo/a.o
+
+# demo 
 .PHONY: build
 build:
-	${CXX} ${CPPFLAGS} ${VAR} -o ${OUT} && ./${OUT}
+	${CXX} ${CPPFLAGS} ${VAR_DEMO} -o ${OUT_DEMO} && ./${OUT_DEMO}
 
 .PHONY: clean
 clean:
-	rm ${OUT}
+	rm ${OUT_DEMO}
