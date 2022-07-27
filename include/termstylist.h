@@ -538,7 +538,7 @@ namespace termstylist {
             const std::string BG256_166 = "\033[48;5;166m"; //48;5;166
             const std::string BG256_167 = "\033[48;5;167m"; //48;5;167
             const std::string BG256_168 = "\033[48;5;168m"; //48;5;168
-            const std::string BG256_169 = "\033[49;5;169m"; //48;5;169
+            const std::string BG256_169 = "\033[48;5;169m"; //48;5;169
             const std::string BG256_170 = "\033[48;5;170m"; //48;5;170
             const std::string BG256_171 = "\033[48;5;171m"; //48;5;171 
             const std::string BG256_172 = "\033[48;5;172m"; //48;5;172
@@ -5080,6 +5080,8 @@ namespace termstylist {
     template<typename BG256_221>
     std::basic_ostream<BG256_221> & BG256_221(std::basic_ostream<BG256_221> &os) {
         os << obj_internal::BG256.BG256_221;
+
+        return os;
     }
 
     //48;5;222
@@ -5124,7 +5126,7 @@ namespace termstylist {
 
     //48;5;227
     template<typename BG256_227>
-    std::basic_ostream<BG256_227> & BGG256_227(std::basic_ostream<BG256_227> &os) {
+    std::basic_ostream<BG256_227> & BG256_227(std::basic_ostream<BG256_227> &os) {
         os << obj_internal::BG256.BG256_227;
 
         return os;
