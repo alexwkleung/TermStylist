@@ -190,6 +190,201 @@ class Test_FG_Colours816 {
                 std::cout << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
             }
         }
+
+        //test: fg yellow
+        void TEST_FG_YELLOW() {
+            std::ostringstream FG_YELLOW;
+
+            FG_YELLOW << termstylist::FG_Yellow;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_Yellow " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[33m " << termstylist::FG_Default << "==== ";
+
+            if(FG_YELLOW.str() == "\033[33m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg blue
+        void TEST_FG_BLUE() {
+            std::ostringstream FG_BLUE;
+
+            FG_BLUE << termstylist::FG_Blue;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_Blue " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[34m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BLUE.str() == "\033[34m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg magenta
+        void TEST_FG_MAGENTA() {
+            std::ostringstream FG_MAGENTA;
+
+            FG_MAGENTA << termstylist::FG_Magenta;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_Magenta " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[35m " << termstylist::FG_Default << "==== ";
+
+            if(FG_MAGENTA.str() == "\033[35m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg cyan
+        void TEST_FG_CYAN() {
+            std::ostringstream FG_CYAN;
+
+            FG_CYAN << termstylist::FG_Cyan;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_Cyan " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[36m " << termstylist::FG_Default << "==== ";
+
+            if(FG_CYAN.str() == "\033[36m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg white
+        void TEST_FG_WHITE() {
+            std::ostringstream FG_WHITE;
+
+            FG_WHITE << termstylist::FG_White;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_White " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[97m " << termstylist::FG_Default << "==== ";
+
+            if(FG_WHITE.str() == "\033[97m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg light grey
+        void TEST_FG_LIGHTGREY() {
+            std::ostringstream FG_LIGHTGREY;
+
+            FG_LIGHTGREY << termstylist::FG_LightGrey;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightGrey " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[37m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTGREY.str() == "\033[37m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg dark grey
+        void TEST_FG_DARKGREY() {
+            std::ostringstream FG_DARKGREY;
+
+            FG_DARKGREY << termstylist::FG_DarkGrey;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_DarkGrey " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[90m " << termstylist::FG_Default << "==== ";
+
+            if(FG_DARKGREY.str() == "\033[90m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+        
+        //test: fg light red
+        void TEST_FG_LIGHTRED() {
+            std::ostringstream FG_LIGHTRED;
+
+            FG_LIGHTRED << termstylist::FG_LightRed;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightRed " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[91m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTRED.str() == "\033[91m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg light green
+        void TEST_FG_LIGHTGREEN() {
+            std::ostringstream FG_LIGHTGREEN;
+
+            FG_LIGHTGREEN << termstylist::FG_LightGreen;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightGreen " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[92m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTGREEN.str() == "\033[92m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg light yellow
+        void TEST_FG_LIGHTYELLOW() {
+            std::ostringstream FG_LIGHTYELLOW;
+
+            FG_LIGHTYELLOW << termstylist::FG_LightYellow;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightYellow " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[93m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTYELLOW.str() == "\033[93m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg light blue
+        void TEST_FG_LIGHTBLUE() {
+            std::ostringstream FG_LIGHTBLUE;
+
+            FG_LIGHTBLUE << termstylist::FG_LightBlue;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightBlue " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[94m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTBLUE.str() == "\033[94m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg light magenta
+        void TEST_FG_LIGHTMAGENTA() {
+            std::ostringstream FG_LIGHTMAGENTA;
+
+            FG_LIGHTMAGENTA << termstylist::FG_LightMagenta;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightMagenta " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[95m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTMAGENTA.str() == "\033[95m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg light cyan
+        void TEST_FG_LIGHTCYAN() {
+            std::ostringstream FG_LIGHTCYAN;
+
+            FG_LIGHTCYAN << termstylist::FG_LightCyan;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_LightCyan " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[96m " << termstylist::FG_Default << "==== ";
+
+            if(FG_LIGHTCYAN.str() == "\033[96m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
 };
 
 int main() {
@@ -215,7 +410,20 @@ int main() {
     T_FGC_816.TEST_FG_BLACK();
     T_FGC_816.TEST_FG_RED();
     T_FGC_816.TEST_FG_GREEN();
-
+    T_FGC_816.TEST_FG_YELLOW();
+    T_FGC_816.TEST_FG_BLUE();
+    T_FGC_816.TEST_FG_MAGENTA();
+    T_FGC_816.TEST_FG_CYAN();
+    T_FGC_816.TEST_FG_WHITE();
+    T_FGC_816.TEST_FG_LIGHTGREY();
+    T_FGC_816.TEST_FG_DARKGREY();
+    T_FGC_816.TEST_FG_LIGHTRED();
+    T_FGC_816.TEST_FG_LIGHTGREEN();
+    T_FGC_816.TEST_FG_LIGHTYELLOW();
+    T_FGC_816.TEST_FG_LIGHTBLUE();
+    T_FGC_816.TEST_FG_LIGHTMAGENTA();
+    T_FGC_816.TEST_FG_LIGHTCYAN();
+    
     return 0;
 }
 
