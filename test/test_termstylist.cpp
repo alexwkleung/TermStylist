@@ -3,7 +3,11 @@
 #include <iostream>
 #include <sstream>
 
-/* * * TEST ATTRIBUTES * * */
+/* * * * * * * * * * * * * *
+*                          *
+*     TEST ATTRIBUTES      *
+*                          *
+* * * * * * * * * * * * * */
 
 //title: attr tests
 void Test_Attributes::TEST_ATTRS_TITLE() {
@@ -70,7 +74,11 @@ void Test_Attributes::TEST_ATTRS_REVERSE() {
     }
 }
 
-/* * * TEST RESET  * * */
+/* * * * * * * * * * * * * *
+*                          *
+*       TEST RESET         *
+*                          *
+* * * * * * * * * * * * * */
 
 //title: reset tests
 void Test_Reset::TEST_RESET_TITLE() {
@@ -137,7 +145,11 @@ void Test_Reset::TEST_RESET_REVERSE() {
     }
 }
 
-/* * * TEST FG COLOURS 8/16  * * */
+/* * * * * * * * * * * * * *
+*                          *
+*   TEST FG COLOURS 8/16   *
+*                          *
+* * * * * * * * * * * * * */
 
 //title: fg colours 816 tests
 void Test_FGColours816::TEST_FGCOLOURS816_TITLE() {
@@ -639,7 +651,11 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTCYAN() {
     }
 }
 
-/* * * TEST BG COLOURS 8/16  * * */
+/* * * * * * * * * * * * * *
+*                          *
+*   TEST BG COLOURS 8/16   *
+*                          *
+* * * * * * * * * * * * * */
 
 //title: bg colours 816 tests
 void Test_BGColours816::TEST_BGCOLOURS_816_TITLE() {
@@ -1126,7 +1142,11 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTCYAN() {
     }
 }
 
-/* * * TEST FG COLOURS 256  * * */
+/* * * * * * * * * * * * * *
+*                          *
+*    TEST FG COLOURS 256   *
+*                          *
+* * * * * * * * * * * * * */
 
 //title: fg colours 256 tests
 void Test_FGColours256::TEST_FGCOLOURS256_TITLE() {
@@ -1463,6 +1483,66 @@ void Test_FGColours256::TEST_FG256_21() {
     }
 }
 
+//test: fg256 22
+void Test_FGColours256::TEST_FG256_22() {
+    std::ostringstream FG256__22;
+
+    FG256__22 << termstylist::FG256_22;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_22 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;22m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__22.str() == "\033[38;5;22m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 23
+void Test_FGColours256::TEST_FG256_23() {
+    std::ostringstream FG256__23;
+
+    FG256__23 << termstylist::FG256_23;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_23 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;23m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__23.str() == "\033[38;5;23m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 24
+void Test_FGColours256::TEST_FG256_24() {
+    std::ostringstream FG256__24;
+
+    FG256__24 << termstylist::FG256_24;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_24 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;24m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__24.str() == "\033[38;5;24m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 25
+void Test_FGColours256::TEST_FG256_25() {
+    std::ostringstream FG256__25;
+
+    FG256__25 << termstylist::FG256_25;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_25 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;25m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__25.str() == "\033[38;5;25m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
 int main() {
     Test_Attributes T_ATTRS;
 
@@ -1579,6 +1659,10 @@ int main() {
     T_FGC_256.TEST_FG256_19();
     T_FGC_256.TEST_FG256_20();
     T_FGC_256.TEST_FG256_21();
+    T_FGC_256.TEST_FG256_22();
+    T_FGC_256.TEST_FG256_23();
+    T_FGC_256.TEST_FG256_24(); 
+    T_FGC_256.TEST_FG256_25();
 
     return 0;
 }

@@ -653,7 +653,11 @@ namespace termstylist {
         BGColours256 BG256;
     }
 
-    /* * * ATTRIBUTES * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *   ATTRIBUTES TEMPLATES   *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //1: attr bold
     template<typename ATTRSBold>
@@ -687,7 +691,11 @@ namespace termstylist {
         return os;
     }
 
-    /* * * RESET * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *     RESET TEMPLATES      *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //0: reset default
     template<typename RESETDefault>
@@ -721,7 +729,12 @@ namespace termstylist {
         return os;
     }
 
-    /* * * FOREGROUND COLOUR TEMPLATES (8 COLOURS) * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *   FOREGROUND COLOUR      *
+    *   TEMPLATES (8 COLOURS)  *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //39: fg default
     template<typename FGDefault>
@@ -859,7 +872,12 @@ namespace termstylist {
         return os;
     }
 
-    /* * * FOREGROUND COLOUR TEMPLATES (16 COLOURS) * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *   FOREGROUND COLOUR      *
+    *   TEMPLATES (16 COLOURS) *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //30;1: fg bold black
     template<typename FGBoldBlack>
@@ -989,7 +1007,12 @@ namespace termstylist {
         return os;
     }
 
-    /* * * BACKGROUND COLOUR TEMPLATES (8 COLOURS) * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *   BACKGROUND COLOUR      *
+    *   TEMPLATES (8 COLOURS)  *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //49: bg default
     template<typename BGDefault>
@@ -1127,7 +1150,12 @@ namespace termstylist {
         return os;
     }
 
-    /* * * BACKGROUND COLOUR TEMPLATES (16 COLOURS) * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *   BACKGROUND COLOUR      *
+    *   TEMPLATES (16 COLOURS) *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //40;1: bg bold black
     template<typename BGBoldBlack>
@@ -1257,7 +1285,12 @@ namespace termstylist {
         return os;
     }
 
-    /* * * FOREGROUND COLOUR TEMPLATES (256 COLOURS) * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *  FOREGROUND COLOUR       *
+    *  TEMPLATES (256 COLOURS) *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //38;5;0
     template<typename FG256_0>
@@ -3315,7 +3348,12 @@ namespace termstylist {
         return os;
     }
 
-    /* * * BACKGROUND COLOUR TEMPLATES (256 COLOURS) * * */
+    /* * * * * * * * * * * * * *
+    *                          *
+    *  BACKGROUND COLOUR       *
+    *  TEMPLATES (256 COLOURS) *
+    *                          *
+    * * * * * * * * * * * * * */
 
     //48;5;0
     template<typename BG256_0>
