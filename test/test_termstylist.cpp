@@ -4,6 +4,8 @@
 #include <sstream>
 #include <string>
 
+/* * * TEST ATTRIBUTES * * */
+
 //title: attr tests
 void Test_Attributes::TEST_ATTR_TITLE() {
     std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST ATTRIBUTES" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
@@ -53,6 +55,8 @@ void Test_Attributes::TEST_REVERSE() {
         std::cerr << TEST_FAILURE;
     }
 }
+
+/* * * TEST RESET  * * */
 
 //title: reset tests
 void Test_Reset::TEST_RESET_TITLE() {
@@ -118,6 +122,8 @@ void Test_Reset::TEST_RESET_REVERSE() {
         std::cerr << TEST_FAILURE;
     }
 }
+
+/* * * TEST FG COLOURS 8/16  * * */
 
 //title: fg colours 816 tests
 void Test_FGColours816::TEST_FGCOLOURS816_TITLE() {
@@ -619,6 +625,8 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTCYAN() {
     }
 }
 
+/* * * TEST BG COLOURS 8/16  * * */
+
 //title: bg colours 816 tests
 void Test_BGColours816::TEST_BGCOLOURS_816_TITLE() {
     std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST BG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
@@ -1103,6 +1111,8 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTCYAN() {
         std::cerr << TEST_FAILURE;
     }
 }
+
+/* * * TEST FG COLOURS 256  * * */
 
 //title: fg colours 256 tests
 void Test_FGColours256::TEST_FGCOLOURS256_TITLE() {
