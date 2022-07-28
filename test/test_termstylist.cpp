@@ -8,7 +8,7 @@ class Test_Attributes {
     public:
         //title: attr tests
         void TEST_ATTR_TITLE() {
-            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST ATTRIBUTES" << termstylist::RESET_Underline << termstylist::FG_Default << '\n';
+            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST ATTRIBUTES" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
         }
 
         //test: attr bold
@@ -62,7 +62,7 @@ class Test_Reset {
     public:
         //title: reset tests
         void TEST_RESET_TITLE() {
-            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST RESET" << termstylist::RESET_Underline << termstylist::FG_Default << '\n';
+            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST RESET" <<  termstylist::FG_Default << termstylist::RESET_Underline << '\n';
         }
 
         //test: reset default
@@ -131,7 +131,7 @@ class Test_FG_Colours816 {
     public:
         //title: fg colours 816 tests
         void TEST_FG_COLOURS816_TITLE() {
-            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST FG COLOURS 8/16" << termstylist::RESET_Underline << termstylist::FG_Default << '\n';
+            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST FG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline <<'\n';
         }
 
         //test: fg default
@@ -630,6 +630,270 @@ class Test_FG_Colours816 {
         }
 };
 
+//class test bg colours 8/16
+class Test_BG_Colours_816 {
+    public:
+        //title: bg colours 816 tests
+        void TEST_BGCOLOURS_816_TITLE() {
+            std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST BG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
+        }
+
+        //test: bg default
+        void TEST_BG_DEFAULT() {
+            std::ostringstream BG_DEFAULT;
+
+            BG_DEFAULT << termstylist::BG_Default;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Default " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[49m " << termstylist::FG_Default << "==== ";
+
+            if(BG_DEFAULT.str() == "\033[49m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg black
+        void TEST_BG_BLACK() {
+            std::ostringstream BG_BLACK;
+
+            BG_BLACK << termstylist::BG_Black;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Black " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[40m " << termstylist::FG_Default << "==== ";
+
+            if(BG_BLACK.str() == "\033[40m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg red 
+        void TEST_BG_RED() {
+            std::ostringstream BG_RED;
+
+            BG_RED << termstylist::BG_Red;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Red " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[41m " << termstylist::FG_Default << "==== ";
+
+            if(BG_RED.str() == "\033[41m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+        
+        //test: bg green
+        void TEST_BG_GREEN() {
+            std::ostringstream BG_GREEN;
+
+            BG_GREEN << termstylist::BG_Green;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Green " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[42m " << termstylist::FG_Default << "==== ";
+
+            if(BG_GREEN.str() == "\033[42m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg yellow
+        void TEST_BG_YELLOW() {
+            std::ostringstream BG_YELLOW;
+
+            BG_YELLOW << termstylist::BG_Yellow;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Yellow " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[43m " << termstylist::FG_Default << "==== ";
+
+            if(BG_YELLOW.str() == "\033[43m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg blue
+        void TEST_BG_BLUE() {
+            std::ostringstream BG_BLUE;
+
+            BG_BLUE << termstylist::BG_Blue;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Blue " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[44m " << termstylist::FG_Default << "==== ";
+
+            if(BG_BLUE.str() == "\033[44m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg magenta
+        void TEST_BG_MAGENTA() {
+            std::ostringstream BG_MAGENTA;
+
+            BG_MAGENTA << termstylist::BG_Magenta;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Magenta " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[45m " << termstylist::FG_Default << "==== ";
+
+            if(BG_MAGENTA.str() == "\033[45m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg cyan
+        void TEST_BG_CYAN() {
+            std::ostringstream BG_CYAN;
+
+            BG_CYAN << termstylist::BG_Cyan;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_Cyan " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[46m " << termstylist::FG_Default << "==== ";
+
+            if(BG_CYAN.str() == "\033[46m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg white
+        void TEST_BG_WHITE() {
+            std::ostringstream BG_WHITE;
+
+            BG_WHITE << termstylist::BG_White;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_White " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[107m " << termstylist::FG_Default << "==== ";
+
+            if(BG_WHITE.str() == "\033[107m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light grey 
+        void TEST_BG_LIGHTGREY() {
+            std::ostringstream BG_LIGHTGREY;
+
+            BG_LIGHTGREY << termstylist::BG_LightGrey;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightGrey " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[47m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTGREY.str() == "\033[47m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg dark grey
+        void TEST_BG_DARKGREY() {
+            std::ostringstream BG_DARKGREY;
+
+            BG_DARKGREY << termstylist::BG_DarkGrey;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_DarkGrey " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[100m " << termstylist::FG_Default << "==== ";
+
+            if(BG_DARKGREY.str() == "\033[100m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light red
+        void TEST_BG_LIGHTRED() {
+            std::ostringstream BG_LIGHTRED;
+
+            BG_LIGHTRED << termstylist::BG_LightRed;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightRed " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[101m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTRED.str() == "\033[101m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light green
+        void TEST_BG_LIGHTGREEN() {
+            std::ostringstream BG_LIGHTGREEN;
+
+            BG_LIGHTGREEN << termstylist::BG_LightGreen;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightGreen " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[102m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTGREEN.str() == "\033[102m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light yellow
+        void TEST_BG_LIGHTYELLOW() {
+            std::ostringstream BG_LIGHTYELLOW;
+
+            BG_LIGHTYELLOW << termstylist::BG_LightYellow;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightYellow " << termstylist::FG_Default << "~ SHOULD BE ~ " << termstylist::FG256_223 << "\\033[103m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTYELLOW.str() == "\033[103m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light blue
+        void TEST_BG_LIGHTBLUE() {
+            std::ostringstream BG_LIGHTBLUE;
+
+            BG_LIGHTBLUE << termstylist::BG_LightBlue;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightBlue " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[104m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTBLUE.str() == "\033[104m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light magenta
+        void TEST_BG_LIGHTMAGENTA() {
+            std::ostringstream BG_LIGHTMAGENTA;
+
+            BG_LIGHTMAGENTA << termstylist::BG_LightMagenta;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightMagenta " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[105m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTMAGENTA.str() == "\033[105m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: bg light cyan
+        void TEST_BG_LIGHTCYAN() {
+            std::ostringstream BG_LIGHTCYAN;
+
+            BG_LIGHTCYAN << termstylist::BG_LightCyan;
+
+            std::cout << termstylist::FG256_223 << "termstylist::BG_LightCyan " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[106m " << termstylist::FG_Default << "==== ";
+
+            if(BG_LIGHTCYAN.str() == "\033[106m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+};
+
 int main() {
     Test_Attributes T_ATTR;
 
@@ -684,6 +948,27 @@ int main() {
     T_FGC_816.TEST_FG_BOLDLIGHTMAGENTA();
     T_FGC_816.TEST_FG_BOLDLIGHTCYAN();
 
+    Test_BG_Colours_816 T_BGC_816;
+
+    T_BGC_816.TEST_BGCOLOURS_816_TITLE();
+    T_BGC_816.TEST_BG_DEFAULT();
+    T_BGC_816.TEST_BG_BLACK();
+    T_BGC_816.TEST_BG_RED();
+    T_BGC_816.TEST_BG_GREEN();
+    T_BGC_816.TEST_BG_YELLOW();
+    T_BGC_816.TEST_BG_BLUE();
+    T_BGC_816.TEST_BG_MAGENTA();
+    T_BGC_816.TEST_BG_CYAN();
+    T_BGC_816.TEST_BG_WHITE();
+    T_BGC_816.TEST_BG_LIGHTGREY();
+    T_BGC_816.TEST_BG_DARKGREY();
+    T_BGC_816.TEST_BG_LIGHTRED();
+    T_BGC_816.TEST_BG_LIGHTGREEN();
+    T_BGC_816.TEST_BG_LIGHTYELLOW();
+    T_BGC_816.TEST_BG_LIGHTBLUE();
+    T_BGC_816.TEST_BG_LIGHTMAGENTA();
+    T_BGC_816.TEST_BG_LIGHTCYAN();
+    
     return 0;
 }
 
