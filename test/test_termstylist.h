@@ -5,6 +5,22 @@
 #include <ostream>
 #include <string>
 
+namespace {
+    template<typename SUCCESS> 
+    std::basic_ostream<SUCCESS> & TEST_SUCCESS(std::basic_ostream<SUCCESS> &out) {
+        out << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+
+        return out;
+    }
+
+    template<typename FAILURE>
+    std::basic_ostream<FAILURE> & TEST_FAILURE(std::basic_ostream<FAILURE> &out) {
+        out << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+
+        return out;
+    }
+}
+
 class Misc {
     protected:
         std::string shouldEqual = "~ SHOULD EQUAL ~ ";
@@ -174,20 +190,4 @@ class Test_FGColours256 : protected Misc {
         void TEST_FG256_59();
         void TEST_FG256_60();
 };
-
-namespace {
-    template<typename SUCCESS> 
-    std::basic_ostream<SUCCESS> & TEST_SUCCESS(std::basic_ostream<SUCCESS> &out) {
-        out << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
-
-        return out;
-    }
-
-    template<typename FAILURE>
-    std::basic_ostream<FAILURE> & TEST_FAILURE(std::basic_ostream<FAILURE> &out) {
-        out << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
-
-        return out;
-    }
-}
 #endif
