@@ -3,6 +3,7 @@
 #include <sstream>
 #include <string>
 
+//class test attributes 
 class Test_Attributes {
     public:
         //title: attr tests
@@ -56,6 +57,7 @@ class Test_Attributes {
         }
 };
 
+//class test reset
 class Test_Reset {
     public:
         //title: reset tests
@@ -124,6 +126,7 @@ class Test_Reset {
         }
 };
 
+//class test fg colours 8/16
 class Test_FG_Colours816 {
     public:
         //title: fg colours 816 tests
@@ -385,6 +388,246 @@ class Test_FG_Colours816 {
                 std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
             }
         }
+
+        //test: fg bold black
+        void TEST_FG_BOLDBLACK() {
+            std::ostringstream FG_BOLDBLACK;
+
+            FG_BOLDBLACK << termstylist::FG_BoldBlack;
+
+            std::cout << '\n' << termstylist::FG256_223 << "termstylist::FG_BoldBlack " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[30;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDBLACK.str() == "\033[30;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold red
+        void TEST_FG_BOLDRED() {
+            std::ostringstream FG_BOLDRED;
+
+            FG_BOLDRED << termstylist::FG_BoldRed;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldRed " << termstylist::FG_Default <<  "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[31;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDRED.str() == "\033[31;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';    
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold green
+        void TEST_FG_BOLDGREEN() {
+            std::ostringstream FG_BOLDGREEN;
+
+            FG_BOLDGREEN << termstylist::FG_BoldGreen;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldGreen " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[32;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDGREEN.str() == "\033[32;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        } 
+
+        //test: fg bold yellow
+        void TEST_FG_BOLDYELLOW() {
+            std::ostringstream FG_BOLDYELLOW;
+
+            FG_BOLDYELLOW << termstylist::FG_BoldYellow;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldYellow " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[33;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDYELLOW.str() == "\033[33;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold blue
+        void TEST_FG_BOLDBLUE() {
+            std::ostringstream FG_BOLDBLUE;
+
+            FG_BOLDBLUE << termstylist::FG_BoldBlue;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldBlue " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[34;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDBLUE.str() == "\033[34;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold magenta 
+        void TEST_FG_BOLDMAGENTA() {
+            std::ostringstream FG_BOLDMAGENTA;
+
+            FG_BOLDMAGENTA << termstylist::FG_BoldMagenta;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldMagenta " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[35;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDMAGENTA.str() == "\033[35;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold cyan
+        void TEST_FG_BOLDCYAN() {
+            std::ostringstream FG_BOLDCYAN;
+
+            FG_BOLDCYAN << termstylist::FG_BoldCyan;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldCyan " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[36;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDCYAN.str() == "\033[36;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold white
+        void TEST_FG_BOLDWHITE() {
+            std::ostringstream FG_BOLDWHITE;
+
+            FG_BOLDWHITE << termstylist::FG_BoldWhite;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldWhite " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[97;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDWHITE.str() == "\033[97;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light grey
+        void TEST_FG_BOLDLIGHTGREY() {
+            std::ostringstream FG_BOLDLIGHTGREY;
+
+            FG_BOLDLIGHTGREY << termstylist::FG_BoldLightGrey;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldLightGrey " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[37;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTGREY.str() == "\033[37;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold dark grey
+        void TEST_FG_BOLDDARKGREY() {
+            std::ostringstream FG_BOLDDARKGREY;
+
+            FG_BOLDDARKGREY << termstylist::FG_BoldDarkGrey;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldDarkGrey " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[90;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDDARKGREY.str() == "\033[90;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light red 
+        void TEST_FG_BOLDLIGHTRED() {
+            std::ostringstream FG_BOLDLIGHTRED;
+
+            FG_BOLDLIGHTRED << termstylist::FG_BoldLightRed;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldLightRed " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[91;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTRED.str() == "\033[91;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light green
+        void TEST_FG_BOLDLIGHTGREEN() {
+            std::ostringstream FG_BOLDLIGHTGREEN;
+
+            FG_BOLDLIGHTGREEN << termstylist::FG_BoldLightGreen;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_boldLightGreen " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[92;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTGREEN.str() == "\033[92;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light yellow
+        void TEST_FG_BOLDLIGHTYELLOW() {
+            std::ostringstream FG_BOLDLIGHTYELLOW;
+
+            FG_BOLDLIGHTYELLOW << termstylist::FG_BoldLightYellow;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldLightYellow " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[93;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTYELLOW.str() == "\033[93;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light blue
+        void TEST_FG_BOLDLIGHTBLUE() {
+            std::ostringstream FG_BOLDLIGHTBLUE;
+
+            FG_BOLDLIGHTBLUE << termstylist::FG_BoldLightBlue;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldLightBlue " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[94;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTBLUE.str() == "\033[94;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light magenta
+        void TEST_FG_BOLDLIGHTMAGENTA() {
+            std::ostringstream FG_BOLDLIGHTMAGENTA;
+
+            FG_BOLDLIGHTMAGENTA << termstylist::FG_BoldLightMagenta;
+
+            std::cout << termstylist::FG256_223 << "termstlist::FG_BoldLightMagenta " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[95;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTMAGENTA.str() == "\033[95;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
+
+        //test: fg bold light cyan
+        void TEST_FG_BOLDLIGHTCYAN() {
+            std::ostringstream FG_BOLDLIGHTCYAN;
+
+            FG_BOLDLIGHTCYAN << termstylist::FG_BoldLightCyan;
+
+            std::cout << termstylist::FG256_223 << "termstylist::FG_BoldLightCyan " << termstylist::FG_Default << "~ SHOULD EQUAL ~ " << termstylist::FG256_223 << "\\033[96;1m " << termstylist::FG_Default << "==== ";
+
+            if(FG_BOLDLIGHTCYAN.str() == "\033[96;1m") {
+                std::cout << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
+            } else {
+                std::cerr << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
+            }
+        }
 };
 
 int main() {
@@ -423,7 +666,24 @@ int main() {
     T_FGC_816.TEST_FG_LIGHTBLUE();
     T_FGC_816.TEST_FG_LIGHTMAGENTA();
     T_FGC_816.TEST_FG_LIGHTCYAN();
-    
+
+    T_FGC_816.TEST_FG_BOLDBLACK();
+    T_FGC_816.TEST_FG_BOLDRED();
+    T_FGC_816.TEST_FG_BOLDGREEN();
+    T_FGC_816.TEST_FG_BOLDYELLOW();
+    T_FGC_816.TEST_FG_BOLDBLUE();
+    T_FGC_816.TEST_FG_BOLDMAGENTA();
+    T_FGC_816.TEST_FG_BOLDCYAN();
+    T_FGC_816.TEST_FG_BOLDWHITE();
+    T_FGC_816.TEST_FG_BOLDLIGHTGREY();
+    T_FGC_816.TEST_FG_BOLDDARKGREY();
+    T_FGC_816.TEST_FG_BOLDLIGHTRED();
+    T_FGC_816.TEST_FG_BOLDLIGHTGREEN();
+    T_FGC_816.TEST_FG_BOLDLIGHTYELLOW();
+    T_FGC_816.TEST_FG_BOLDLIGHTBLUE();
+    T_FGC_816.TEST_FG_BOLDLIGHTMAGENTA();
+    T_FGC_816.TEST_FG_BOLDLIGHTCYAN();
+
     return 0;
 }
 
