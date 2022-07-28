@@ -13,10 +13,11 @@ class ShouldEqual {
 //class test attributes 
 class Test_Attributes : protected ShouldEqual {
     public:
-        void TEST_ATTR_TITLE();
-        void TEST_BOLD();
-        void TEST_UNDERLINE();
-        void TEST_REVERSE();
+        void TEST_ATTRS_TITLE();
+        void TEST_ATTRS_BOLD();
+        void TEST_ATTRS_DIM();
+        void TEST_ATTRS_UNDERLINE();
+        void TEST_ATTRS_REVERSE();
 };
 
 //class test reset
@@ -118,6 +119,16 @@ class Test_FGColours256 : protected ShouldEqual {
         void TEST_FG256_5();
         void TEST_FG256_6();
         void TEST_FG256_7();
+        void TEST_FG256_8();
+        void TEST_FG256_9();
+        void TEST_FG256_10();
+        void TEST_FG256_11();
+        void TEST_FG256_12();
+        void TEST_FG256_13();
+        void TEST_FG256_14();
+        void TEST_FG256_15();
+        void TEST_FG256_16();
+        void TEST_FG256_17();
 };
 
 namespace {

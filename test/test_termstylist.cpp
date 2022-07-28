@@ -6,34 +6,49 @@
 /* * * TEST ATTRIBUTES * * */
 
 //title: attr tests
-void Test_Attributes::TEST_ATTR_TITLE() {
-    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST ATTRIBUTES" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
-    }
+void Test_Attributes::TEST_ATTRS_TITLE() {
+    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTRS_Underline << "TEST ATTRIBUTES" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
+}
 
 //test: attr bold
-void Test_Attributes::TEST_BOLD() {
-    std::ostringstream ATTR_BOLD;
+void Test_Attributes::TEST_ATTRS_BOLD() {
+    std::ostringstream ATTRS_BOLD;
 
-    ATTR_BOLD << termstylist::ATTR_Bold;
+    ATTRS_BOLD << termstylist::ATTRS_Bold;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTR_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[1m " << termstylist::FG_Default <<  "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[1m " << termstylist::FG_Default <<  "==== ";
             
-    if(ATTR_BOLD.str() == "\033[1m") {
+    if(ATTRS_BOLD.str() == "\033[1m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
     }
 }
 
+//test: attr dim
+void Test_Attributes::TEST_ATTRS_DIM() {
+    std::ostringstream ATTRS_DIM;
+
+    ATTRS_DIM << termstylist::ATTRS_Dim;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Dim " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[2m " << termstylist::FG_Default << "==== ";
+
+    if(ATTRS_DIM.str() == "\033[2m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
 //test: attr underline
-void Test_Attributes::TEST_UNDERLINE() {
-    std::ostringstream ATTR_UNDERLINE;
+void Test_Attributes::TEST_ATTRS_UNDERLINE() {
+    std::ostringstream ATTRS_UNDERLINE;
 
-    ATTR_UNDERLINE << termstylist::ATTR_Underline;
+    ATTRS_UNDERLINE << termstylist::ATTRS_Underline;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTR_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[4m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[4m " << termstylist::FG_Default << "==== ";
 
-    if(ATTR_UNDERLINE.str() == "\033[4m") {
+    if(ATTRS_UNDERLINE.str() == "\033[4m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -41,14 +56,14 @@ void Test_Attributes::TEST_UNDERLINE() {
 }
 
 //test: attr reverse
-void Test_Attributes::TEST_REVERSE() {
-    std::ostringstream ATTR_REVERSE;
+void Test_Attributes::TEST_ATTRS_REVERSE() {
+    std::ostringstream ATTRS_REVERSE;
 
-    ATTR_REVERSE << termstylist::ATTR_Reverse;
+    ATTRS_REVERSE << termstylist::ATTRS_Reverse;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTR_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[7m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[7m " << termstylist::FG_Default << "==== ";
 
-    if(ATTR_REVERSE.str() == "\033[7m") {
+    if(ATTRS_REVERSE.str() == "\033[7m") {
         std::cout << TEST_SUCCESS;;
     } else { 
         std::cerr << TEST_FAILURE;
@@ -59,7 +74,7 @@ void Test_Attributes::TEST_REVERSE() {
 
 //title: reset tests
 void Test_Reset::TEST_RESET_TITLE() {
-    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST RESET" <<  termstylist::FG_Default << termstylist::RESET_Underline << '\n';
+    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTRS_Underline << "TEST RESET" <<  termstylist::FG_Default << termstylist::RESET_Underline << '\n';
 }
 
 //test: reset default
@@ -126,7 +141,7 @@ void Test_Reset::TEST_RESET_REVERSE() {
 
 //title: fg colours 816 tests
 void Test_FGColours816::TEST_FGCOLOURS816_TITLE() {
-    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST FG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline <<'\n';
+    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTRS_Underline << "TEST FG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline <<'\n';
 }
 
 //test: fg default
@@ -628,7 +643,7 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTCYAN() {
 
 //title: bg colours 816 tests
 void Test_BGColours816::TEST_BGCOLOURS_816_TITLE() {
-    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST BG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
+    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTRS_Underline << "TEST BG COLOURS 8/16" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
 }
 
 //test: bg default
@@ -1115,7 +1130,7 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTCYAN() {
 
 //title: fg colours 256 tests
 void Test_FGColours256::TEST_FGCOLOURS256_TITLE() {
-    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTR_Underline << "TEST FG COLOURS 256" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
+    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTRS_Underline << "TEST FG COLOURS 256" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
 }
 
 //test: fg256 0 
@@ -1238,13 +1253,164 @@ void Test_FGColours256::TEST_FG256_7() {
     }
 }
 
-int main() {
-    Test_Attributes T_ATTR;
+//test: fg256 8
+void Test_FGColours256::TEST_FG256_8() {
+    std::ostringstream FG256_8;
 
-    T_ATTR.TEST_ATTR_TITLE();
-    T_ATTR.TEST_BOLD();
-    T_ATTR.TEST_UNDERLINE();
-    T_ATTR.TEST_REVERSE();
+    FG256_8 << termstylist::FG256_8;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_8 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;8m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_8.str() == "\033[38;5;8m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 9
+void Test_FGColours256::TEST_FG256_9() {
+    std::ostringstream FG256_9;
+
+    FG256_9 << termstylist::FG256_9;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_9 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;9m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_9.str() == "\033[38;5;9m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 10
+void Test_FGColours256::TEST_FG256_10() {
+    std::ostringstream FG256_10;
+
+    FG256_10 << termstylist::FG256_10;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_10 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;10m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_10.str() == "\033[38;5;10m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 11
+void Test_FGColours256::TEST_FG256_11() {
+    std::ostringstream FG256_11;
+
+    FG256_11 << termstylist::FG256_11;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_11 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;11m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_11.str() == "\033[38;5;11m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 12 
+void Test_FGColours256::TEST_FG256_12() {
+    std::ostringstream FG256_12;
+    
+    FG256_12 << termstylist::FG256_12;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_12 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;12m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_12.str() == "\033[38;5;12m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 13
+void Test_FGColours256::TEST_FG256_13() {
+    std::ostringstream FG256_13;
+
+    FG256_13 << termstylist::FG256_13;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_13 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;13m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_13.str() == "\033[38;5;13m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 14 
+void Test_FGColours256::TEST_FG256_14() {
+    std::ostringstream FG256_14;
+
+    FG256_14 << termstylist::FG256_14;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_14 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;14m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_14.str() == "\033[38;5;14m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 15
+void Test_FGColours256::TEST_FG256_15() {
+    std::ostringstream FG256_15;
+
+    FG256_15 << termstylist::FG256_15;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_15 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;15m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_15.str() == "\033[38;5;15m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 16
+void Test_FGColours256::TEST_FG256_16() {
+    std::ostringstream FG256_16;
+
+    FG256_16 << termstylist::FG256_16;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_16 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;16m " << termstylist::FG_Default << "==== ";
+
+    if(FG256_16.str() == "\033[38;5;16m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 17
+void Test_FGColours256::TEST_FG256_17() {
+    std::ostringstream FG256_17;
+
+    FG256_17 << termstylist::FG256_17;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_17 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;17m " << termstylist::FG_Default << "===== ";
+
+    if(FG256_17.str() == "\033[38;5;17m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+int main() {
+    Test_Attributes T_ATTRS;
+
+    T_ATTRS.TEST_ATTRS_TITLE();
+    T_ATTRS.TEST_ATTRS_BOLD();
+    T_ATTRS.TEST_ATTRS_DIM();
+    T_ATTRS.TEST_ATTRS_UNDERLINE();
+    T_ATTRS.TEST_ATTRS_REVERSE();
 
     Test_Reset T_RESET;
 
@@ -1339,6 +1505,16 @@ int main() {
     T_FGC_256.TEST_FG256_5();
     T_FGC_256.TEST_FG256_6();
     T_FGC_256.TEST_FG256_7();
+    T_FGC_256.TEST_FG256_8();
+    T_FGC_256.TEST_FG256_9();
+    T_FGC_256.TEST_FG256_10();
+    T_FGC_256.TEST_FG256_11();
+    T_FGC_256.TEST_FG256_12(); 
+    T_FGC_256.TEST_FG256_13();
+    T_FGC_256.TEST_FG256_14();
+    T_FGC_256.TEST_FG256_15();
+    T_FGC_256.TEST_FG256_16();
+    T_FGC_256.TEST_FG256_17();
 
     return 0;
 }

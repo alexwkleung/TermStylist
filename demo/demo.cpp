@@ -5,9 +5,10 @@ int main() {
     std::cout << '\n';
 
     //attributes
-    std::cout << termstylist::ATTR_Bold << "Bold" << termstylist::RESET_Default << " ";
-    std::cout << termstylist::ATTR_Underline << "Underline" << termstylist::RESET_Underline << " ";
-    std::cout << termstylist::ATTR_Reverse << "Reverse" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::ATTRS_Bold << "Bold" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::ATTRS_Dim << "Dim" << termstylist::RESET_Default << " ";
+    std::cout << termstylist::ATTRS_Underline << "Underline" << termstylist::RESET_Underline << " ";
+    std::cout << termstylist::ATTRS_Reverse << "Reverse" << termstylist::RESET_Default << " ";
 
     std::cout << '\n' << '\n';
     

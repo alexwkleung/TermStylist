@@ -8,8 +8,8 @@ VAR_TEST = test/test_termstylist.cpp
 OUT_TEST = test/test.o
 
 # demo 
-.PHONY: build
-build:
+.PHONY: demo
+demo:
 	clear
 	${CXX} ${CPPFLAGS} ${VAR_DEMO} -o ${OUT_DEMO} && ./${OUT_DEMO}
 

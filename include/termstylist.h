@@ -8,9 +8,10 @@ namespace termstylist {
     //attributes
     struct Attributes {
         public:
-            const std::string ATTR_Bold = "\033[1m"; //1
-            const std::string ATTR_Underline = "\033[4m"; //4
-            const std::string ATTR_Reverse = "\033[7m"; //7
+            const std::string ATTRS_Bold = "\033[1m"; //1
+            const std::string ATTRS_Dim = "\033[2m"; //2
+            const std::string ATTRS_Underline = "\033[4m"; //4
+            const std::string ATTRS_Reverse = "\033[7m"; //7
     };
 
     //reset
@@ -655,25 +656,33 @@ namespace termstylist {
     /* * * ATTRIBUTES * * */
 
     //1: attr bold
-    template<typename ATTRBold>
-    std::basic_ostream<ATTRBold> & ATTR_Bold(std::basic_ostream<ATTRBold> &os) {
-        os << obj_internal::ATTRS.ATTR_Bold;
+    template<typename ATTRSBold>
+    std::basic_ostream<ATTRSBold> & ATTRS_Bold(std::basic_ostream<ATTRSBold> &os) {
+        os << obj_internal::ATTRS.ATTRS_Bold;
 
         return os;
     }
 
-    //4: attr underline
-    template<typename ATTRUnderline>
-    std::basic_ostream<ATTRUnderline> & ATTR_Underline(std::basic_ostream<ATTRUnderline> &os) {
-        os << obj_internal::ATTRS.ATTR_Underline;
+    //2: attr dim
+    template<typename ATTRSDim>
+    std::basic_ostream<ATTRSDim> & ATTRS_Dim(std::basic_ostream<ATTRSDim> &os) {
+        os << obj_internal::ATTRS.ATTRS_Dim;
+
+        return os;
+    }
+
+    //4: attr underline 
+    template<typename ATTRSUnderline>
+    std::basic_ostream<ATTRSUnderline> & ATTRS_Underline(std::basic_ostream<ATTRSUnderline> &os) {
+        os << obj_internal::ATTRS.ATTRS_Underline;
 
         return os;
     }
 
     //7: attr reverse
-    template<typename ATTRReverse>
-    std::basic_ostream<ATTRReverse> & ATTR_Reverse(std::basic_ostream<ATTRReverse> &os) {
-        os << obj_internal::ATTRS.ATTR_Reverse;
+    template<typename ATTRSReverse>
+    std::basic_ostream<ATTRSReverse> & ATTRS_Reverse(std::basic_ostream<ATTRSReverse> &os) {
+        os << obj_internal::ATTRS.ATTRS_Reverse;
 
         return os;
     }
