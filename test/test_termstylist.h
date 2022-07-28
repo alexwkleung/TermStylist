@@ -5,13 +5,14 @@
 #include <ostream>
 #include <string>
 
-class ShouldEqual {
+class Misc {
     protected:
         std::string shouldEqual = "~ SHOULD EQUAL ~ ";
+        std::string endBreak = "==== ";
 };
 
 //class test attributes 
-class Test_Attributes : protected ShouldEqual {
+class Test_Attributes : protected Misc {
     public:
         void TEST_ATTRS_TITLE();
         void TEST_ATTRS_BOLD();
@@ -21,7 +22,7 @@ class Test_Attributes : protected ShouldEqual {
 };
 
 //class test reset
-class Test_Reset : protected ShouldEqual {
+class Test_Reset : protected Misc {
     public:
         void TEST_RESET_TITLE();
         void TEST_RESET_DEFAULT();
@@ -31,7 +32,7 @@ class Test_Reset : protected ShouldEqual {
 };
 
 //class test fg colours 8/16
-class Test_FGColours816 : protected ShouldEqual {
+class Test_FGColours816 : protected Misc {
     public:
         void TEST_FGCOLOURS816_TITLE();
         void TEST_FG_DEFAULT();
@@ -70,7 +71,7 @@ class Test_FGColours816 : protected ShouldEqual {
 };
 
 //class test bg colours 8/16
-class Test_BGColours816 : protected ShouldEqual {
+class Test_BGColours816 : protected Misc {
     public:
         void TEST_BGCOLOURS_816_TITLE();
         void TEST_BG_DEFAULT();
@@ -108,7 +109,7 @@ class Test_BGColours816 : protected ShouldEqual {
 };
 
 //class test fg colours 256
-class Test_FGColours256 : protected ShouldEqual {
+class Test_FGColours256 : protected Misc {
     public:
         void TEST_FGCOLOURS256_TITLE();
         void TEST_FG256_0();
@@ -129,6 +130,19 @@ class Test_FGColours256 : protected ShouldEqual {
         void TEST_FG256_15();
         void TEST_FG256_16();
         void TEST_FG256_17();
+        void TEST_FG256_18();
+        void TEST_FG256_19();
+        void TEST_FG256_20();
+        void TEST_FG256_21();
+        void TEST_FG256_22();
+        void TEST_FG256_23();
+        void TEST_FG256_24();
+        void TEST_FG256_25();
+        void TEST_FG256_26();
+        void TEST_FG256_27();
+        void TEST_FG256_28();
+        void TEST_FG256_29();
+        void TEST_FG256_30();
 };
 
 namespace {

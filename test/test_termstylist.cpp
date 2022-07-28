@@ -12,13 +12,13 @@ void Test_Attributes::TEST_ATTRS_TITLE() {
 
 //test: attr bold
 void Test_Attributes::TEST_ATTRS_BOLD() {
-    std::ostringstream ATTRS_BOLD;
+    std::ostringstream ATTRS__BOLD;
 
-    ATTRS_BOLD << termstylist::ATTRS_Bold;
+    ATTRS__BOLD << termstylist::ATTRS_Bold;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[1m " << termstylist::FG_Default <<  "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[1m " << termstylist::FG_Default <<  this->endBreak;
             
-    if(ATTRS_BOLD.str() == "\033[1m") {
+    if(ATTRS__BOLD.str() == "\033[1m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -27,13 +27,13 @@ void Test_Attributes::TEST_ATTRS_BOLD() {
 
 //test: attr dim
 void Test_Attributes::TEST_ATTRS_DIM() {
-    std::ostringstream ATTRS_DIM;
+    std::ostringstream ATTRS__DIM;
 
-    ATTRS_DIM << termstylist::ATTRS_Dim;
+    ATTRS__DIM << termstylist::ATTRS_Dim;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Dim " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[2m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Dim " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[2m " << termstylist::FG_Default << this->endBreak;
 
-    if(ATTRS_DIM.str() == "\033[2m") {
+    if(ATTRS__DIM.str() == "\033[2m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -42,13 +42,13 @@ void Test_Attributes::TEST_ATTRS_DIM() {
 
 //test: attr underline
 void Test_Attributes::TEST_ATTRS_UNDERLINE() {
-    std::ostringstream ATTRS_UNDERLINE;
+    std::ostringstream ATTRS__UNDERLINE;
 
-    ATTRS_UNDERLINE << termstylist::ATTRS_Underline;
+    ATTRS__UNDERLINE << termstylist::ATTRS_Underline;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[4m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[4m " << termstylist::FG_Default << this->endBreak;
 
-    if(ATTRS_UNDERLINE.str() == "\033[4m") {
+    if(ATTRS__UNDERLINE.str() == "\033[4m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -57,13 +57,13 @@ void Test_Attributes::TEST_ATTRS_UNDERLINE() {
 
 //test: attr reverse
 void Test_Attributes::TEST_ATTRS_REVERSE() {
-    std::ostringstream ATTRS_REVERSE;
+    std::ostringstream ATTRS__REVERSE;
 
-    ATTRS_REVERSE << termstylist::ATTRS_Reverse;
+    ATTRS__REVERSE << termstylist::ATTRS_Reverse;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[7m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[7m " << termstylist::FG_Default << this->endBreak;
 
-    if(ATTRS_REVERSE.str() == "\033[7m") {
+    if(ATTRS__REVERSE.str() == "\033[7m") {
         std::cout << TEST_SUCCESS;;
     } else { 
         std::cerr << TEST_FAILURE;
@@ -79,13 +79,13 @@ void Test_Reset::TEST_RESET_TITLE() {
 
 //test: reset default
 void Test_Reset::TEST_RESET_DEFAULT() {
-    std::ostringstream RESET_DEFAULT;
+    std::ostringstream RESET__DEFAULT;
 
-    RESET_DEFAULT << termstylist::RESET_Default;
+    RESET__DEFAULT << termstylist::RESET_Default;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[0m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[0m " << termstylist::FG_Default << this->endBreak;
 
-    if(RESET_DEFAULT.str() == "\033[0m") {
+    if(RESET__DEFAULT.str() == "\033[0m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -94,13 +94,13 @@ void Test_Reset::TEST_RESET_DEFAULT() {
 
 //test: reset bold
 void Test_Reset::TEST_RESET_BOLD() {
-    std::ostringstream RESET_BOLD;
+    std::ostringstream RESET__BOLD;
 
-    RESET_BOLD << termstylist::RESET_Bold;
+    RESET__BOLD << termstylist::RESET_Bold;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[21m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[21m " << termstylist::FG_Default << this->endBreak;
 
-    if(RESET_BOLD.str() == "\033[21m") {
+    if(RESET__BOLD.str() == "\033[21m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -109,13 +109,13 @@ void Test_Reset::TEST_RESET_BOLD() {
 
 //test: reset underline
 void Test_Reset::TEST_RESET_UNDERLINE() {
-    std::ostringstream RESET_UNDERLINE;
+    std::ostringstream RESET__UNDERLINE;
 
-    RESET_UNDERLINE << termstylist::RESET_Underline;
+    RESET__UNDERLINE << termstylist::RESET_Underline;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[24m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[24m " << termstylist::FG_Default << this->endBreak;
 
-    if(RESET_UNDERLINE.str() == "\033[24m") {
+    if(RESET__UNDERLINE.str() == "\033[24m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -124,13 +124,13 @@ void Test_Reset::TEST_RESET_UNDERLINE() {
 
 //test: reset reverse
 void Test_Reset::TEST_RESET_REVERSE() {
-    std::ostringstream RESET_REVERSE;
+    std::ostringstream RESET__REVERSE;
 
-    RESET_REVERSE << termstylist::RESET_Reverse;
+    RESET__REVERSE << termstylist::RESET_Reverse;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[27m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[27m " << termstylist::FG_Default << this->endBreak;
 
-    if(RESET_REVERSE.str() == "\033[27m") {
+    if(RESET__REVERSE.str() == "\033[27m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -146,13 +146,13 @@ void Test_FGColours816::TEST_FGCOLOURS816_TITLE() {
 
 //test: fg default
 void Test_FGColours816::TEST_FG_DEFAULT() {
-    std::ostringstream FG_DEFAULT;
+    std::ostringstream FG__DEFAULT;
 
-    FG_DEFAULT << termstylist::FG_Default;
+    FG__DEFAULT << termstylist::FG_Default;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[39m " << termstylist::FG_Default << "==== "; 
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[39m " << termstylist::FG_Default << this->endBreak; 
 
-    if(FG_DEFAULT.str() == "\033[39m") {
+    if(FG__DEFAULT.str() == "\033[39m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -161,13 +161,13 @@ void Test_FGColours816::TEST_FG_DEFAULT() {
         
 //test: fg black
 void Test_FGColours816::TEST_FG_BLACK() {
-    std::ostringstream FG_BLACK;
+    std::ostringstream FG__BLACK;
 
-    FG_BLACK << termstylist::FG_Black;
+    FG__BLACK << termstylist::FG_Black;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Black " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[30m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Black " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[30m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BLACK.str() == "\033[30m") {
+    if(FG__BLACK.str() == "\033[30m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -176,13 +176,13 @@ void Test_FGColours816::TEST_FG_BLACK() {
 
 //test: fg red
 void Test_FGColours816::TEST_FG_RED() {
-    std::ostringstream FG_RED;
+    std::ostringstream FG__RED;
 
-    FG_RED << termstylist::FG_Red;
+    FG__RED << termstylist::FG_Red;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Red " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[31m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Red " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[31m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_RED.str() == "\033[31m") {
+    if(FG__RED.str() == "\033[31m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -191,13 +191,13 @@ void Test_FGColours816::TEST_FG_RED() {
 
 //test: fg green
 void Test_FGColours816::TEST_FG_GREEN() {
-    std::ostringstream FG_GREEN;
+    std::ostringstream FG__GREEN;
 
-    FG_GREEN << termstylist::FG_Green;
+    FG__GREEN << termstylist::FG_Green;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Green " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[32m " << termstylist::FG_Default << "==== "; 
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Green " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[32m " << termstylist::FG_Default << this->endBreak; 
 
-    if(FG_GREEN.str() == "\033[32m") {
+    if(FG__GREEN.str() == "\033[32m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cout << TEST_FAILURE;
@@ -206,13 +206,13 @@ void Test_FGColours816::TEST_FG_GREEN() {
 
 //test: fg yellow
 void Test_FGColours816::TEST_FG_YELLOW() {
-    std::ostringstream FG_YELLOW;
+    std::ostringstream FG__YELLOW;
 
-    FG_YELLOW << termstylist::FG_Yellow;
+    FG__YELLOW << termstylist::FG_Yellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Yellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[33m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Yellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[33m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_YELLOW.str() == "\033[33m") {
+    if(FG__YELLOW.str() == "\033[33m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -221,13 +221,13 @@ void Test_FGColours816::TEST_FG_YELLOW() {
 
 //test: fg blue
 void Test_FGColours816::TEST_FG_BLUE() {
-    std::ostringstream FG_BLUE;
+    std::ostringstream FG__BLUE;
 
-    FG_BLUE << termstylist::FG_Blue;
+    FG__BLUE << termstylist::FG_Blue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Blue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[34m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Blue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[34m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BLUE.str() == "\033[34m") {
+    if(FG__BLUE.str() == "\033[34m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -236,13 +236,13 @@ void Test_FGColours816::TEST_FG_BLUE() {
 
 //test: fg magenta
 void Test_FGColours816::TEST_FG_MAGENTA() {
-    std::ostringstream FG_MAGENTA;
+    std::ostringstream FG__MAGENTA;
 
-    FG_MAGENTA << termstylist::FG_Magenta;
+    FG__MAGENTA << termstylist::FG_Magenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Magenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[35m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Magenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[35m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_MAGENTA.str() == "\033[35m") {
+    if(FG__MAGENTA.str() == "\033[35m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -251,13 +251,13 @@ void Test_FGColours816::TEST_FG_MAGENTA() {
 
 //test: fg cyan
 void Test_FGColours816::TEST_FG_CYAN() {
-    std::ostringstream FG_CYAN;
+    std::ostringstream FG__CYAN;
 
-    FG_CYAN << termstylist::FG_Cyan;
+    FG__CYAN << termstylist::FG_Cyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Cyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[36m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_Cyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[36m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_CYAN.str() == "\033[36m") {
+    if(FG__CYAN.str() == "\033[36m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -266,13 +266,13 @@ void Test_FGColours816::TEST_FG_CYAN() {
 
 //test: fg white
 void Test_FGColours816::TEST_FG_WHITE() {
-    std::ostringstream FG_WHITE;
+    std::ostringstream FG__WHITE;
 
-    FG_WHITE << termstylist::FG_White;
+    FG__WHITE << termstylist::FG_White;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_White " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[97m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_White " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[97m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_WHITE.str() == "\033[97m") {
+    if(FG__WHITE.str() == "\033[97m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -281,13 +281,13 @@ void Test_FGColours816::TEST_FG_WHITE() {
 
 //test: fg light grey
 void Test_FGColours816::TEST_FG_LIGHTGREY() {
-    std::ostringstream FG_LIGHTGREY;
+    std::ostringstream FG__LIGHTGREY;
 
-    FG_LIGHTGREY << termstylist::FG_LightGrey;
+    FG__LIGHTGREY << termstylist::FG_LightGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[37m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[37m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTGREY.str() == "\033[37m") {
+    if(FG__LIGHTGREY.str() == "\033[37m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -296,13 +296,13 @@ void Test_FGColours816::TEST_FG_LIGHTGREY() {
 
 //test: fg dark grey
 void Test_FGColours816::TEST_FG_DARKGREY() {
-    std::ostringstream FG_DARKGREY;
+    std::ostringstream FG__DARKGREY;
 
-    FG_DARKGREY << termstylist::FG_DarkGrey;
+    FG__DARKGREY << termstylist::FG_DarkGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_DarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[90m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_DarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[90m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_DARKGREY.str() == "\033[90m") {
+    if(FG__DARKGREY.str() == "\033[90m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -311,13 +311,13 @@ void Test_FGColours816::TEST_FG_DARKGREY() {
         
 //test: fg light red
 void Test_FGColours816::TEST_FG_LIGHTRED() {
-    std::ostringstream FG_LIGHTRED;
+    std::ostringstream FG__LIGHTRED;
 
-    FG_LIGHTRED << termstylist::FG_LightRed;
+    FG__LIGHTRED << termstylist::FG_LightRed;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[91m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[91m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTRED.str() == "\033[91m") {
+    if(FG__LIGHTRED.str() == "\033[91m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -326,13 +326,13 @@ void Test_FGColours816::TEST_FG_LIGHTRED() {
 
 //test: fg light green
 void Test_FGColours816::TEST_FG_LIGHTGREEN() {
-    std::ostringstream FG_LIGHTGREEN;
+    std::ostringstream FG__LIGHTGREEN;
 
-    FG_LIGHTGREEN << termstylist::FG_LightGreen;
+    FG__LIGHTGREEN << termstylist::FG_LightGreen;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[92m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[92m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTGREEN.str() == "\033[92m") {
+    if(FG__LIGHTGREEN.str() == "\033[92m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -341,13 +341,13 @@ void Test_FGColours816::TEST_FG_LIGHTGREEN() {
 
 //test: fg light yellow
 void Test_FGColours816::TEST_FG_LIGHTYELLOW() {
-    std::ostringstream FG_LIGHTYELLOW;
+    std::ostringstream FG__LIGHTYELLOW;
 
-    FG_LIGHTYELLOW << termstylist::FG_LightYellow;
+    FG__LIGHTYELLOW << termstylist::FG_LightYellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[93m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[93m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTYELLOW.str() == "\033[93m") {
+    if(FG__LIGHTYELLOW.str() == "\033[93m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -356,13 +356,13 @@ void Test_FGColours816::TEST_FG_LIGHTYELLOW() {
 
 //test: fg light blue
 void Test_FGColours816::TEST_FG_LIGHTBLUE() {
-    std::ostringstream FG_LIGHTBLUE;
+    std::ostringstream FG__LIGHTBLUE;
 
-    FG_LIGHTBLUE << termstylist::FG_LightBlue;
+    FG__LIGHTBLUE << termstylist::FG_LightBlue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[94m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[94m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTBLUE.str() == "\033[94m") {
+    if(FG__LIGHTBLUE.str() == "\033[94m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -371,13 +371,13 @@ void Test_FGColours816::TEST_FG_LIGHTBLUE() {
 
 //test: fg light magenta
 void Test_FGColours816::TEST_FG_LIGHTMAGENTA() {
-    std::ostringstream FG_LIGHTMAGENTA;
+    std::ostringstream FG__LIGHTMAGENTA;
 
-    FG_LIGHTMAGENTA << termstylist::FG_LightMagenta;
+    FG__LIGHTMAGENTA << termstylist::FG_LightMagenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[95m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[95m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTMAGENTA.str() == "\033[95m") {
+    if(FG__LIGHTMAGENTA.str() == "\033[95m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -386,13 +386,13 @@ void Test_FGColours816::TEST_FG_LIGHTMAGENTA() {
 
 //test: fg light cyan
 void Test_FGColours816::TEST_FG_LIGHTCYAN() {
-    std::ostringstream FG_LIGHTCYAN;
+    std::ostringstream FG__LIGHTCYAN;
 
-    FG_LIGHTCYAN << termstylist::FG_LightCyan;
+    FG__LIGHTCYAN << termstylist::FG_LightCyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[96m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_LightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[96m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_LIGHTCYAN.str() == "\033[96m") {
+    if(FG__LIGHTCYAN.str() == "\033[96m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -401,13 +401,13 @@ void Test_FGColours816::TEST_FG_LIGHTCYAN() {
 
 //test: fg bold black
 void Test_FGColours816::TEST_FG_BOLDBLACK() {
-    std::ostringstream FG_BOLDBLACK;
+    std::ostringstream FG__BOLDBLACK;
 
-    FG_BOLDBLACK << termstylist::FG_BoldBlack;
+    FG__BOLDBLACK << termstylist::FG_BoldBlack;
 
-    std::cout << '\n' << termstylist::FG_LightYellow << "termstylist::FG_BoldBlack " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[30;1m " << termstylist::FG_Default << "==== ";
+    std::cout << '\n' << termstylist::FG_LightYellow << "termstylist::FG_BoldBlack " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[30;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDBLACK.str() == "\033[30;1m") {
+    if(FG__BOLDBLACK.str() == "\033[30;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -416,13 +416,13 @@ void Test_FGColours816::TEST_FG_BOLDBLACK() {
 
 //test: fg bold red
 void Test_FGColours816::TEST_FG_BOLDRED() {
-    std::ostringstream FG_BOLDRED;
+    std::ostringstream FG__BOLDRED;
 
-    FG_BOLDRED << termstylist::FG_BoldRed;
+    FG__BOLDRED << termstylist::FG_BoldRed;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldRed " << termstylist::FG_Default <<  this->shouldEqual << termstylist::FG_LightYellow << "\\033[31;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldRed " << termstylist::FG_Default <<  this->shouldEqual << termstylist::FG_LightYellow << "\\033[31;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDRED.str() == "\033[31;1m") {
+    if(FG__BOLDRED.str() == "\033[31;1m") {
         std::cout << TEST_SUCCESS;    
     } else {
         std::cerr << TEST_FAILURE;
@@ -431,13 +431,13 @@ void Test_FGColours816::TEST_FG_BOLDRED() {
 
 //test: fg bold green
 void Test_FGColours816::TEST_FG_BOLDGREEN() {
-    std::ostringstream FG_BOLDGREEN;
+    std::ostringstream FG__BOLDGREEN;
 
-    FG_BOLDGREEN << termstylist::FG_BoldGreen;
+    FG__BOLDGREEN << termstylist::FG_BoldGreen;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[32;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[32;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDGREEN.str() == "\033[32;1m") {
+    if(FG__BOLDGREEN.str() == "\033[32;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -446,13 +446,13 @@ void Test_FGColours816::TEST_FG_BOLDGREEN() {
 
 //test: fg bold yellow
 void Test_FGColours816::TEST_FG_BOLDYELLOW() {
-    std::ostringstream FG_BOLDYELLOW;
+    std::ostringstream FG__BOLDYELLOW;
 
-    FG_BOLDYELLOW << termstylist::FG_BoldYellow;
+    FG__BOLDYELLOW << termstylist::FG_BoldYellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[33;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[33;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDYELLOW.str() == "\033[33;1m") {
+    if(FG__BOLDYELLOW.str() == "\033[33;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -461,13 +461,13 @@ void Test_FGColours816::TEST_FG_BOLDYELLOW() {
 
 //test: fg bold blue
 void Test_FGColours816::TEST_FG_BOLDBLUE() {
-    std::ostringstream FG_BOLDBLUE;
+    std::ostringstream FG__BOLDBLUE;
 
-    FG_BOLDBLUE << termstylist::FG_BoldBlue;
+    FG__BOLDBLUE << termstylist::FG_BoldBlue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[34;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[34;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDBLUE.str() == "\033[34;1m") {
+    if(FG__BOLDBLUE.str() == "\033[34;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -476,13 +476,13 @@ void Test_FGColours816::TEST_FG_BOLDBLUE() {
 
 //test: fg bold magenta 
 void Test_FGColours816::TEST_FG_BOLDMAGENTA() {
-    std::ostringstream FG_BOLDMAGENTA;
+    std::ostringstream FG__BOLDMAGENTA;
 
-    FG_BOLDMAGENTA << termstylist::FG_BoldMagenta;
+    FG__BOLDMAGENTA << termstylist::FG_BoldMagenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[35;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[35;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDMAGENTA.str() == "\033[35;1m") {
+    if(FG__BOLDMAGENTA.str() == "\033[35;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -491,13 +491,13 @@ void Test_FGColours816::TEST_FG_BOLDMAGENTA() {
 
 //test: fg bold cyan
 void Test_FGColours816::TEST_FG_BOLDCYAN() {
-    std::ostringstream FG_BOLDCYAN;
+    std::ostringstream FG__BOLDCYAN;
 
-    FG_BOLDCYAN << termstylist::FG_BoldCyan;
+    FG__BOLDCYAN << termstylist::FG_BoldCyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[36;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[36;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDCYAN.str() == "\033[36;1m") {
+    if(FG__BOLDCYAN.str() == "\033[36;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -506,13 +506,13 @@ void Test_FGColours816::TEST_FG_BOLDCYAN() {
 
 //test: fg bold white
 void Test_FGColours816::TEST_FG_BOLDWHITE() {
-    std::ostringstream FG_BOLDWHITE;
+    std::ostringstream FG__BOLDWHITE;
 
-    FG_BOLDWHITE << termstylist::FG_BoldWhite;
+    FG__BOLDWHITE << termstylist::FG_BoldWhite;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldWhite " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[97;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldWhite " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[97;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDWHITE.str() == "\033[97;1m") {
+    if(FG__BOLDWHITE.str() == "\033[97;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -521,13 +521,13 @@ void Test_FGColours816::TEST_FG_BOLDWHITE() {
 
 //test: fg bold light grey
 void Test_FGColours816::TEST_FG_BOLDLIGHTGREY() {
-    std::ostringstream FG_BOLDLIGHTGREY;
+    std::ostringstream FG__BOLDLIGHTGREY;
 
-    FG_BOLDLIGHTGREY << termstylist::FG_BoldLightGrey;
+    FG__BOLDLIGHTGREY << termstylist::FG_BoldLightGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[37;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[37;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTGREY.str() == "\033[37;1m") {
+    if(FG__BOLDLIGHTGREY.str() == "\033[37;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -536,13 +536,13 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTGREY() {
 
 //test: fg bold dark grey
 void Test_FGColours816::TEST_FG_BOLDDARKGREY() {
-    std::ostringstream FG_BOLDDARKGREY;
+    std::ostringstream FG__BOLDDARKGREY;
 
-    FG_BOLDDARKGREY << termstylist::FG_BoldDarkGrey;
+    FG__BOLDDARKGREY << termstylist::FG_BoldDarkGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldDarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[90;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldDarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[90;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDDARKGREY.str() == "\033[90;1m") {
+    if(FG__BOLDDARKGREY.str() == "\033[90;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -551,13 +551,13 @@ void Test_FGColours816::TEST_FG_BOLDDARKGREY() {
 
 //test: fg bold light red 
 void Test_FGColours816::TEST_FG_BOLDLIGHTRED() {
-    std::ostringstream FG_BOLDLIGHTRED;
+    std::ostringstream FG__BOLDLIGHTRED;
 
-    FG_BOLDLIGHTRED << termstylist::FG_BoldLightRed;
+    FG__BOLDLIGHTRED << termstylist::FG_BoldLightRed;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[91;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[91;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTRED.str() == "\033[91;1m") {
+    if(FG__BOLDLIGHTRED.str() == "\033[91;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -566,13 +566,13 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTRED() {
 
 //test: fg bold light green
 void Test_FGColours816::TEST_FG_BOLDLIGHTGREEN() {
-    std::ostringstream FG_BOLDLIGHTGREEN;
+    std::ostringstream FG__BOLDLIGHTGREEN;
 
-    FG_BOLDLIGHTGREEN << termstylist::FG_BoldLightGreen;
+    FG__BOLDLIGHTGREEN << termstylist::FG_BoldLightGreen;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_boldLightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[92;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_boldLightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[92;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTGREEN.str() == "\033[92;1m") {
+    if(FG__BOLDLIGHTGREEN.str() == "\033[92;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -581,13 +581,13 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTGREEN() {
 
 //test: fg bold light yellow
 void Test_FGColours816::TEST_FG_BOLDLIGHTYELLOW() {
-    std::ostringstream FG_BOLDLIGHTYELLOW;
+    std::ostringstream FG__BOLDLIGHTYELLOW;
 
-    FG_BOLDLIGHTYELLOW << termstylist::FG_BoldLightYellow;
+    FG__BOLDLIGHTYELLOW << termstylist::FG_BoldLightYellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[93;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[93;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTYELLOW.str() == "\033[93;1m") {
+    if(FG__BOLDLIGHTYELLOW.str() == "\033[93;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -596,13 +596,13 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTYELLOW() {
 
 //test: fg bold light blue
 void Test_FGColours816::TEST_FG_BOLDLIGHTBLUE() {
-    std::ostringstream FG_BOLDLIGHTBLUE;
+    std::ostringstream FG__BOLDLIGHTBLUE;
 
-    FG_BOLDLIGHTBLUE << termstylist::FG_BoldLightBlue;
+    FG__BOLDLIGHTBLUE << termstylist::FG_BoldLightBlue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[94;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[94;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTBLUE.str() == "\033[94;1m") {
+    if(FG__BOLDLIGHTBLUE.str() == "\033[94;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -611,13 +611,13 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTBLUE() {
 
 //test: fg bold light magenta
 void Test_FGColours816::TEST_FG_BOLDLIGHTMAGENTA() {
-    std::ostringstream FG_BOLDLIGHTMAGENTA;
+    std::ostringstream FG__BOLDLIGHTMAGENTA;
 
-    FG_BOLDLIGHTMAGENTA << termstylist::FG_BoldLightMagenta;
+    FG__BOLDLIGHTMAGENTA << termstylist::FG_BoldLightMagenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstlist::FG_BoldLightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[95;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstlist::FG_BoldLightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[95;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTMAGENTA.str() == "\033[95;1m") {
+    if(FG__BOLDLIGHTMAGENTA.str() == "\033[95;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -626,13 +626,13 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTMAGENTA() {
 
 //test: fg bold light cyan
 void Test_FGColours816::TEST_FG_BOLDLIGHTCYAN() {
-    std::ostringstream FG_BOLDLIGHTCYAN;
+    std::ostringstream FG__BOLDLIGHTCYAN;
 
-    FG_BOLDLIGHTCYAN << termstylist::FG_BoldLightCyan;
+    FG__BOLDLIGHTCYAN << termstylist::FG_BoldLightCyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[96;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG_BoldLightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[96;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG_BOLDLIGHTCYAN.str() == "\033[96;1m") {
+    if(FG__BOLDLIGHTCYAN.str() == "\033[96;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -648,13 +648,13 @@ void Test_BGColours816::TEST_BGCOLOURS_816_TITLE() {
 
 //test: bg default
 void Test_BGColours816::TEST_BG_DEFAULT() {
-    std::ostringstream BG_DEFAULT;
+    std::ostringstream BG__DEFAULT;
 
-    BG_DEFAULT << termstylist::BG_Default;
+    BG__DEFAULT << termstylist::BG_Default;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[49m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[49m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_DEFAULT.str() == "\033[49m") {
+    if(BG__DEFAULT.str() == "\033[49m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -663,13 +663,13 @@ void Test_BGColours816::TEST_BG_DEFAULT() {
 
 //test: bg black
 void Test_BGColours816::TEST_BG_BLACK() {
-    std::ostringstream BG_BLACK;
+    std::ostringstream BG__BLACK;
 
-    BG_BLACK << termstylist::BG_Black;
+    BG__BLACK << termstylist::BG_Black;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Black " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[40m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Black " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[40m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BLACK.str() == "\033[40m") {
+    if(BG__BLACK.str() == "\033[40m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -678,13 +678,13 @@ void Test_BGColours816::TEST_BG_BLACK() {
 
 //test: bg red 
 void Test_BGColours816::TEST_BG_RED() {
-    std::ostringstream BG_RED;
+    std::ostringstream BG__RED;
 
-    BG_RED << termstylist::BG_Red;
+    BG__RED << termstylist::BG_Red;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Red " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[41m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Red " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[41m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_RED.str() == "\033[41m") {
+    if(BG__RED.str() == "\033[41m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -693,13 +693,13 @@ void Test_BGColours816::TEST_BG_RED() {
         
 //test: bg green
 void Test_BGColours816::TEST_BG_GREEN() {
-    std::ostringstream BG_GREEN;
+    std::ostringstream BG__GREEN;
 
-    BG_GREEN << termstylist::BG_Green;
+    BG__GREEN << termstylist::BG_Green;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Green " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[42m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Green " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[42m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_GREEN.str() == "\033[42m") {
+    if(BG__GREEN.str() == "\033[42m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -708,13 +708,13 @@ void Test_BGColours816::TEST_BG_GREEN() {
 
 //test: bg yellow
 void Test_BGColours816::TEST_BG_YELLOW() {
-    std::ostringstream BG_YELLOW;
+    std::ostringstream BG__YELLOW;
 
-    BG_YELLOW << termstylist::BG_Yellow;
+    BG__YELLOW << termstylist::BG_Yellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Yellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[43m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Yellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[43m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_YELLOW.str() == "\033[43m") {
+    if(BG__YELLOW.str() == "\033[43m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -723,13 +723,13 @@ void Test_BGColours816::TEST_BG_YELLOW() {
 
 //test: bg blue
 void Test_BGColours816::TEST_BG_BLUE() {
-    std::ostringstream BG_BLUE;
+    std::ostringstream BG__BLUE;
 
-    BG_BLUE << termstylist::BG_Blue;
+    BG__BLUE << termstylist::BG_Blue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Blue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[44m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Blue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[44m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BLUE.str() == "\033[44m") {
+    if(BG__BLUE.str() == "\033[44m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -738,13 +738,13 @@ void Test_BGColours816::TEST_BG_BLUE() {
 
 //test: bg magenta
 void Test_BGColours816::TEST_BG_MAGENTA() {
-    std::ostringstream BG_MAGENTA;
+    std::ostringstream BG__MAGENTA;
 
-    BG_MAGENTA << termstylist::BG_Magenta;
+    BG__MAGENTA << termstylist::BG_Magenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Magenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[45m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Magenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[45m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_MAGENTA.str() == "\033[45m") {
+    if(BG__MAGENTA.str() == "\033[45m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -753,13 +753,13 @@ void Test_BGColours816::TEST_BG_MAGENTA() {
 
 //test: bg cyan
 void Test_BGColours816::TEST_BG_CYAN() {
-    std::ostringstream BG_CYAN;
+    std::ostringstream BG__CYAN;
 
-    BG_CYAN << termstylist::BG_Cyan;
+    BG__CYAN << termstylist::BG_Cyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Cyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[46m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_Cyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[46m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_CYAN.str() == "\033[46m") {
+    if(BG__CYAN.str() == "\033[46m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -768,13 +768,13 @@ void Test_BGColours816::TEST_BG_CYAN() {
 
 //test: bg white
 void Test_BGColours816::TEST_BG_WHITE() {
-    std::ostringstream BG_WHITE;
+    std::ostringstream BG__WHITE;
 
-    BG_WHITE << termstylist::BG_White;
+    BG__WHITE << termstylist::BG_White;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_White " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[107m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_White " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[107m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_WHITE.str() == "\033[107m") {
+    if(BG__WHITE.str() == "\033[107m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -783,13 +783,13 @@ void Test_BGColours816::TEST_BG_WHITE() {
 
 //test: bg light grey 
 void Test_BGColours816::TEST_BG_LIGHTGREY() {
-    std::ostringstream BG_LIGHTGREY;
+    std::ostringstream BG__LIGHTGREY;
 
-    BG_LIGHTGREY << termstylist::BG_LightGrey;
+    BG__LIGHTGREY << termstylist::BG_LightGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[47m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[47m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTGREY.str() == "\033[47m") {
+    if(BG__LIGHTGREY.str() == "\033[47m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -798,13 +798,13 @@ void Test_BGColours816::TEST_BG_LIGHTGREY() {
 
 //test: bg dark grey
 void Test_BGColours816::TEST_BG_DARKGREY() {
-    std::ostringstream BG_DARKGREY;
+    std::ostringstream BG__DARKGREY;
 
-    BG_DARKGREY << termstylist::BG_DarkGrey;
+    BG__DARKGREY << termstylist::BG_DarkGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_DarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[100m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_DarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[100m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_DARKGREY.str() == "\033[100m") {
+    if(BG__DARKGREY.str() == "\033[100m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -813,13 +813,13 @@ void Test_BGColours816::TEST_BG_DARKGREY() {
 
 //test: bg light red
 void Test_BGColours816::TEST_BG_LIGHTRED() {
-    std::ostringstream BG_LIGHTRED;
+    std::ostringstream BG__LIGHTRED;
 
-    BG_LIGHTRED << termstylist::BG_LightRed;
+    BG__LIGHTRED << termstylist::BG_LightRed;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[101m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[101m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTRED.str() == "\033[101m") {
+    if(BG__LIGHTRED.str() == "\033[101m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -828,13 +828,13 @@ void Test_BGColours816::TEST_BG_LIGHTRED() {
 
 //test: bg light green
 void Test_BGColours816::TEST_BG_LIGHTGREEN() {
-    std::ostringstream BG_LIGHTGREEN;
+    std::ostringstream BG__LIGHTGREEN;
 
-    BG_LIGHTGREEN << termstylist::BG_LightGreen;
+    BG__LIGHTGREEN << termstylist::BG_LightGreen;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[102m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[102m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTGREEN.str() == "\033[102m") {
+    if(BG__LIGHTGREEN.str() == "\033[102m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -843,13 +843,13 @@ void Test_BGColours816::TEST_BG_LIGHTGREEN() {
 
 //test: bg light yellow
 void Test_BGColours816::TEST_BG_LIGHTYELLOW() {
-    std::ostringstream BG_LIGHTYELLOW;
+    std::ostringstream BG__LIGHTYELLOW;
 
-    BG_LIGHTYELLOW << termstylist::BG_LightYellow;
+    BG__LIGHTYELLOW << termstylist::BG_LightYellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightYellow " << termstylist::FG_Default << "~ SHOULD BE ~ " << termstylist::FG_LightYellow << "\\033[103m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightYellow " << termstylist::FG_Default << "~ SHOULD BE ~ " << termstylist::FG_LightYellow << "\\033[103m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTYELLOW.str() == "\033[103m") {
+    if(BG__LIGHTYELLOW.str() == "\033[103m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -858,13 +858,13 @@ void Test_BGColours816::TEST_BG_LIGHTYELLOW() {
 
 //test: bg light blue
 void Test_BGColours816::TEST_BG_LIGHTBLUE() {
-    std::ostringstream BG_LIGHTBLUE;
+    std::ostringstream BG__LIGHTBLUE;
 
-    BG_LIGHTBLUE << termstylist::BG_LightBlue;
+    BG__LIGHTBLUE << termstylist::BG_LightBlue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[104m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[104m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTBLUE.str() == "\033[104m") {
+    if(BG__LIGHTBLUE.str() == "\033[104m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -873,13 +873,13 @@ void Test_BGColours816::TEST_BG_LIGHTBLUE() {
 
 //test: bg light magenta
 void Test_BGColours816::TEST_BG_LIGHTMAGENTA() {
-    std::ostringstream BG_LIGHTMAGENTA;
+    std::ostringstream BG__LIGHTMAGENTA;
 
-    BG_LIGHTMAGENTA << termstylist::BG_LightMagenta;
+    BG__LIGHTMAGENTA << termstylist::BG_LightMagenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[105m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[105m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTMAGENTA.str() == "\033[105m") {
+    if(BG__LIGHTMAGENTA.str() == "\033[105m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -888,13 +888,13 @@ void Test_BGColours816::TEST_BG_LIGHTMAGENTA() {
 
 //test: bg light cyan
 void Test_BGColours816::TEST_BG_LIGHTCYAN() {
-    std::ostringstream BG_LIGHTCYAN;
+    std::ostringstream BG__LIGHTCYAN;
 
-    BG_LIGHTCYAN << termstylist::BG_LightCyan;
+    BG__LIGHTCYAN << termstylist::BG_LightCyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[106m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_LightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[106m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_LIGHTCYAN.str() == "\033[106m") {
+    if(BG__LIGHTCYAN.str() == "\033[106m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -903,13 +903,13 @@ void Test_BGColours816::TEST_BG_LIGHTCYAN() {
 
 //test: bg bold black
 void Test_BGColours816::TEST_BG_BOLDBLACK() {
-    std::ostringstream BG_BOLDBLACK;
+    std::ostringstream BG__BOLDBLACK;
 
-    BG_BOLDBLACK << termstylist::BG_BoldBlack;
+    BG__BOLDBLACK << termstylist::BG_BoldBlack;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldBlack " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[40;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldBlack " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[40;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDBLACK.str() == "\033[40;1m") {
+    if(BG__BOLDBLACK.str() == "\033[40;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -918,13 +918,13 @@ void Test_BGColours816::TEST_BG_BOLDBLACK() {
 
 //test: bg bold red
 void Test_BGColours816::TEST_BG_BOLDRED() {
-    std::ostringstream BG_BOLDRED;
+    std::ostringstream BG__BOLDRED;
 
-    BG_BOLDRED << termstylist::BG_BoldRed;
+    BG__BOLDRED << termstylist::BG_BoldRed;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[42;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[42;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDRED.str() == "\033[41;1m") {
+    if(BG__BOLDRED.str() == "\033[41;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -933,13 +933,13 @@ void Test_BGColours816::TEST_BG_BOLDRED() {
 
 //test: bg bold green 
 void Test_BGColours816::TEST_BG_BOLDGREEN() {
-    std::ostringstream BG_BOLDGREEN;
+    std::ostringstream BG__BOLDGREEN;
 
-    BG_BOLDGREEN << termstylist::BG_BoldGreen;
+    BG__BOLDGREEN << termstylist::BG_BoldGreen;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[42;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[42;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDGREEN.str() == "\033[42;1m") {
+    if(BG__BOLDGREEN.str() == "\033[42;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -948,13 +948,13 @@ void Test_BGColours816::TEST_BG_BOLDGREEN() {
 
 //test: bg bold yellow
 void Test_BGColours816::TEST_BG_BOLDYELLOW() {
-    std::ostringstream BG_BOLDYELLOW;
+    std::ostringstream BG__BOLDYELLOW;
 
-    BG_BOLDYELLOW << termstylist::BG_BoldYellow;
+    BG__BOLDYELLOW << termstylist::BG_BoldYellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[43;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[43;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDYELLOW.str() == "\033[43;1m") {
+    if(BG__BOLDYELLOW.str() == "\033[43;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -963,13 +963,13 @@ void Test_BGColours816::TEST_BG_BOLDYELLOW() {
 
 //test: bg bold blue
 void Test_BGColours816::TEST_BG_BOLDBLUE() {
-    std::ostringstream BG_BOLDBLUE;
+    std::ostringstream BG__BOLDBLUE;
 
-    BG_BOLDBLUE << termstylist::BG_BoldBlue;
+    BG__BOLDBLUE << termstylist::BG_BoldBlue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[44;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[44;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDBLUE.str() == "\033[44;1m") {
+    if(BG__BOLDBLUE.str() == "\033[44;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -978,13 +978,13 @@ void Test_BGColours816::TEST_BG_BOLDBLUE() {
 
 //test: bg bold magenta
 void Test_BGColours816::TEST_BG_BOLDMAGENTA() {
-    std::ostringstream BG_BOLDMAGENTA;
+    std::ostringstream BG__BOLDMAGENTA;
 
-    BG_BOLDMAGENTA << termstylist::BG_BoldMagenta;
+    BG__BOLDMAGENTA << termstylist::BG_BoldMagenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[45;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[45;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDMAGENTA.str() == "\033[45;1m") {
+    if(BG__BOLDMAGENTA.str() == "\033[45;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -993,13 +993,13 @@ void Test_BGColours816::TEST_BG_BOLDMAGENTA() {
 
 //test: bg bold cyan
 void Test_BGColours816::TEST_BG_BOLDCYAN() {
-    std::ostringstream BG_BOLDCYAN;
+    std::ostringstream BG__BOLDCYAN;
 
-    BG_BOLDCYAN << termstylist::BG_BoldCyan;
+    BG__BOLDCYAN << termstylist::BG_BoldCyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[46;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[46;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDCYAN.str() == "\033[46;1m") {
+    if(BG__BOLDCYAN.str() == "\033[46;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1008,13 +1008,13 @@ void Test_BGColours816::TEST_BG_BOLDCYAN() {
         
 //test: bg bold white 
 void Test_BGColours816::TEST_BG_BOLDWHITE() {
-    std::ostringstream BG_BOLDWHITE;
+    std::ostringstream BG__BOLDWHITE;
 
-    BG_BOLDWHITE << termstylist::BG_BoldWhite;
+    BG__BOLDWHITE << termstylist::BG_BoldWhite;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldWhite " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[107;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldWhite " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[107;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDWHITE.str() == "\033[107;1m") {
+    if(BG__BOLDWHITE.str() == "\033[107;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1023,13 +1023,13 @@ void Test_BGColours816::TEST_BG_BOLDWHITE() {
 
 //test: bg bold dark grey 
 void Test_BGColours816::TEST_BG_BOLDDARKGREY() {
-    std::ostringstream BG_BOLDDARKGREY;
+    std::ostringstream BG__BOLDDARKGREY;
 
-    BG_BOLDDARKGREY << termstylist::BG_BoldDarkGrey;
+    BG__BOLDDARKGREY << termstylist::BG_BoldDarkGrey;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldDarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[100;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldDarkGrey " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[100;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDDARKGREY.str() == "\033[100;1m") {
+    if(BG__BOLDDARKGREY.str() == "\033[100;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1038,13 +1038,13 @@ void Test_BGColours816::TEST_BG_BOLDDARKGREY() {
 
 //test: bg bold light red 
 void Test_BGColours816::TEST_BG_BOLDLIGHTRED() {
-    std::ostringstream BG_BOLDLIGHTRED;
+    std::ostringstream BG__BOLDLIGHTRED;
 
-    BG_BOLDLIGHTRED << termstylist::BG_BoldLightRed;
+    BG__BOLDLIGHTRED << termstylist::BG_BoldLightRed;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist:BG_BoldLightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[101;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist:BG_BoldLightRed " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[101;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDLIGHTRED.str() == "\033[101;1m") {
+    if(BG__BOLDLIGHTRED.str() == "\033[101;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cout << TEST_FAILURE;
@@ -1053,13 +1053,13 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTRED() {
 
 //test: bg bold light green
 void Test_BGColours816::TEST_BG_BOLDLIGHTGREEN() {
-    std::ostringstream BG_BOLDLIGHTGREEN;
+    std::ostringstream BG__BOLDLIGHTGREEN;
 
-    BG_BOLDLIGHTGREEN << termstylist::BG_BoldLightGreen;
+    BG__BOLDLIGHTGREEN << termstylist::BG_BoldLightGreen;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[102;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightGreen " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[102;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDLIGHTGREEN.str() == "\033[102;1m") {
+    if(BG__BOLDLIGHTGREEN.str() == "\033[102;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1068,13 +1068,13 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTGREEN() {
 
 //test: bg bold light yellow
 void Test_BGColours816::TEST_BG_BOLDLIGHTYELLOW() {
-    std::ostringstream BG_BOLDLIGHTYELLOW;
+    std::ostringstream BG__BOLDLIGHTYELLOW;
 
-    BG_BOLDLIGHTYELLOW << termstylist::BG_BoldLightYellow;
+    BG__BOLDLIGHTYELLOW << termstylist::BG_BoldLightYellow;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[103;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightYellow " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[103;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDLIGHTYELLOW.str() == "\033[103;1m") {
+    if(BG__BOLDLIGHTYELLOW.str() == "\033[103;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1083,13 +1083,13 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTYELLOW() {
 
 //test: bg bold light blue
 void Test_BGColours816::TEST_BG_BOLDLIGHTBLUE() {
-    std::ostringstream BG_BOLDLIGHTBLUE;
+    std::ostringstream BG__BOLDLIGHTBLUE;
 
-    BG_BOLDLIGHTBLUE << termstylist::BG_BoldLightBlue;
+    BG__BOLDLIGHTBLUE << termstylist::BG_BoldLightBlue;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[104;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightBlue " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[104;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDLIGHTBLUE.str() == "\033[104;1m") {
+    if(BG__BOLDLIGHTBLUE.str() == "\033[104;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1098,13 +1098,13 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTBLUE() {
         
 //test: bg bold light magenta
 void Test_BGColours816::TEST_BG_BOLDLIGHTMAGENTA() {
-    std::ostringstream BG_BOLDLIGHTMAGENTA;
+    std::ostringstream BG__BOLDLIGHTMAGENTA;
 
-    BG_BOLDLIGHTMAGENTA << termstylist::BG_BoldLightMagenta;
+    BG__BOLDLIGHTMAGENTA << termstylist::BG_BoldLightMagenta;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[105;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightMagenta " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[105;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDLIGHTMAGENTA.str() == "\033[105;1m") {
+    if(BG__BOLDLIGHTMAGENTA.str() == "\033[105;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1113,13 +1113,13 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTMAGENTA() {
 
 //test: bg bold light cyan
 void Test_BGColours816::TEST_BG_BOLDLIGHTCYAN() {
-    std::ostringstream BG_BOLDLIGHTCYAN;
+    std::ostringstream BG__BOLDLIGHTCYAN;
 
-    BG_BOLDLIGHTCYAN << termstylist::BG_BoldLightCyan;
+    BG__BOLDLIGHTCYAN << termstylist::BG_BoldLightCyan;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[106;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG_BoldLightCyan " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[106;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(BG_BOLDLIGHTCYAN.str() == "\033[106;1m") {
+    if(BG__BOLDLIGHTCYAN.str() == "\033[106;1m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1135,13 +1135,13 @@ void Test_FGColours256::TEST_FGCOLOURS256_TITLE() {
 
 //test: fg256 0 
 void Test_FGColours256::TEST_FG256_0() {
-    std::ostringstream FG256_0;
+    std::ostringstream FG256__0;
 
-    FG256_0 << termstylist::FG256_0;
+    FG256__0 << termstylist::FG256_0;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_0 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;0m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_0 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;0m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_0.str() == "\033[38;5;0m") {
+    if(FG256__0.str() == "\033[38;5;0m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1150,13 +1150,13 @@ void Test_FGColours256::TEST_FG256_0() {
 
 //test: fg256 1
 void Test_FGColours256::TEST_FG256_1() {
-    std::ostringstream FG256_1;
+    std::ostringstream FG256__1;
 
-    FG256_1 << termstylist::FG256_1;
+    FG256__1 << termstylist::FG256_1;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_1 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;1m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_1 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;1m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_1.str() == "\033[38;5;1m") {
+    if(FG256__1.str() == "\033[38;5;1m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1165,13 +1165,13 @@ void Test_FGColours256::TEST_FG256_1() {
 
 //test: fg256 2 
 void Test_FGColours256::TEST_FG256_2() {
-    std::ostringstream FG256_2;
+    std::ostringstream FG256__2;
             
-    FG256_2 << termstylist::FG256_2;
+    FG256__2 << termstylist::FG256_2;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_2 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;2m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_2 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;2m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_2.str() == "\033[38;5;2m") {
+    if(FG256__2.str() == "\033[38;5;2m") {
         std::cout << TEST_SUCCESS;;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1180,13 +1180,13 @@ void Test_FGColours256::TEST_FG256_2() {
 
 //test: fg256 3
 void Test_FGColours256::TEST_FG256_3() {
-    std::ostringstream FG256_3;
+    std::ostringstream FG256__3;
 
-    FG256_3 << termstylist::FG256_3;
+    FG256__3 << termstylist::FG256_3;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_3 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;3m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_3 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;3m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_3.str() == "\033[38;5;3m") {
+    if(FG256__3.str() == "\033[38;5;3m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr<< TEST_FAILURE;
@@ -1195,13 +1195,13 @@ void Test_FGColours256::TEST_FG256_3() {
 
 //test: fg256 4
 void Test_FGColours256::TEST_FG256_4() {
-    std::ostringstream FG256_4;
+    std::ostringstream FG256__4;
 
-    FG256_4 << termstylist::FG256_4;
+    FG256__4 << termstylist::FG256_4;
     
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_4 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;4m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_4 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;4m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_4.str() == "\033[38;5;4m") {
+    if(FG256__4.str() == "\033[38;5;4m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1210,13 +1210,13 @@ void Test_FGColours256::TEST_FG256_4() {
 
 //test: fg256 5 
 void Test_FGColours256::TEST_FG256_5() {
-    std::ostringstream FG256_5;
+    std::ostringstream FG256__5;
 
-    FG256_5 << termstylist::FG256_5;
+    FG256__5 << termstylist::FG256_5;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_5 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;5m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_5 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;5m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_5.str() == "\033[38;5;5m") {
+    if(FG256__5.str() == "\033[38;5;5m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1225,13 +1225,13 @@ void Test_FGColours256::TEST_FG256_5() {
 
 //test: fg256 6
 void Test_FGColours256::TEST_FG256_6() {
-    std::ostringstream FG256_6;
+    std::ostringstream FG256__6;
 
-    FG256_6 << termstylist::FG256_6;
+    FG256__6 << termstylist::FG256_6;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_6 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;6m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_6 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;6m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_6.str() == "\033[38;5;6m") {
+    if(FG256__6.str() == "\033[38;5;6m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1240,13 +1240,13 @@ void Test_FGColours256::TEST_FG256_6() {
 
 //test: fg256 7
 void Test_FGColours256::TEST_FG256_7() {
-    std::ostringstream FG256_7;
+    std::ostringstream FG256__7;
 
-    FG256_7 << termstylist::FG256_7;
+    FG256__7 << termstylist::FG256_7;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_7 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;7m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_7 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;7m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_7.str() == "\033[38;5;7m") {
+    if(FG256__7.str() == "\033[38;5;7m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1255,13 +1255,13 @@ void Test_FGColours256::TEST_FG256_7() {
 
 //test: fg256 8
 void Test_FGColours256::TEST_FG256_8() {
-    std::ostringstream FG256_8;
+    std::ostringstream FG256__8;
 
-    FG256_8 << termstylist::FG256_8;
+    FG256__8 << termstylist::FG256_8;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_8 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;8m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_8 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;8m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_8.str() == "\033[38;5;8m") {
+    if(FG256__8.str() == "\033[38;5;8m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1270,13 +1270,13 @@ void Test_FGColours256::TEST_FG256_8() {
 
 //test: fg256 9
 void Test_FGColours256::TEST_FG256_9() {
-    std::ostringstream FG256_9;
+    std::ostringstream FG256__9;
 
-    FG256_9 << termstylist::FG256_9;
+    FG256__9 << termstylist::FG256_9;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_9 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;9m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_9 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;9m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_9.str() == "\033[38;5;9m") {
+    if(FG256__9.str() == "\033[38;5;9m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1285,13 +1285,13 @@ void Test_FGColours256::TEST_FG256_9() {
 
 //test: fg256 10
 void Test_FGColours256::TEST_FG256_10() {
-    std::ostringstream FG256_10;
+    std::ostringstream FG256__10;
 
-    FG256_10 << termstylist::FG256_10;
+    FG256__10 << termstylist::FG256_10;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_10 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;10m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_10 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;10m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_10.str() == "\033[38;5;10m") {
+    if(FG256__10.str() == "\033[38;5;10m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1300,13 +1300,13 @@ void Test_FGColours256::TEST_FG256_10() {
 
 //test: fg256 11
 void Test_FGColours256::TEST_FG256_11() {
-    std::ostringstream FG256_11;
+    std::ostringstream FG256__11;
 
-    FG256_11 << termstylist::FG256_11;
+    FG256__11 << termstylist::FG256_11;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_11 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;11m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_11 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;11m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_11.str() == "\033[38;5;11m") {
+    if(FG256__11.str() == "\033[38;5;11m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1315,13 +1315,13 @@ void Test_FGColours256::TEST_FG256_11() {
 
 //test: fg256 12 
 void Test_FGColours256::TEST_FG256_12() {
-    std::ostringstream FG256_12;
+    std::ostringstream FG256__12;
     
-    FG256_12 << termstylist::FG256_12;
+    FG256__12 << termstylist::FG256_12;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_12 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;12m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_12 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;12m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_12.str() == "\033[38;5;12m") {
+    if(FG256__12.str() == "\033[38;5;12m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1330,13 +1330,13 @@ void Test_FGColours256::TEST_FG256_12() {
 
 //test: fg256 13
 void Test_FGColours256::TEST_FG256_13() {
-    std::ostringstream FG256_13;
+    std::ostringstream FG256__13;
 
-    FG256_13 << termstylist::FG256_13;
+    FG256__13 << termstylist::FG256_13;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_13 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;13m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_13 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;13m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_13.str() == "\033[38;5;13m") {
+    if(FG256__13.str() == "\033[38;5;13m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1345,13 +1345,13 @@ void Test_FGColours256::TEST_FG256_13() {
 
 //test: fg256 14 
 void Test_FGColours256::TEST_FG256_14() {
-    std::ostringstream FG256_14;
+    std::ostringstream FG256__14;
 
-    FG256_14 << termstylist::FG256_14;
+    FG256__14 << termstylist::FG256_14;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_14 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;14m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_14 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;14m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_14.str() == "\033[38;5;14m") {
+    if(FG256__14.str() == "\033[38;5;14m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1360,13 +1360,13 @@ void Test_FGColours256::TEST_FG256_14() {
 
 //test: fg256 15
 void Test_FGColours256::TEST_FG256_15() {
-    std::ostringstream FG256_15;
+    std::ostringstream FG256__15;
 
-    FG256_15 << termstylist::FG256_15;
+    FG256__15 << termstylist::FG256_15;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_15 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;15m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_15 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;15m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_15.str() == "\033[38;5;15m") {
+    if(FG256__15.str() == "\033[38;5;15m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1375,13 +1375,13 @@ void Test_FGColours256::TEST_FG256_15() {
 
 //test: fg256 16
 void Test_FGColours256::TEST_FG256_16() {
-    std::ostringstream FG256_16;
+    std::ostringstream FG256__16;
 
-    FG256_16 << termstylist::FG256_16;
+    FG256__16 << termstylist::FG256_16;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_16 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;16m " << termstylist::FG_Default << "==== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_16 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;16m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_16.str() == "\033[38;5;16m") {
+    if(FG256__16.str() == "\033[38;5;16m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1390,13 +1390,73 @@ void Test_FGColours256::TEST_FG256_16() {
 
 //test: fg256 17
 void Test_FGColours256::TEST_FG256_17() {
-    std::ostringstream FG256_17;
+    std::ostringstream FG256__17;
 
-    FG256_17 << termstylist::FG256_17;
+    FG256__17 << termstylist::FG256_17;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_17 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;17m " << termstylist::FG_Default << "===== ";
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_17 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;17m " << termstylist::FG_Default << this->endBreak;
 
-    if(FG256_17.str() == "\033[38;5;17m") {
+    if(FG256__17.str() == "\033[38;5;17m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 18
+void Test_FGColours256::TEST_FG256_18() {
+    std::ostringstream FG256__18;
+
+    FG256__18 << termstylist::FG256_18;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_18 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;18m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__18.str() == "\033[38;5;18m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 19
+void Test_FGColours256::TEST_FG256_19() {
+    std::ostringstream FG256__19;
+
+    FG256__19 << termstylist::FG256_19;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_19 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;19m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__19.str() == "\033[38;5;19m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 20
+void Test_FGColours256::TEST_FG256_20() {
+    std::ostringstream FG256__20;
+
+    FG256__20 << termstylist::FG256_20;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_20 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;20m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__20.str() == "\033[38;5;20m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 21
+void Test_FGColours256::TEST_FG256_21() {
+    std::ostringstream FG256__21;
+
+    FG256__21 << termstylist::FG256_21;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_21 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;21m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__21.str() == "\033[38;5;21m") {
         std::cout << TEST_SUCCESS;
     } else {
         std::cerr << TEST_FAILURE;
@@ -1515,6 +1575,10 @@ int main() {
     T_FGC_256.TEST_FG256_15();
     T_FGC_256.TEST_FG256_16();
     T_FGC_256.TEST_FG256_17();
+    T_FGC_256.TEST_FG256_18();
+    T_FGC_256.TEST_FG256_19();
+    T_FGC_256.TEST_FG256_20();
+    T_FGC_256.TEST_FG256_21();
 
     return 0;
 }
