@@ -3,9 +3,15 @@
 
 #include "../include/termstylist.h"
 #include <ostream>
+#include <string>
+
+class ShouldEqual {
+    protected:
+        std::string shouldEqual = "~ SHOULD EQUAL ~ ";
+};
 
 //class test attributes 
-class Test_Attributes {
+class Test_Attributes : protected ShouldEqual {
     public:
         void TEST_ATTR_TITLE();
         void TEST_BOLD();
@@ -14,7 +20,7 @@ class Test_Attributes {
 };
 
 //class test reset
-class Test_Reset {
+class Test_Reset : protected ShouldEqual {
     public:
         void TEST_RESET_TITLE();
         void TEST_RESET_DEFAULT();
@@ -24,7 +30,7 @@ class Test_Reset {
 };
 
 //class test fg colours 8/16
-class Test_FGColours816 {
+class Test_FGColours816 : protected ShouldEqual {
     public:
         void TEST_FGCOLOURS816_TITLE();
         void TEST_FG_DEFAULT();
@@ -63,7 +69,7 @@ class Test_FGColours816 {
 };
 
 //class test bg colours 8/16
-class Test_BGColours816 {
+class Test_BGColours816 : protected ShouldEqual {
     public:
         void TEST_BGCOLOURS_816_TITLE();
         void TEST_BG_DEFAULT();
@@ -101,7 +107,7 @@ class Test_BGColours816 {
 };
 
 //class test fg colours 256
-class Test_FGColours256 {
+class Test_FGColours256 : protected ShouldEqual {
     public:
         void TEST_FGCOLOURS256_TITLE();
         void TEST_FG256_0();
