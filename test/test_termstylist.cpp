@@ -1234,7 +1234,7 @@ void Test_FGColours256::TEST_FG256_5() {
 
     FG256__5 << termstylist::FG256_5;
 
-    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_5 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;5m " << termstylist::FG_Default << this->endBreak;
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_5 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;5m " << termstylist::FG_Default << this->endBreak;
 
     if(FG256__5.str() == "\033[38;5;5m") {
         std::cout << TEST_SUCCESS;
@@ -1768,6 +1768,306 @@ void Test_FGColours256::TEST_FG256_40() {
     }
 }
 
+//test: fg256 41
+void Test_FGColours256::TEST_FG256_41() {
+    std::ostringstream FG256__41;
+
+    FG256__41 << termstylist::FG256_41;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_41 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033;38;5;41m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__41.str() == "\033[38;5;41m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 42
+void Test_FGColours256::TEST_FG256_42() {
+    std::ostringstream FG256__42;
+
+    FG256__42 << termstylist::FG256_42;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_42 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;42m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__42.str() == "\033[38;5;42m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 43
+void Test_FGColours256::TEST_FG256_43() {
+    std::ostringstream FG256__43;
+
+    FG256__43 << termstylist::FG256_43;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_43 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;43m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__43.str() == "\033[38;5;43m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 44 
+void Test_FGColours256::TEST_FG256_44() {
+    std::ostringstream FG256__44;
+    
+    FG256__44 << termstylist::FG256_44;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_44 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;44m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__44.str() == "\033[38;5;44m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 45
+void Test_FGColours256::TEST_FG256_45() {
+    std::ostringstream FG256__45;
+
+    FG256__45 << termstylist::FG256_45;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_45 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;45m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__45.str() == "\033[38;5;45m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 46
+void Test_FGColours256::TEST_FG256_46() {
+    std::ostringstream FG256__46;
+
+    FG256__46 << termstylist::FG256_46;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_46 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;46m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__46.str() == "\033[38;5;46m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 47
+void Test_FGColours256::TEST_FG256_47() {
+    std::ostringstream FG256__47;
+
+    FG256__47 << termstylist::FG256_47;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_47 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;47m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__47.str() == "\033[38;5;47m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 48
+void Test_FGColours256::TEST_FG256_48() {
+    std::ostringstream FG256__48;
+
+    FG256__48 << termstylist::FG256_48;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_48 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;48m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__48.str() == "\033[38;5;48m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 49
+void Test_FGColours256::TEST_FG256_49() {
+    std::ostringstream FG256__49;
+
+    FG256__49 << termstylist::FG256_49;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_49 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;49m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__49.str() == "\033[38;5;49m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 50
+void Test_FGColours256::TEST_FG256_50() {
+    std::ostringstream FG256__50;
+
+    FG256__50 << termstylist::FG256_50;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_50 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;50m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__50.str() == "\033[38;5;50m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 51
+void Test_FGColours256::TEST_FG256_51() {
+    std::ostringstream FG256__51;
+
+    FG256__51 << termstylist::FG256_51;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_51 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;51m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__51.str() == "\033[38;5;51m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 52
+void Test_FGColours256::TEST_FG256_52() {
+    std::ostringstream FG256__52;
+
+    FG256__52 << termstylist::FG256_52;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_52 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;52m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__52.str() == "\033[38;5;52m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 53
+void Test_FGColours256::TEST_FG256_53() {
+    std::ostringstream FG256__53;
+
+    FG256__53 << termstylist::FG256_53;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_53 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;53m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__53.str() == "\033[38;5;53m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 54 
+void Test_FGColours256::TEST_FG256_54() {
+    std::ostringstream FG256__54;
+
+    FG256__54 << termstylist::FG256_54;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_54 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;54m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__54.str() == "\033[38;5;54m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 55
+void Test_FGColours256::TEST_FG256_55() {
+    std::ostringstream FG256__55;
+
+    FG256__55 << termstylist::FG256_55;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_55 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;55m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__55.str() == "\033[38;5;55m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 56
+void Test_FGColours256::TEST_FG256_56() {
+    std::ostringstream FG256__56;
+
+    FG256__56 << termstylist::FG256_56;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_56 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;56m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__56.str() == "\033[38;5;56m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 57
+void Test_FGColours256::TEST_FG256_57() {
+    std::ostringstream FG256__57;
+
+    FG256__57 << termstylist::FG256_57;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_57 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;57m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__57.str() == "\033[38;5;57m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 58
+void Test_FGColours256::TEST_FG256_58() {
+    std::ostringstream FG256__58;
+
+    FG256__58 << termstylist::FG256_58;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_58 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;58m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__58.str() == "\033[38;5;58m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 59
+void Test_FGColours256::TEST_FG256_59() {
+    std::ostringstream FG256__59;
+
+    FG256__59 << termstylist::FG256_59;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_59 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;59m " << termstylist::FG_Default << this->endBreak;;
+
+    if(FG256__59.str() == "\033[38;5;59m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
+//test: fg256 60
+void Test_FGColours256::TEST_FG256_60() {
+    std::ostringstream FG256__60;
+
+    FG256__60 << termstylist::FG256_60;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::FG256_60 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;60m " << termstylist::FG_Default << this->endBreak;
+
+    if(FG256__60.str() == "\033[38;5;60m") {
+        std::cout << TEST_SUCCESS;
+    } else {
+        std::cerr << TEST_FAILURE;
+    }
+}
+
 int main() {
     Test_Attributes T_ATTRS;
 
@@ -1903,6 +2203,26 @@ int main() {
     T_FGC_256.TEST_FG256_38();
     T_FGC_256.TEST_FG256_39();
     T_FGC_256.TEST_FG256_40();
+    T_FGC_256.TEST_FG256_41();
+    T_FGC_256.TEST_FG256_42();
+    T_FGC_256.TEST_FG256_43();
+    T_FGC_256.TEST_FG256_44();
+    T_FGC_256.TEST_FG256_45();
+    T_FGC_256.TEST_FG256_46();
+    T_FGC_256.TEST_FG256_47();
+    T_FGC_256.TEST_FG256_48();
+    T_FGC_256.TEST_FG256_49();
+    T_FGC_256.TEST_FG256_50();
+    T_FGC_256.TEST_FG256_51();
+    T_FGC_256.TEST_FG256_52();
+    T_FGC_256.TEST_FG256_53();
+    T_FGC_256.TEST_FG256_54();
+    T_FGC_256.TEST_FG256_55();
+    T_FGC_256.TEST_FG256_56();
+    T_FGC_256.TEST_FG256_57();
+    T_FGC_256.TEST_FG256_58();
+    T_FGC_256.TEST_FG256_59();
+    T_FGC_256.TEST_FG256_60();
     
     return 0;
 }
