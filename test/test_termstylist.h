@@ -107,6 +107,11 @@ class Test_FGColours256 {
         void TEST_FG256_0();
         void TEST_FG256_1();
         void TEST_FG256_2();
+        void TEST_FG256_3();
+        void TEST_FG256_4();
+        void TEST_FG256_5();
+        void TEST_FG256_6();
+        void TEST_FG256_7();
 };
 
 namespace {
