@@ -189,5 +189,15 @@ class Test_FGColours256 : protected Misc {
         void TEST_FG256_58();
         void TEST_FG256_59();
         void TEST_FG256_60();
+        void TEST_FG256_61();
+        void TEST_FG256_62();
+        void TEST_FG256_63();
+        void TEST_FG256_64();
+        void TEST_FG256_65();
+        void TEST_FG256_66();
+        void TEST_FG256_67();
+        void TEST_FG256_68();
+        void TEST_FG256_69();
+        void TEST_FG256_70();
 };
 #endif
