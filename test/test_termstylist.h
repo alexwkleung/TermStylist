@@ -21,6 +21,7 @@ namespace {
     }
 }
 
+//class misc 
 class Misc {
     protected:
         std::string shouldEqual = "~ SHOULD EQUAL ~ ";
@@ -269,5 +270,25 @@ class Test_FGColours256 : protected Misc {
         void TEST_FG256_138();
         void TEST_FG256_139();
         void TEST_FG256_140();
+        void TEST_FG256_141();
+        void TEST_FG256_142();
+        void TEST_FG256_143();
+        void TEST_FG256_144();
+        void TEST_FG256_145();
+        void TEST_FG256_146();
+        void TEST_FG256_147();
+        void TEST_FG256_148();
+        void TEST_FG256_149();
+        void TEST_FG256_150();
+        void TEST_FG256_151();
+        void TEST_FG256_152();
+        void TEST_FG256_153();
+        void TEST_FG256_154();
+        void TEST_FG256_155();
+        void TEST_FG256_156();
+        void TEST_FG256_157();
+        void TEST_FG256_158();
+        void TEST_FG256_159();
+        void TEST_FG256_160();
 };
 #endif
