@@ -2958,7 +2958,7 @@ namespace termstylist {
     //38;5;208
     template<typename FG256_208>
     std::basic_ostream<FG256_208> & FG256_208(std::basic_ostream<FG256_208> &os) {
-        os << obj_internal::FG256.FG256_207;
+        os << obj_internal::FG256.FG256_208;
 
         return os;
     }
