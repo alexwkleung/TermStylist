@@ -632,7 +632,6 @@ namespace termstylist {
     //namespace obj holds created objects from structs (ostream manipulators will use them)
     //this is here as an extra layer to "prevent/hide" access of the struct members via using the object externally
     //NOTE: namespace obj_internal is not meant for use outside of namespace termstylist
-    //and thus the reason it's named "obj_internal" meaning it is used only within this file
     namespace obj_internal {
         //object ATTRS of Attributes struct
         Attributes ATTRS;
