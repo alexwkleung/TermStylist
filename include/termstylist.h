@@ -222,7 +222,7 @@ namespace termstylist {
             const std::string FG256_111 = "\033[38;5;111m"; //38;5;111
             const std::string FG256_112 = "\033[38;5;112m"; //38;5;112
             const std::string FG256_113 = "\033[38;5;113m"; //38;5;113
-            const std::string FG256_114 = "\033[38;5;113m"; //38;5;114
+            const std::string FG256_114 = "\033[38;5;114m"; //38;5;114
             const std::string FG256_115 = "\033[38;5;115m"; //38;5;115
             const std::string FG256_116 = "\033[38;5;116m"; //38;5;116 
             const std::string FG256_117 = "\033[38;5;117m"; //38;5;117
