@@ -7,17 +7,17 @@
 
 //unnamed namespace
 namespace {
-    //success
-    template<typename SUCCESS> 
-    std::basic_ostream<SUCCESS> &TEST_SUCCESS(std::basic_ostream<SUCCESS> &out) {
+    //success indicator
+    template<typename SUCCESS_INDICATOR> 
+    std::basic_ostream<SUCCESS_INDICATOR> &TEST_SUCCESS(std::basic_ostream<SUCCESS_INDICATOR> &out) {
         out << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
 
         return out;
     }
 
-    //failure
-    template<typename FAILURE>
-    std::basic_ostream<FAILURE> &TEST_FAILURE(std::basic_ostream<FAILURE> &out) {
+    //failure indicator
+    template<typename FAILURE_INDICATOR>
+    std::basic_ostream<FAILURE_INDICATOR> &TEST_FAILURE(std::basic_ostream<FAILURE_INDICATOR> &out) {
         out << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
 
         return out;
