@@ -5668,7 +5668,7 @@ void Test_FGColours256::TEST_FG256_256() {
 
 /* * * * * * * * * * * * * *
 *                          *
-*    TEST BG COLOURS 256   *
+*   TEST BG COLOURS 256    *
 *                          *
 * * * * * * * * * * * * * */
 
