@@ -9,7 +9,7 @@
 namespace {
     //success
     template<typename SUCCESS> 
-    std::basic_ostream<SUCCESS> & TEST_SUCCESS(std::basic_ostream<SUCCESS> &out) {
+    std::basic_ostream<SUCCESS> &TEST_SUCCESS(std::basic_ostream<SUCCESS> &out) {
         out << termstylist::FG_LightGreen << "SUCCESS" << termstylist::FG_Default << '\n';
 
         return out;
@@ -17,7 +17,7 @@ namespace {
 
     //failure
     template<typename FAILURE>
-    std::basic_ostream<FAILURE> & TEST_FAILURE(std::basic_ostream<FAILURE> &out) {
+    std::basic_ostream<FAILURE> &TEST_FAILURE(std::basic_ostream<FAILURE> &out) {
         out << termstylist::FG_LightRed << "FAILURE" << termstylist::FG_Default << '\n';
 
         return out;
@@ -28,6 +28,22 @@ namespace {
 
     //int to hold failure count
     int countFailure{};
+
+    //success count
+    template<typename SUCCESS_COUNT>
+    std::basic_ostream<SUCCESS_COUNT> &SUCCESS_COUNT(std::basic_ostream<SUCCESS_COUNT> &out) {
+        out << termstylist::FG_LightGreen << "SUCCESS COUNT" << termstylist::FG_White << ": " << countSuccess << termstylist::FG_Default << '\n';
+
+        return out;
+    }
+
+    //failure count
+    template<typename FAILURE_COUNT>
+    std::basic_ostream<FAILURE_COUNT> &FAILURE_COUNT(std::basic_ostream<FAILURE_COUNT> &out) {
+        out << termstylist::FG_LightRed << "FAILURE COUNT" << termstylist::FG_White << ": " << countFailure << termstylist::FG_Default << '\n';
+
+        return out;
+    }
 }
 
 //class misc 
