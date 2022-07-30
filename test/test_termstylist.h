@@ -396,4 +396,11 @@ class Test_FGColours256 : protected Misc {
         void TEST_FG256_255();
         void TEST_FG256_256();
 };
+
+//class test bg colours 256
+class Test_BGColours256 : protected Misc {
+    public:
+        void TEST_BGCOLOURS256_TITLE();
+        void TEST_BG256_0();
+};
 #endif

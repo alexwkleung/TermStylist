@@ -5666,6 +5666,34 @@ void Test_FGColours256::TEST_FG256_256() {
     }
 }
 
+/* * * * * * * * * * * * * *
+*                          *
+*    TEST BG COLOURS 256   *
+*                          *
+* * * * * * * * * * * * * */
+
+//title: bg colours 256 tests
+void Test_BGColours256::TEST_BGCOLOURS256_TITLE() {
+    std::cout << '\n' << termstylist::FG_LightCyan << termstylist::ATTRS_Underline << "TEST BG COLOURS 256" << termstylist::FG_Default << termstylist::RESET_Underline << '\n';
+}
+
+//test: bg256 0
+void Test_BGColours256::TEST_BG256_0() {
+    std::ostringstream BG256__0;
+
+    BG256__0 << termstylist::BG256_0;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_0 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;0 " << termstylist::FG_Default << this->endBreak;
+
+    if(BG256__0.str() == "\033[48;5;0m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 int main() {
     Test_Attributes T_ATTRS;
 
@@ -6018,6 +6046,11 @@ int main() {
     T_FGC_256.TEST_FG256_255();
     T_FGC_256.TEST_FG256_256();
 
+    Test_BGColours256 T_BGC_256;
+
+    T_BGC_256.TEST_BGCOLOURS256_TITLE();
+    T_BGC_256.TEST_BG256_0();
+    
     std::cout << '\n';
     std::cout << termstylist::FG_LightGreen << "SUCCESS COUNT" << termstylist::FG_White << ": " << countSuccess << termstylist::FG_Default << '\n';
     std::cout << termstylist::FG_LightRed << "FAILURE COUNT" << termstylist::FG_White << ": " << countFailure << termstylist::FG_Default << '\n';
