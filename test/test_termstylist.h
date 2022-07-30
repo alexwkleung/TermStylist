@@ -33,7 +33,7 @@ namespace {
 //class misc 
 class Misc {
     protected:
-        std::string shouldEqual = "~ SHOULD EQUAL ~ ";
+        std::string shouldEqual = "SHOULD EQUAL ";
         std::string endBreak = "==== ";
 };
 
