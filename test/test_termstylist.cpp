@@ -23,9 +23,11 @@ void Test_Attributes::TEST_ATTRS_BOLD() {
     std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[1m " << termstylist::FG_Default <<  this->endBreak;
             
     if(ATTRS__BOLD.str() == "\033[1m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -39,8 +41,10 @@ void Test_Attributes::TEST_ATTRS_DIM() {
 
     if(ATTRS__DIM.str() == "\033[2m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -53,9 +57,11 @@ void Test_Attributes::TEST_ATTRS_UNDERLINE() {
     std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[4m " << termstylist::FG_Default << this->endBreak;
 
     if(ATTRS__UNDERLINE.str() == "\033[4m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -68,9 +74,11 @@ void Test_Attributes::TEST_ATTRS_REVERSE() {
     std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[7m " << termstylist::FG_Default << this->endBreak;
 
     if(ATTRS__REVERSE.str() == "\033[7m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else { 
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -94,9 +102,11 @@ void Test_Reset::TEST_RESET_DEFAULT() {
     std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Default " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[0m " << termstylist::FG_Default << this->endBreak;
 
     if(RESET__DEFAULT.str() == "\033[0m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -109,9 +119,11 @@ void Test_Reset::TEST_RESET_BOLD() {
     std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Bold " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[21m " << termstylist::FG_Default << this->endBreak;
 
     if(RESET__BOLD.str() == "\033[21m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -124,9 +136,11 @@ void Test_Reset::TEST_RESET_UNDERLINE() {
     std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Underline " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[24m " << termstylist::FG_Default << this->endBreak;
 
     if(RESET__UNDERLINE.str() == "\033[24m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -139,9 +153,11 @@ void Test_Reset::TEST_RESET_REVERSE() {
     std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Reverse " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[27m " << termstylist::FG_Default << this->endBreak;
 
     if(RESET__REVERSE.str() == "\033[27m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -166,8 +182,10 @@ void Test_FGColours816::TEST_FG_DEFAULT() {
 
     if(FG__DEFAULT.str() == "\033[39m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
         
@@ -180,9 +198,11 @@ void Test_FGColours816::TEST_FG_BLACK() {
     std::cout << termstylist::FG_LightYellow << "termstylist::FG_Black " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[30m " << termstylist::FG_Default << this->endBreak;
 
     if(FG__BLACK.str() == "\033[30m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -195,9 +215,11 @@ void Test_FGColours816::TEST_FG_RED() {
     std::cout << termstylist::FG_LightYellow << "termstylist::FG_Red " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[31m " << termstylist::FG_Default << this->endBreak;
 
     if(FG__RED.str() == "\033[31m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -210,9 +232,11 @@ void Test_FGColours816::TEST_FG_GREEN() {
     std::cout << termstylist::FG_LightYellow << "termstylist::FG_Green " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[32m " << termstylist::FG_Default << this->endBreak; 
 
     if(FG__GREEN.str() == "\033[32m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cout << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -226,8 +250,10 @@ void Test_FGColours816::TEST_FG_YELLOW() {
 
     if(FG__YELLOW.str() == "\033[33m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -241,8 +267,10 @@ void Test_FGColours816::TEST_FG_BLUE() {
 
     if(FG__BLUE.str() == "\033[34m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -256,8 +284,10 @@ void Test_FGColours816::TEST_FG_MAGENTA() {
 
     if(FG__MAGENTA.str() == "\033[35m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -271,8 +301,10 @@ void Test_FGColours816::TEST_FG_CYAN() {
 
     if(FG__CYAN.str() == "\033[36m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -286,8 +318,10 @@ void Test_FGColours816::TEST_FG_WHITE() {
 
     if(FG__WHITE.str() == "\033[97m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -301,8 +335,10 @@ void Test_FGColours816::TEST_FG_LIGHTGREY() {
 
     if(FG__LIGHTGREY.str() == "\033[37m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -316,8 +352,10 @@ void Test_FGColours816::TEST_FG_DARKGREY() {
 
     if(FG__DARKGREY.str() == "\033[90m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
         
@@ -331,8 +369,10 @@ void Test_FGColours816::TEST_FG_LIGHTRED() {
 
     if(FG__LIGHTRED.str() == "\033[91m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -346,8 +386,10 @@ void Test_FGColours816::TEST_FG_LIGHTGREEN() {
 
     if(FG__LIGHTGREEN.str() == "\033[92m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -361,8 +403,10 @@ void Test_FGColours816::TEST_FG_LIGHTYELLOW() {
 
     if(FG__LIGHTYELLOW.str() == "\033[93m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -376,8 +420,10 @@ void Test_FGColours816::TEST_FG_LIGHTBLUE() {
 
     if(FG__LIGHTBLUE.str() == "\033[94m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -391,8 +437,10 @@ void Test_FGColours816::TEST_FG_LIGHTMAGENTA() {
 
     if(FG__LIGHTMAGENTA.str() == "\033[95m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -406,8 +454,10 @@ void Test_FGColours816::TEST_FG_LIGHTCYAN() {
 
     if(FG__LIGHTCYAN.str() == "\033[96m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -421,8 +471,10 @@ void Test_FGColours816::TEST_FG_BOLDBLACK() {
 
     if(FG__BOLDBLACK.str() == "\033[30;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -436,8 +488,10 @@ void Test_FGColours816::TEST_FG_BOLDRED() {
 
     if(FG__BOLDRED.str() == "\033[31;1m") {
         std::cout << TEST_SUCCESS;    
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -451,8 +505,10 @@ void Test_FGColours816::TEST_FG_BOLDGREEN() {
 
     if(FG__BOLDGREEN.str() == "\033[32;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 } 
 
@@ -466,8 +522,10 @@ void Test_FGColours816::TEST_FG_BOLDYELLOW() {
 
     if(FG__BOLDYELLOW.str() == "\033[33;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -481,8 +539,10 @@ void Test_FGColours816::TEST_FG_BOLDBLUE() {
 
     if(FG__BOLDBLUE.str() == "\033[34;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -496,8 +556,10 @@ void Test_FGColours816::TEST_FG_BOLDMAGENTA() {
 
     if(FG__BOLDMAGENTA.str() == "\033[35;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -511,8 +573,10 @@ void Test_FGColours816::TEST_FG_BOLDCYAN() {
 
     if(FG__BOLDCYAN.str() == "\033[36;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -526,8 +590,10 @@ void Test_FGColours816::TEST_FG_BOLDWHITE() {
 
     if(FG__BOLDWHITE.str() == "\033[97;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -541,8 +607,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTGREY() {
 
     if(FG__BOLDLIGHTGREY.str() == "\033[37;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -556,8 +624,10 @@ void Test_FGColours816::TEST_FG_BOLDDARKGREY() {
 
     if(FG__BOLDDARKGREY.str() == "\033[90;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -571,8 +641,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTRED() {
 
     if(FG__BOLDLIGHTRED.str() == "\033[91;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -586,8 +658,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTGREEN() {
 
     if(FG__BOLDLIGHTGREEN.str() == "\033[92;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -601,8 +675,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTYELLOW() {
 
     if(FG__BOLDLIGHTYELLOW.str() == "\033[93;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -616,8 +692,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTBLUE() {
 
     if(FG__BOLDLIGHTBLUE.str() == "\033[94;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -631,8 +709,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTMAGENTA() {
 
     if(FG__BOLDLIGHTMAGENTA.str() == "\033[95;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -646,8 +726,10 @@ void Test_FGColours816::TEST_FG_BOLDLIGHTCYAN() {
 
     if(FG__BOLDLIGHTCYAN.str() == "\033[96;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -672,8 +754,10 @@ void Test_BGColours816::TEST_BG_DEFAULT() {
 
     if(BG__DEFAULT.str() == "\033[49m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -687,8 +771,10 @@ void Test_BGColours816::TEST_BG_BLACK() {
 
     if(BG__BLACK.str() == "\033[40m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -702,8 +788,10 @@ void Test_BGColours816::TEST_BG_RED() {
 
     if(BG__RED.str() == "\033[41m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
         
@@ -717,8 +805,10 @@ void Test_BGColours816::TEST_BG_GREEN() {
 
     if(BG__GREEN.str() == "\033[42m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -732,8 +822,10 @@ void Test_BGColours816::TEST_BG_YELLOW() {
 
     if(BG__YELLOW.str() == "\033[43m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -747,8 +839,10 @@ void Test_BGColours816::TEST_BG_BLUE() {
 
     if(BG__BLUE.str() == "\033[44m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -762,8 +856,10 @@ void Test_BGColours816::TEST_BG_MAGENTA() {
 
     if(BG__MAGENTA.str() == "\033[45m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -777,8 +873,10 @@ void Test_BGColours816::TEST_BG_CYAN() {
 
     if(BG__CYAN.str() == "\033[46m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -792,8 +890,10 @@ void Test_BGColours816::TEST_BG_WHITE() {
 
     if(BG__WHITE.str() == "\033[107m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -807,8 +907,10 @@ void Test_BGColours816::TEST_BG_LIGHTGREY() {
 
     if(BG__LIGHTGREY.str() == "\033[47m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -822,8 +924,10 @@ void Test_BGColours816::TEST_BG_DARKGREY() {
 
     if(BG__DARKGREY.str() == "\033[100m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -837,8 +941,10 @@ void Test_BGColours816::TEST_BG_LIGHTRED() {
 
     if(BG__LIGHTRED.str() == "\033[101m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -852,8 +958,10 @@ void Test_BGColours816::TEST_BG_LIGHTGREEN() {
 
     if(BG__LIGHTGREEN.str() == "\033[102m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -867,8 +975,10 @@ void Test_BGColours816::TEST_BG_LIGHTYELLOW() {
 
     if(BG__LIGHTYELLOW.str() == "\033[103m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -882,8 +992,10 @@ void Test_BGColours816::TEST_BG_LIGHTBLUE() {
 
     if(BG__LIGHTBLUE.str() == "\033[104m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -897,8 +1009,10 @@ void Test_BGColours816::TEST_BG_LIGHTMAGENTA() {
 
     if(BG__LIGHTMAGENTA.str() == "\033[105m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -912,8 +1026,10 @@ void Test_BGColours816::TEST_BG_LIGHTCYAN() {
 
     if(BG__LIGHTCYAN.str() == "\033[106m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -927,8 +1043,10 @@ void Test_BGColours816::TEST_BG_BOLDBLACK() {
 
     if(BG__BOLDBLACK.str() == "\033[40;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -942,8 +1060,10 @@ void Test_BGColours816::TEST_BG_BOLDRED() {
 
     if(BG__BOLDRED.str() == "\033[41;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -957,8 +1077,10 @@ void Test_BGColours816::TEST_BG_BOLDGREEN() {
 
     if(BG__BOLDGREEN.str() == "\033[42;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -972,8 +1094,10 @@ void Test_BGColours816::TEST_BG_BOLDYELLOW() {
 
     if(BG__BOLDYELLOW.str() == "\033[43;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -987,8 +1111,10 @@ void Test_BGColours816::TEST_BG_BOLDBLUE() {
 
     if(BG__BOLDBLUE.str() == "\033[44;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1002,8 +1128,10 @@ void Test_BGColours816::TEST_BG_BOLDMAGENTA() {
 
     if(BG__BOLDMAGENTA.str() == "\033[45;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1017,8 +1145,10 @@ void Test_BGColours816::TEST_BG_BOLDCYAN() {
 
     if(BG__BOLDCYAN.str() == "\033[46;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }      
         
@@ -1032,8 +1162,10 @@ void Test_BGColours816::TEST_BG_BOLDWHITE() {
 
     if(BG__BOLDWHITE.str() == "\033[107;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1047,8 +1179,10 @@ void Test_BGColours816::TEST_BG_BOLDDARKGREY() {
 
     if(BG__BOLDDARKGREY.str() == "\033[100;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1062,8 +1196,10 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTRED() {
 
     if(BG__BOLDLIGHTRED.str() == "\033[101;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cout << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1077,8 +1213,10 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTGREEN() {
 
     if(BG__BOLDLIGHTGREEN.str() == "\033[102;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 } 
 
@@ -1092,8 +1230,10 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTYELLOW() {
 
     if(BG__BOLDLIGHTYELLOW.str() == "\033[103;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1107,8 +1247,10 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTBLUE() {
 
     if(BG__BOLDLIGHTBLUE.str() == "\033[104;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
         
@@ -1122,8 +1264,10 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTMAGENTA() {
 
     if(BG__BOLDLIGHTMAGENTA.str() == "\033[105;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1137,8 +1281,10 @@ void Test_BGColours816::TEST_BG_BOLDLIGHTCYAN() {
 
     if(BG__BOLDLIGHTCYAN.str() == "\033[106;1m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1162,9 +1308,11 @@ void Test_FGColours256::TEST_FG256_0() {
     std::cout << termstylist::FG_LightYellow << "termstylist::FG256_0 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;0m " << termstylist::FG_Default << this->endBreak;
 
     if(FG256__0.str() == "\033[38;5;0m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }   
 }
 
@@ -1177,9 +1325,11 @@ void Test_FGColours256::TEST_FG256_1() {
     std::cout << termstylist::FG_LightYellow << "termstylist::FG256_1 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;1m " << termstylist::FG_Default << this->endBreak;
 
     if(FG256__1.str() == "\033[38;5;1m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1192,9 +1342,11 @@ void Test_FGColours256::TEST_FG256_2() {
     std::cout << termstylist::FG_LightYellow << "termstylist::FG256_2 " << termstylist::FG_Default << this->shouldEqual << termstylist::FG_LightYellow << "\\033[38;5;2m " << termstylist::FG_Default << this->endBreak;
 
     if(FG256__2.str() == "\033[38;5;2m") {
-        std::cout << TEST_SUCCESS;;
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1208,8 +1360,10 @@ void Test_FGColours256::TEST_FG256_3() {
 
     if(FG256__3.str() == "\033[38;5;3m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr<< TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1223,8 +1377,10 @@ void Test_FGColours256::TEST_FG256_4() {
 
     if(FG256__4.str() == "\033[38;5;4m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1238,8 +1394,10 @@ void Test_FGColours256::TEST_FG256_5() {
 
     if(FG256__5.str() == "\033[38;5;5m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1253,8 +1411,10 @@ void Test_FGColours256::TEST_FG256_6() {
 
     if(FG256__6.str() == "\033[38;5;6m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1268,8 +1428,10 @@ void Test_FGColours256::TEST_FG256_7() {
 
     if(FG256__7.str() == "\033[38;5;7m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1283,8 +1445,10 @@ void Test_FGColours256::TEST_FG256_8() {
 
     if(FG256__8.str() == "\033[38;5;8m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1298,8 +1462,10 @@ void Test_FGColours256::TEST_FG256_9() {
 
     if(FG256__9.str() == "\033[38;5;9m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1313,8 +1479,10 @@ void Test_FGColours256::TEST_FG256_10() {
 
     if(FG256__10.str() == "\033[38;5;10m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1328,8 +1496,10 @@ void Test_FGColours256::TEST_FG256_11() {
 
     if(FG256__11.str() == "\033[38;5;11m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1343,8 +1513,10 @@ void Test_FGColours256::TEST_FG256_12() {
 
     if(FG256__12.str() == "\033[38;5;12m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1358,8 +1530,10 @@ void Test_FGColours256::TEST_FG256_13() {
 
     if(FG256__13.str() == "\033[38;5;13m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1373,8 +1547,10 @@ void Test_FGColours256::TEST_FG256_14() {
 
     if(FG256__14.str() == "\033[38;5;14m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1388,8 +1564,10 @@ void Test_FGColours256::TEST_FG256_15() {
 
     if(FG256__15.str() == "\033[38;5;15m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1403,8 +1581,10 @@ void Test_FGColours256::TEST_FG256_16() {
 
     if(FG256__16.str() == "\033[38;5;16m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1418,8 +1598,10 @@ void Test_FGColours256::TEST_FG256_17() {
 
     if(FG256__17.str() == "\033[38;5;17m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1433,8 +1615,10 @@ void Test_FGColours256::TEST_FG256_18() {
 
     if(FG256__18.str() == "\033[38;5;18m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1448,8 +1632,10 @@ void Test_FGColours256::TEST_FG256_19() {
 
     if(FG256__19.str() == "\033[38;5;19m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1463,8 +1649,10 @@ void Test_FGColours256::TEST_FG256_20() {
 
     if(FG256__20.str() == "\033[38;5;20m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1478,8 +1666,10 @@ void Test_FGColours256::TEST_FG256_21() {
 
     if(FG256__21.str() == "\033[38;5;21m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1493,8 +1683,10 @@ void Test_FGColours256::TEST_FG256_22() {
 
     if(FG256__22.str() == "\033[38;5;22m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1508,8 +1700,10 @@ void Test_FGColours256::TEST_FG256_23() {
 
     if(FG256__23.str() == "\033[38;5;23m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1523,8 +1717,10 @@ void Test_FGColours256::TEST_FG256_24() {
 
     if(FG256__24.str() == "\033[38;5;24m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1538,8 +1734,10 @@ void Test_FGColours256::TEST_FG256_25() {
 
     if(FG256__25.str() == "\033[38;5;25m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1553,8 +1751,10 @@ void Test_FGColours256::TEST_FG256_26() {
 
     if(FG256__26.str() == "\033[38;5;26m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1568,6 +1768,7 @@ void Test_FGColours256::TEST_FG256_27() {
 
     if(FG256__27.str() == "\033[38;5;27m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
     }
@@ -1583,8 +1784,10 @@ void Test_FGColours256::TEST_FG256_28() {
 
     if(FG256__28.str() == "\033[38;5;28m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1598,8 +1801,10 @@ void Test_FGColours256::TEST_FG256_29() {
 
     if(FG256__29.str() == "\033[38;5;29m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1613,8 +1818,10 @@ void Test_FGColours256::TEST_FG256_30() {
 
     if(FG256__30.str() == "\033[38;5;30m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1628,8 +1835,10 @@ void Test_FGColours256::TEST_FG256_31() {
 
     if(FG256__31.str() == "\033[38;5;31m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1643,8 +1852,10 @@ void Test_FGColours256::TEST_FG256_32() {
 
     if(FG256__32.str() == "\033[38;5;32m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1658,8 +1869,10 @@ void Test_FGColours256::TEST_FG256_33() {
 
     if(FG256__33.str() == "\033[38;5;33m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1673,8 +1886,10 @@ void Test_FGColours256::TEST_FG256_34() {
 
     if(FG256__34.str() == "\033[38;5;34m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1688,8 +1903,10 @@ void Test_FGColours256::TEST_FG256_35() {
 
     if(FG256__35.str() == "\033[38;5;35m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1703,8 +1920,10 @@ void Test_FGColours256::TEST_FG256_36() {
 
     if(FG256__36.str() == "\033[38;5;36m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 } 
 
@@ -1718,8 +1937,10 @@ void Test_FGColours256::TEST_FG256_37() {
 
     if(FG256__37.str() == "\033[38;5;37m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1733,8 +1954,10 @@ void Test_FGColours256::TEST_FG256_38() {
 
     if(FG256__38.str() == "\033[38;5;38m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1748,8 +1971,10 @@ void Test_FGColours256::TEST_FG256_39() {
 
     if(FG256__39.str() == "\033[38;5;39m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1763,8 +1988,10 @@ void Test_FGColours256::TEST_FG256_40() {
 
     if(FG256__40.str() == "\033[38;5;40m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1778,8 +2005,10 @@ void Test_FGColours256::TEST_FG256_41() {
 
     if(FG256__41.str() == "\033[38;5;41m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1793,8 +2022,10 @@ void Test_FGColours256::TEST_FG256_42() {
 
     if(FG256__42.str() == "\033[38;5;42m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1808,8 +2039,10 @@ void Test_FGColours256::TEST_FG256_43() {
 
     if(FG256__43.str() == "\033[38;5;43m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1823,8 +2056,10 @@ void Test_FGColours256::TEST_FG256_44() {
 
     if(FG256__44.str() == "\033[38;5;44m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1838,8 +2073,10 @@ void Test_FGColours256::TEST_FG256_45() {
 
     if(FG256__45.str() == "\033[38;5;45m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1853,8 +2090,10 @@ void Test_FGColours256::TEST_FG256_46() {
 
     if(FG256__46.str() == "\033[38;5;46m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1868,8 +2107,10 @@ void Test_FGColours256::TEST_FG256_47() {
 
     if(FG256__47.str() == "\033[38;5;47m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1883,8 +2124,10 @@ void Test_FGColours256::TEST_FG256_48() {
 
     if(FG256__48.str() == "\033[38;5;48m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1898,8 +2141,10 @@ void Test_FGColours256::TEST_FG256_49() {
 
     if(FG256__49.str() == "\033[38;5;49m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1913,8 +2158,10 @@ void Test_FGColours256::TEST_FG256_50() {
 
     if(FG256__50.str() == "\033[38;5;50m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1928,8 +2175,10 @@ void Test_FGColours256::TEST_FG256_51() {
 
     if(FG256__51.str() == "\033[38;5;51m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1943,8 +2192,10 @@ void Test_FGColours256::TEST_FG256_52() {
 
     if(FG256__52.str() == "\033[38;5;52m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1958,8 +2209,10 @@ void Test_FGColours256::TEST_FG256_53() {
 
     if(FG256__53.str() == "\033[38;5;53m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1973,8 +2226,10 @@ void Test_FGColours256::TEST_FG256_54() {
 
     if(FG256__54.str() == "\033[38;5;54m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -1988,8 +2243,10 @@ void Test_FGColours256::TEST_FG256_55() {
 
     if(FG256__55.str() == "\033[38;5;55m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2003,8 +2260,10 @@ void Test_FGColours256::TEST_FG256_56() {
 
     if(FG256__56.str() == "\033[38;5;56m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2018,8 +2277,10 @@ void Test_FGColours256::TEST_FG256_57() {
 
     if(FG256__57.str() == "\033[38;5;57m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2033,8 +2294,10 @@ void Test_FGColours256::TEST_FG256_58() {
 
     if(FG256__58.str() == "\033[38;5;58m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2048,8 +2311,10 @@ void Test_FGColours256::TEST_FG256_59() {
 
     if(FG256__59.str() == "\033[38;5;59m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2063,8 +2328,10 @@ void Test_FGColours256::TEST_FG256_60() {
 
     if(FG256__60.str() == "\033[38;5;60m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2078,8 +2345,10 @@ void Test_FGColours256::TEST_FG256_61() {
 
     if(FG256__61.str() == "\033[38;5;61m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2093,8 +2362,10 @@ void Test_FGColours256::TEST_FG256_62() {
 
     if(FG256__62.str() == "\033[38;5;62m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2108,8 +2379,10 @@ void Test_FGColours256::TEST_FG256_63() {
 
     if(FG256__63.str() == "\033[38;5;63m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2123,8 +2396,10 @@ void Test_FGColours256::TEST_FG256_64() {
 
     if(FG256__64.str() == "\033[38;5;64m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2138,8 +2413,10 @@ void Test_FGColours256::TEST_FG256_65() {
 
     if(FG256__65.str() == "\033[38;5;65m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2153,8 +2430,10 @@ void Test_FGColours256::TEST_FG256_66() {
 
     if(FG256__66.str() == "\033[38;5;66m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2168,8 +2447,10 @@ void Test_FGColours256::TEST_FG256_67() {
 
     if(FG256__67.str() == "\033[38;5;67m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2183,8 +2464,10 @@ void Test_FGColours256::TEST_FG256_68() {
 
     if(FG256__68.str() == "\033[38;5;68m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2198,8 +2481,10 @@ void Test_FGColours256::TEST_FG256_69() {
 
     if(FG256__69.str() == "\033[38;5;69m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2213,8 +2498,10 @@ void Test_FGColours256::TEST_FG256_70() {
 
     if(FG256__70.str() == "\033[38;5;70m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2228,8 +2515,10 @@ void Test_FGColours256::TEST_FG256_71() {
 
     if(FG256__71.str() == "\033[38;5;71m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2243,8 +2532,10 @@ void Test_FGColours256::TEST_FG256_72() {
 
     if(FG256__72.str() == "\033[38;5;72m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2258,8 +2549,10 @@ void Test_FGColours256::TEST_FG256_73() {
 
     if(FG256__73.str() == "\033[38;5;73m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2273,8 +2566,10 @@ void Test_FGColours256::TEST_FG256_74() {
 
     if(FG256__74.str() == "\033[38;5;74m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2288,8 +2583,10 @@ void Test_FGColours256::TEST_FG256_75() {
 
     if(FG256__75.str() == "\033[38;5;75m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2303,8 +2600,10 @@ void Test_FGColours256::TEST_FG256_76() {
 
     if(FG256__76.str() == "\033[38;5;76m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2318,8 +2617,10 @@ void Test_FGColours256::TEST_FG256_77() {
 
     if(FG256__77.str() == "\033[38;5;77m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2333,8 +2634,10 @@ void Test_FGColours256::TEST_FG256_78() {
 
     if(FG256__78.str() == "\033[38;5;78m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2348,8 +2651,10 @@ void Test_FGColours256::TEST_FG256_79() {
 
     if(FG256__79.str() == "\033[38;5;79m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2363,8 +2668,10 @@ void Test_FGColours256::TEST_FG256_80() {
 
     if(FG256__80.str() == "\033[38;5;80m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2378,8 +2685,10 @@ void Test_FGColours256::TEST_FG256_81() {
 
     if(FG256__81.str() == "\033[38;5;81m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2393,8 +2702,10 @@ void Test_FGColours256::TEST_FG256_82() {
 
     if(FG256__82.str() == "\033[38;5;82m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2408,8 +2719,10 @@ void Test_FGColours256::TEST_FG256_83() {
 
     if(FG256__83.str() == "\033[38;5;83m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2423,8 +2736,10 @@ void Test_FGColours256::TEST_FG256_84() {
 
     if(FG256__84.str() == "\033[38;5;84m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2438,8 +2753,10 @@ void Test_FGColours256::TEST_FG256_85() {
 
     if(FG256__85.str() == "\033[38;5;85m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2453,8 +2770,10 @@ void Test_FGColours256::TEST_FG256_86() {
 
     if(FG256__86.str() == "\033[38;5;86m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2468,8 +2787,10 @@ void Test_FGColours256::TEST_FG256_87() {
 
     if(FG256__87.str() == "\033[38;5;87m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2483,8 +2804,10 @@ void Test_FGColours256::TEST_FG256_88() {
 
     if(FG256__88.str() == "\033[38;5;88m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2498,8 +2821,10 @@ void Test_FGColours256::TEST_FG256_89() {
 
     if(FG256__89.str() == "\033[38;5;89m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2513,8 +2838,10 @@ void Test_FGColours256::TEST_FG256_90() {
 
     if(FG256__90.str() == "\033[38;5;90m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else { 
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2528,8 +2855,10 @@ void Test_FGColours256::TEST_FG256_91() {
 
     if(FG256__91.str() == "\033[38;5;91m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2543,8 +2872,10 @@ void Test_FGColours256::TEST_FG256_92() {
 
     if(FG256__92.str() == "\033[38;5;92m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2558,8 +2889,10 @@ void Test_FGColours256::TEST_FG256_93() {
 
     if(FG256__93.str() == "\033[38;5;93m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2573,8 +2906,10 @@ void Test_FGColours256::TEST_FG256_94() {
 
     if(FG256__94.str() == "\033[38;5;94m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2588,8 +2923,10 @@ void Test_FGColours256::TEST_FG256_95() {
 
     if(FG256__95.str() == "\033[38;5;95m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2603,8 +2940,10 @@ void Test_FGColours256::TEST_FG256_96() {
 
     if(FG256__96.str() == "\033[38;5;96m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2618,8 +2957,10 @@ void Test_FGColours256::TEST_FG256_97() {
 
     if(FG256__97.str() == "\033[38;5;97m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2633,8 +2974,10 @@ void Test_FGColours256::TEST_FG256_98() {
 
     if(FG256__98.str() == "\033[38;5;98m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2648,8 +2991,10 @@ void Test_FGColours256::TEST_FG256_99() {
 
     if(FG256__99.str() == "\033[38;5;99m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2663,8 +3008,10 @@ void Test_FGColours256::TEST_FG256_100() {
 
     if(FG256__100.str() == "\033[38;5;100m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2678,8 +3025,10 @@ void Test_FGColours256::TEST_FG256_101() {
 
     if(FG256__101.str() == "\033[38;5;101m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2693,8 +3042,10 @@ void Test_FGColours256::TEST_FG256_102() {
 
     if(FG256__102.str() == "\033[38;5;102m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2708,8 +3059,10 @@ void Test_FGColours256::TEST_FG256_103() {
 
     if(FG256__103.str() == "\033[38;5;103m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2723,8 +3076,10 @@ void Test_FGColours256::TEST_FG256_104() {
 
     if(FG256__104.str() == "\033[38;5;104m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2738,8 +3093,10 @@ void Test_FGColours256::TEST_FG256_105() {
 
     if(FG256__105.str() == "\033[38;5;105m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2753,8 +3110,10 @@ void Test_FGColours256::TEST_FG256_106() {
 
     if(FG256__106.str() == "\033[38;5;106m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2768,8 +3127,10 @@ void Test_FGColours256::TEST_FG256_107() {
 
     if(FG256__107.str() == "\033[38;5;107m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2783,8 +3144,10 @@ void Test_FGColours256::TEST_FG256_108() {
 
     if(FG256__108.str() == "\033[38;5;108m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2798,8 +3161,10 @@ void Test_FGColours256::TEST_FG256_109() {
 
     if(FG256__109.str() == "\033[38;5;109m") { 
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2813,8 +3178,10 @@ void Test_FGColours256::TEST_FG256_110() {
 
     if(FG256__110.str() == "\033[38;5;110m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2828,8 +3195,10 @@ void Test_FGColours256::TEST_FG256_111() {
 
     if(FG256__111.str() == "\033[38;5;111m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2843,8 +3212,10 @@ void Test_FGColours256::TEST_FG256_112() {
 
     if(FG256__112.str() == "\033[38;5;112m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2858,8 +3229,10 @@ void Test_FGColours256::TEST_FG256_113() {
 
     if(FG256__113.str() == "\033[38;5;113m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2873,8 +3246,10 @@ void Test_FGColours256::TEST_FG256_114() {
 
     if(FG256__114.str() == "\033[38;5;114m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2888,8 +3263,10 @@ void Test_FGColours256::TEST_FG256_115() {
 
     if(FG256__115.str() == "\033[38;5;115m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2903,8 +3280,10 @@ void Test_FGColours256::TEST_FG256_116() {
 
     if(FG256__116.str() == "\033[38;5;116m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2918,8 +3297,10 @@ void Test_FGColours256::TEST_FG256_117() {
 
     if(FG256__117.str() == "\033[38;5;117m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2933,8 +3314,10 @@ void Test_FGColours256::TEST_FG256_118() {
 
     if(FG256__118.str() == "\033[38;5;118m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2948,8 +3331,10 @@ void Test_FGColours256::TEST_FG256_119() {
 
     if(FG256__119.str() == "\033[38;5;119m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2963,8 +3348,10 @@ void Test_FGColours256::TEST_FG256_120() {
 
     if(FG256__120.str() == "\033[38;5;120m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2978,8 +3365,10 @@ void Test_FGColours256::TEST_FG256_121() {
 
     if(FG256__121.str() == "\033[38;5;121m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -2993,8 +3382,10 @@ void Test_FGColours256::TEST_FG256_122() {
 
     if(FG256__122.str() == "\033[38;5;122m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3008,8 +3399,10 @@ void Test_FGColours256::TEST_FG256_123() {
 
     if(FG256__123.str() == "\033[38;5;123m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3023,8 +3416,10 @@ void Test_FGColours256::TEST_FG256_124() {
 
     if(FG256__124.str() == "\033[38;5;124m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cout << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3038,8 +3433,10 @@ void Test_FGColours256::TEST_FG256_125() {
 
     if(FG256__125.str() == "\033[38;5;125m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3053,8 +3450,10 @@ void Test_FGColours256::TEST_FG256_126() {
 
     if(FG256__126.str() == "\033[38;5;126m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3068,8 +3467,10 @@ void Test_FGColours256::TEST_FG256_127() {
 
     if(FG256__127.str() == "\033[38;5;127m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3083,8 +3484,10 @@ void Test_FGColours256::TEST_FG256_128() {
 
     if(FG256__128.str() == "\033[38;5;128m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3098,8 +3501,10 @@ void Test_FGColours256::TEST_FG256_129() {
 
     if(FG256__129.str() == "\033[38;5;129m") {
         std::cout << TEST_SUCCESS; 
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3113,8 +3518,10 @@ void Test_FGColours256::TEST_FG256_130() {
 
     if(FG256__130.str() == "\033[38;5;130m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3128,8 +3535,10 @@ void Test_FGColours256::TEST_FG256_131() {
 
     if(FG256__131.str() == "\033[38;5;131m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3143,8 +3552,10 @@ void Test_FGColours256::TEST_FG256_132() {
 
     if(FG256__132.str() == "\033[38;5;132m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3158,8 +3569,10 @@ void Test_FGColours256::TEST_FG256_133() {
 
     if(FG256__133.str() == "\033[38;5;133m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else { 
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3173,8 +3586,10 @@ void Test_FGColours256::TEST_FG256_134() {
 
     if(FG256__134.str() == "\033[38;5;134m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3188,8 +3603,10 @@ void Test_FGColours256::TEST_FG256_135() {
 
     if(FG256__135.str() == "\033[38;5;135m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3203,8 +3620,10 @@ void Test_FGColours256::TEST_FG256_136() {
 
     if(FG256__136.str() == "\033[38;5;136m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3218,8 +3637,10 @@ void Test_FGColours256::TEST_FG256_137() {
 
     if(FG256__137.str() == "\033[38;5;137m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3233,8 +3654,10 @@ void Test_FGColours256::TEST_FG256_138() {
 
     if(FG256__138.str() == "\033[38;5;138m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3248,8 +3671,10 @@ void Test_FGColours256::TEST_FG256_139() {
 
     if(FG256__139.str() == "\033[38;5;139m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3263,8 +3688,10 @@ void Test_FGColours256::TEST_FG256_140() {
 
     if(FG256__140.str() == "\033[38;5;140m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3278,8 +3705,10 @@ void Test_FGColours256::TEST_FG256_141() {
 
     if(FG256__141.str() == "\033[38;5;141m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3293,8 +3722,10 @@ void Test_FGColours256::TEST_FG256_142() {
 
     if(FG256__142.str() == "\033[38;5;142m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3308,8 +3739,10 @@ void Test_FGColours256::TEST_FG256_143() {
 
     if(FG256__143.str() == "\033[38;5;143m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3323,8 +3756,10 @@ void Test_FGColours256::TEST_FG256_144() {
 
     if(FG256__144.str() == "\033[38;5;144m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3338,8 +3773,10 @@ void Test_FGColours256::TEST_FG256_145() {
 
     if(FG256__145.str() == "\033[38;5;145m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3353,8 +3790,10 @@ void Test_FGColours256::TEST_FG256_146() {
 
     if(FG256__146.str() == "\033[38;5;146m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3368,8 +3807,10 @@ void Test_FGColours256::TEST_FG256_147() {
 
     if(FG256__147.str() == "\033[38;5;147m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3383,8 +3824,10 @@ void Test_FGColours256::TEST_FG256_148() {
 
     if(FG256__148.str() == "\033[38;5;148m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3398,8 +3841,10 @@ void Test_FGColours256::TEST_FG256_149() {
     
     if(FG256__149.str() == "\033[38;5;149m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3413,8 +3858,10 @@ void Test_FGColours256::TEST_FG256_150() {
 
     if(FG256__150.str() == "\033[38;5;150m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 } 
 
@@ -3428,8 +3875,10 @@ void Test_FGColours256::TEST_FG256_151() {
     
     if(FG256__151.str() == "\033[38;5;151m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3443,8 +3892,10 @@ void Test_FGColours256::TEST_FG256_152() {
 
     if(FG256__152.str() == "\033[38;5;152m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3458,8 +3909,10 @@ void Test_FGColours256::TEST_FG256_153() {
 
     if(FG256__153.str() == "\033[38;5;153m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3473,8 +3926,10 @@ void Test_FGColours256::TEST_FG256_154() {
 
     if(FG256__154.str() == "\033[38;5;154m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3488,8 +3943,10 @@ void Test_FGColours256::TEST_FG256_155() {
 
     if(FG256__155.str() == "\033[38;5;155m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3503,8 +3960,10 @@ void Test_FGColours256::TEST_FG256_156() {
 
     if(FG256__156.str() == "\033[38;5;156m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3518,8 +3977,10 @@ void Test_FGColours256::TEST_FG256_157() {
 
     if(FG256__157.str() == "\033[38;5;157m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3533,8 +3994,10 @@ void Test_FGColours256::TEST_FG256_158() {
 
     if(FG256__158.str() == "\033[38;5;158m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3548,8 +4011,10 @@ void Test_FGColours256::TEST_FG256_159() {
 
     if(FG256__159.str() == "\033[38;5;159m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3563,8 +4028,10 @@ void Test_FGColours256::TEST_FG256_160() {
 
     if(FG256__160.str() == "\033[38;5;160m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3578,8 +4045,10 @@ void Test_FGColours256::TEST_FG256_161() {
 
     if(FG256__161.str() == "\033[38;5;161m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3593,8 +4062,10 @@ void Test_FGColours256::TEST_FG256_162() {
 
     if(FG256__162.str() == "\033[38;5;162m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3608,8 +4079,10 @@ void Test_FGColours256::TEST_FG256_163() {
 
     if(FG256__163.str() == "\033[38;5;163m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3623,8 +4096,10 @@ void Test_FGColours256::TEST_FG256_164() {
 
     if(FG256__164.str() == "\033[38;5;164m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3638,8 +4113,10 @@ void Test_FGColours256::TEST_FG256_165() {
 
     if(FG256__165.str() == "\033[38;5;165m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3653,8 +4130,10 @@ void Test_FGColours256::TEST_FG256_166() {
 
     if(FG256__166.str() == "\033[38;5;166m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3668,8 +4147,10 @@ void Test_FGColours256::TEST_FG256_167() {
 
     if(FG256__167.str() == "\033[38;5;167m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3683,8 +4164,10 @@ void Test_FGColours256::TEST_FG256_168() {
 
     if(FG256__168.str() == "\033[38;5;168m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3698,8 +4181,10 @@ void Test_FGColours256::TEST_FG256_169() {
 
     if(FG256__169.str() == "\033[38;5;169m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3713,8 +4198,10 @@ void Test_FGColours256::TEST_FG256_170() {
 
     if(FG256__170.str() == "\033[38;5;170m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3728,8 +4215,10 @@ void Test_FGColours256::TEST_FG256_171() {
 
     if(FG256__171.str() == "\033[38;5;171m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3743,8 +4232,10 @@ void Test_FGColours256::TEST_FG256_172() {
 
     if(FG256__172.str() == "\033[38;5;172m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3758,8 +4249,10 @@ void Test_FGColours256::TEST_FG256_173() {
 
     if(FG256__173.str() == "\033[38;5;173m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3773,8 +4266,10 @@ void Test_FGColours256::TEST_FG256_174() {
 
     if(FG256__174.str() == "\033[38;5;174m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3788,8 +4283,10 @@ void Test_FGColours256::TEST_FG256_175() {
 
     if(FG256__175.str() == "\033[38;5;175m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3803,8 +4300,10 @@ void Test_FGColours256::TEST_FG256_176() {
 
     if(FG256__176.str() == "\033[38;5;176m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3818,8 +4317,10 @@ void Test_FGColours256::TEST_FG256_177() {
 
     if(FG256__177.str() == "\033[38;5;177m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3833,8 +4334,10 @@ void Test_FGColours256::TEST_FG256_178() {
 
     if(FG256__178.str() == "\033[38;5;178m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3848,8 +4351,10 @@ void Test_FGColours256::TEST_FG256_179() {
 
     if(FG256__179.str() == "\033[38;5;179m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3863,8 +4368,10 @@ void Test_FGColours256::TEST_FG256_180() {
 
     if(FG256__180.str() == "\033[38;5;180m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3878,8 +4385,10 @@ void Test_FGColours256::TEST_FG256_181() {
 
     if(FG256__181.str() == "\033[38;5;181m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3893,8 +4402,10 @@ void Test_FGColours256::TEST_FG256_182() {
 
     if(FG256__182.str() == "\033[38;5;182m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3908,8 +4419,10 @@ void Test_FGColours256::TEST_FG256_183() {
 
     if(FG256__183.str() == "\033[38;5;183m")  {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3923,8 +4436,10 @@ void Test_FGColours256::TEST_FG256_184() {
 
     if(FG256__184.str() == "\033[38;5;184m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3938,8 +4453,10 @@ void Test_FGColours256::TEST_FG256_185() {
 
     if(FG256__185.str() == "\033[38;5;185m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3953,8 +4470,10 @@ void Test_FGColours256::TEST_FG256_186() {
 
     if(FG256__186.str() == "\033[38;5;186m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3968,8 +4487,10 @@ void Test_FGColours256::TEST_FG256_187() {
 
     if(FG256__187.str() == "\033[38;5;187m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3983,8 +4504,10 @@ void Test_FGColours256::TEST_FG256_188() {
 
     if(FG256__188.str() == "\033[38;5;188m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -3998,8 +4521,10 @@ void Test_FGColours256::TEST_FG256_189() {
 
     if(FG256__189.str() == "\033[38;5;189m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4013,8 +4538,10 @@ void Test_FGColours256::TEST_FG256_190() {
 
     if(FG256__190.str() == "\033[38;5;190m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4028,8 +4555,10 @@ void Test_FGColours256::TEST_FG256_191() {
 
     if(FG256__191.str() == "\033[38;5;191m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4043,8 +4572,10 @@ void Test_FGColours256::TEST_FG256_192() {
 
     if(FG256__192.str() == "\033[38;5;192m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4058,8 +4589,10 @@ void Test_FGColours256::TEST_FG256_193() {
 
     if(FG256__193.str() == "\033[38;5;193m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4073,8 +4606,10 @@ void Test_FGColours256::TEST_FG256_194() {
 
     if(FG256__194.str() == "\033[38;5;194m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4088,8 +4623,10 @@ void Test_FGColours256::TEST_FG256_195() {
 
     if(FG256__195.str() == "\033[38;5;195m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4103,8 +4640,10 @@ void Test_FGColours256::TEST_FG256_196() {
 
     if(FG256__196.str() == "\033[38;5;196m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4118,8 +4657,10 @@ void Test_FGColours256::TEST_FG256_197() {
 
     if(FG256__197.str() == "\033[38;5;197m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4133,8 +4674,10 @@ void Test_FGColours256::TEST_FG256_198() {
 
     if(FG256__198.str() == "\033[38;5;198m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4148,8 +4691,10 @@ void Test_FGColours256::TEST_FG256_199() {
 
     if(FG256__199.str() == "\033[38;5;199m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4163,8 +4708,10 @@ void Test_FGColours256::TEST_FG256_200() {
 
     if(FG256__200.str() == "\033[38;5;200m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4178,8 +4725,10 @@ void Test_FGColours256::TEST_FG256_201() {
 
     if(FG256__201.str() == "\033[38;5;201m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4193,8 +4742,10 @@ void Test_FGColours256::TEST_FG256_202() {
 
     if(FG256_202.str() == "\033[38;5;202m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4208,8 +4759,10 @@ void Test_FGColours256::TEST_FG256_203() {
 
     if(FG256__203.str() == "\033[38;5;203m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 //test: fg256 204
@@ -4222,8 +4775,10 @@ void Test_FGColours256::TEST_FG256_204() {
 
     if(FG256__204.str() == "\033[38;5;204m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4237,8 +4792,10 @@ void Test_FGColours256::TEST_FG256_205() {
 
     if(FG256__205.str() == "\033[38;5;205m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4252,8 +4809,10 @@ void Test_FGColours256::TEST_FG256_206() {
 
     if(FG256__206.str() == "\033[38;5;206m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4267,8 +4826,10 @@ void Test_FGColours256::TEST_FG256_207() {
 
     if(FG256__207.str() == "\033[38;5;207m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4282,8 +4843,10 @@ void Test_FGColours256::TEST_FG256_208() {
 
     if(FG256__208.str() == "\033[38;5;208m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4297,8 +4860,10 @@ void Test_FGColours256::TEST_FG256_209() {
 
     if(FG256__209.str() == "\033[38;5;209m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4312,8 +4877,10 @@ void Test_FGColours256::TEST_FG256_210() {
 
     if(FG256__210.str() == "\033[38;5;210m") {
         std::cout << TEST_SUCCESS;
+        countSuccess++;
     } else {
         std::cerr << TEST_FAILURE;
+        countFailure++;
     }
 }
 
@@ -4622,6 +5189,10 @@ int main() {
     T_FGC_256.TEST_FG256_208();
     T_FGC_256.TEST_FG256_209();
     T_FGC_256.TEST_FG256_210();
+
+    std::cout << '\n';
+    std::cout << termstylist::FG_LightGreen << "[" << "SUCCESS COUNT" << termstylist::FG_LightGreen << "]" << termstylist::FG_White << ": " << countSuccess << termstylist::FG_Default << '\n';
+    std::cout << termstylist::FG_LightRed << "[" << "FAILURE COUNT" << termstylist::FG_LightRed << "]" << termstylist::FG_White << ": " << countFailure << termstylist::FG_Default << '\n';
 
     return 0;
 }
