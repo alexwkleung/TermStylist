@@ -629,9 +629,9 @@ namespace termstylist {
             const std::string BG256_256 = "\033[48;5;256m"; //48;5;256
     };  
 
-    //namespace obj holds created objects from structs (ostream manipulators will use them)
-    //this is here as an extra layer to "prevent/hide" access of the struct members via using the object externally
-    //NOTE: namespace obj_internal is not meant for use outside of namespace termstylist
+    //namespace obj_internal holds created objects from structs (ostream manipulators will use them)
+    //this is here as an extra layer to "prevent/hide" access of the struct members via using these objects externally
+    //NOTE: in short, namespace obj_internal is not meant for use outside of namespace termstylist
     namespace obj_internal {
         //object ATTRS of Attributes struct
         Attributes ATTRS;
@@ -650,6 +650,31 @@ namespace termstylist {
 
         //object BG256 of BGColours256 struct
         BGColours256 BG256;
+    }
+
+    //this unnamed namespace holds created objects from structs.
+    //it allows the users to directly access the member values
+    //which contain the ansi escape codes.
+    //if you mainly/only want to use the ansi escape codes in your own
+    //projects/files, then these objects will allow you to access them
+    namespace {
+        //object E_ATTRS of Attributes struct
+        Attributes E_ATTRS;
+
+        //object E_RESET of Reset struct
+        Reset E_RESET;
+
+        //object E_FG816 of FGColours816 struct
+        FGColours816 E_FG816;
+
+        //object E_BG816 of BGColours816 struct
+        BGColours816 E_BG816;
+
+        //object E_FG256 of FGColours256 struct
+        FGColours256 E_FG256;
+
+        //object E_BG256 of BGColours256 struct
+        BGColours256 E_BG256;
     }
 
     /* * * * * * * * * * * * * *
