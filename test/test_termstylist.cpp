@@ -7423,15 +7423,175 @@ void Test_BGColours256::TEST_BG256_100() {
 }
 
 //test: bg256 101
+void Test_BGColours256::TEST_BG256_101() {
+    std::ostringstream BG256__101;
+
+    BG256__101 << termstylist::BG256_101;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_101 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;101m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__101.str() == "\033[48;5;101m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 102
+void Test_BGColours256::TEST_BG256_102() {
+    std::ostringstream BG256__102;
+
+    BG256__102 << termstylist::BG256_102;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_102 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;102m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__102.str() == "\033[48;5;102m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 103
+void Test_BGColours256::TEST_BG256_103() {
+    std::ostringstream BG256__103;
+    
+    BG256__103 << termstylist::BG256_103;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_103 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;103m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__103.str() == "\033[48;5;103m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 104
+void Test_BGColours256::TEST_BG256_104() {
+    std::ostringstream BG256__104;
+
+    BG256__104 << termstylist::BG256_104;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_104 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;104m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__104.str() == "\033[48;5;104m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++; 
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 105
+void Test_BGColours256::TEST_BG256_105() {
+    std::ostringstream BG256__105;
+
+    BG256__105 << termstylist::BG256_105;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_105 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;105m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__105.str() == "\033[48;5;105m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 106
+void Test_BGColours256::TEST_BG256_106() {
+    std::ostringstream BG256__106;
+
+    BG256__106 << termstylist::BG256_106;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_106 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;106m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__106.str() == "\033[48;5;106m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 107
+void Test_BGColours256::TEST_BG256_107() {
+    std::ostringstream BG256__107;
+
+    BG256__107 << termstylist::BG256_107;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_107 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;107m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__107.str() == "\033[48;5;107m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 108
+void Test_BGColours256::TEST_BG256_108() {
+    std::ostringstream BG256__108;
+
+    BG256__108 << termstylist::BG256_108;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_108 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;108m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__108.str() == "\033[48;5;108m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 109
+void Test_BGColours256::TEST_BG256_109() {
+    std::ostringstream BG256__109;
+
+    BG256__109 << termstylist::BG256_109;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_109 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;109m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__109.str() == "\033[48;5;109m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 110
+void Test_BGColours256::TEST_BG256_110() {
+    std::ostringstream BG256__110;
+
+    BG256__110 << termstylist::BG256_110;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::BG256_110 " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[48;5;110m " << termstylist::FG_White << this->endBreak;
+
+    if(BG256__110.str() == "\033[48;5;110m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: bg256 111
 //test: bg256 112
 //test: bg256 113
@@ -7986,7 +8146,17 @@ int main() {
     T_BGC_256.TEST_BG256_98();
     T_BGC_256.TEST_BG256_99();
     T_BGC_256.TEST_BG256_100();
-    
+    T_BGC_256.TEST_BG256_101();
+    T_BGC_256.TEST_BG256_102();
+    T_BGC_256.TEST_BG256_103();
+    T_BGC_256.TEST_BG256_104();
+    T_BGC_256.TEST_BG256_105();
+    T_BGC_256.TEST_BG256_106();
+    T_BGC_256.TEST_BG256_107();
+    T_BGC_256.TEST_BG256_108();
+    T_BGC_256.TEST_BG256_109();
+    T_BGC_256.TEST_BG256_110();
+
     //output success and failure count
     std::cout << '\n' << SUCCESS_COUNT;
     std::cout << FAILURE_COUNT << '\n';
