@@ -585,7 +585,9 @@ class Test_BGColours256 : protected Misc {
         void TEST_BG256_165();
         void TEST_BG256_166();
         void TEST_BG256_167();
+        void TEST_BG256_168();
         void TEST_BG256_169();
+        void TEST_BG256_170();
         void TEST_BG256_171();
         void TEST_BG256_172();
         void TEST_BG256_173();
