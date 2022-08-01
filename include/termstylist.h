@@ -658,23 +658,23 @@ namespace termstylist {
     //if you mainly/only want to use the ansi escape codes in your own
     //projects/files, then these objects will allow you to access them
     namespace {
-        //object E_ATTRS of Attributes struct
-        Attributes E_ATTRS;
+        //object EO_ATTRS of Attributes struct
+        Attributes EO_ATTRS;
 
-        //object E_RESET of Reset struct
-        Reset E_RESET;
+        //object EO_RESET of Reset struct
+        Reset EO_RESET;
 
-        //object E_FG816 of FGColours816 struct
-        FGColours816 E_FG816;
+        //object EO_FG816 of FGColours816 struct
+        FGColours816 EO_FG816;
 
-        //object E_BG816 of BGColours816 struct
-        BGColours816 E_BG816;
+        //object EO_BG816 of BGColours816 struct
+        BGColours816 EO_BG816;
 
-        //object E_FG256 of FGColours256 struct
-        FGColours256 E_FG256;
+        //object EO_FG256 of FGColours256 struct
+        FGColours256 EO_FG256;
 
-        //object E_BG256 of BGColours256 struct
-        BGColours256 E_BG256;
+        //object EO_BG256 of BGColours256 struct
+        BGColours256 EO_BG256;
     }
 
     /* * * * * * * * * * * * * *
