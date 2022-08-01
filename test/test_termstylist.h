@@ -141,6 +141,7 @@ class Test_BGColours816 : protected Misc {
         void TEST_BG_BOLDMAGENTA();
         void TEST_BG_BOLDCYAN();
         void TEST_BG_BOLDWHITE();
+        void TEST_BG_BOLDLIGHTGREY();
         void TEST_BG_BOLDDARKGREY();
         void TEST_BG_BOLDLIGHTRED();
         void TEST_BG_BOLDLIGHTGREEN();
