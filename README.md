@@ -278,14 +278,14 @@ int main() {
 
 struct Colour {
     public:
-        std::string lightMagenta = termstylist::EO_BG816.BG_LightMagenta;
+        std::string bgLightMagenta = termstylist::EO_BG816.BG_LightMagenta;
         std::string bgDefault = termstylist::EO_BG816.BG_Default;
 };
 
 int main() {
     Colour col;
 
-    std::cout << col.lightMagenta << "I am light magenta!" << col.bgDefault << '\n';
+    std::cout << col.bgLightMagenta << "I am light magenta!" << col.bgDefault << '\n';
 
     return 0;
 }
