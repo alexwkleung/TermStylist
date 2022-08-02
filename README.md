@@ -46,7 +46,7 @@ The ANSI escape codes are split into 6 categories:
 
 TermStylist uses `ostream` overloads with a function that returns an output stream containing the string of the ANSI escape code.
 
-**Remember to reset your attributes/colours using the Reset syntax (i.e., `termstylist::RESET_Default`) or the default syntax correlated to the colour type/attributes you're using (i.e., `termstylist::FG_Default`).
+**Remember to reset your attributes/colours using the Reset syntax (i.e., `termstylist::RESET_Default`) or the default syntax correlated to the colour type you're using (i.e., `termstylist::FG_Default`).
 
 --- 
 
