@@ -155,6 +155,23 @@ void Test_Reset::TEST_RESET_BOLD() {
     }
 }
 
+//test: reset dim
+void Test_Reset::TEST_RESET_DIM() {
+    std::ostringstream RESET__DIM;
+
+    RESET__DIM << termstylist::RESET_Dim;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::RESET_Dim " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033[22m " << termstylist::FG_White << this->endBreak;
+
+    if(RESET__DIM.str() == "\033[22m") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 //test: reset underline
 void Test_Reset::TEST_RESET_UNDERLINE() {
     std::ostringstream RESET__UNDERLINE;
@@ -10110,6 +10127,7 @@ int main() {
     T_RESET.TEST_RESET_TITLE();
     T_RESET.TEST_RESET_DEFAULT();
     T_RESET.TEST_RESET_BOLD();
+    T_RESET.TEST_RESET_DIM();
     T_RESET.TEST_RESET_UNDERLINE();
     T_RESET.TEST_RESET_REVERSE();
 

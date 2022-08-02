@@ -69,6 +69,7 @@ class Test_Reset : protected Misc {
         void TEST_RESET_TITLE();
         void TEST_RESET_DEFAULT();
         void TEST_RESET_BOLD();
+        void TEST_RESET_DIM();
         void TEST_RESET_UNDERLINE();
         void TEST_RESET_REVERSE();
 };
