@@ -222,7 +222,7 @@ int main() {
 #include <iostream>
 
 int main() {
-    std::cout << termstylist::FG256_170 << "I am number 170/256 colour!" << termstylist::FG_Default << '\n';
+    std::cout << termstylist::FG256_170 << "I am colour 170/256!" << termstylist::FG_Default << '\n';
 
     return 0;
 }
