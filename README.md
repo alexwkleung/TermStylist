@@ -31,7 +31,7 @@ Then go to the directory `TermStylist/include` and copy `termstylist.h` into you
 1) Go to releases on the right-hand side of this repository.
 2) Find the latest version available for the library.
 3) Download the `termstylist.h` file.
-4) Copy `termstylist.h` to your project.
+4) Copy `termstylist.h` into your project.
 
 # Usage (Default Syntax)
 
@@ -101,7 +101,7 @@ TermStylist uses `ostream` overloads with a function that returns an output stre
 10) Bold Dark Grey (`termstylist::FG_BoldDarkGrey`)
 11) Bold Light Red (`termstylist::FG_BoldLightRed`)
 12) Bold Light Green (`termstylist::FG_BoldLightGreen`)
-13) Bold Light Yellow (`termstylist;:FG_BoldLightYellow`)
+13) Bold Light Yellow (`termstylist::FG_BoldLightYellow`)
 14) Bold Light Blue (`termstylist::FG_BoldLightBlue`)
 15) Bold Light Magenta (`termstylist::FG_BoldLightMagenta`)
 16) Bold Light Cyan (`termstylist::FG_BoldLightCyan`)
