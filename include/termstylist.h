@@ -656,8 +656,6 @@ namespace termstylist {
     //this unnamed namespace holds created objects from structs.
     //it allows the users to directly access the member values
     //which contain the ansi escape codes.
-    //if you mainly/only want to use the ansi escape codes in your own
-    //projects/files, then these objects will allow you to access them
     namespace {
         //object EO_ATTRS of Attributes struct
         Attributes EO_ATTRS;
