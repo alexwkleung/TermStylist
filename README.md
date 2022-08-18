@@ -4,8 +4,7 @@
 3) [Usage (Default Syntax)](#usage-default-syntax)
 4) [Usage (Objects Syntax)](#usage-objects-syntax)
 5) [Examples](#examples)
-6) [Terminal Compatibility](#terminal-compatibility)
-7) [License](#license)
+6) [License](#license)
 
 # 🎨 TermStylist
 
