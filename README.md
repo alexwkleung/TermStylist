@@ -31,7 +31,7 @@ Include the header in your project.
 #include "termstylist.h"
 ```
 
-**or alternatively:**
+**Alternatively:**
 
 1) Go to releases on the right-hand side of this repository.
 2) Find the latest version available for the library.
@@ -45,7 +45,7 @@ Include the header in your project.
 
 # Usage (Default Syntax)
 
-The ANSI escape codes are split into 6 categories:
+The ANSI escape code strings are split into 6 categories:
 
 1) Attributes
 2) Reset 
@@ -60,14 +60,14 @@ TermStylist uses `ostream` overloads with a function that returns an output stre
 
 --- 
 
-**ATTRIBUTES:**
+**Attributes:**
 
 1) Bold (`termstylist::ATTRS_Bold`)
 2) Dim (`termstylist::ATTRS_Dim`)
 3) Underline (`termstylist::ATTRS_Underline`)
 4) Reverse (`termstylist::ATTRS_Reverse`)
 
-**RESET:**
+**Reset:**
 
 1) Default (`termstylist::RESET_Default`)
 2) Bold (`termstylist::RESET_Bold`)
