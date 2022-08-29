@@ -11,7 +11,7 @@
 ![](img/demo.png)
 *Screenshot above is running demo.cpp in iTerm2.*
 
-TermStylist is a terminal colours library that is header-only. Feel free to submit any issues or improvements that you may have.
+TermStylist is a terminal colours library that is header-only. Feel free to submit any issues or improvements.
 
 Enjoy!
 
