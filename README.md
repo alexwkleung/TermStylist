@@ -11,7 +11,7 @@
 ![](img/demo.png)
 *Screenshot above is running demo.cpp in iTerm2.*
 
-TermStylist is a simple terminal colours library that is header-only. Feel free to submit any issues or possible improvements that you may have.
+TermStylist is a terminal colours library that is header-only. Feel free to submit any issues or improvements that you may have.
 
 Enjoy!
 
@@ -23,7 +23,13 @@ Clone the repository.
 git clone <SSH/HTTPS URL>
 ```
 
-Then go to the directory `TermStylist/include` and copy `termstylist.h` into your project.
+Go to the directory `TermStylist/include` and copy `termstylist.h` into your project.
+
+Include the header in your project.
+
+```cpp
+#include "termstylist.h"
+```
 
 **or alternatively:**
 
@@ -31,6 +37,11 @@ Then go to the directory `TermStylist/include` and copy `termstylist.h` into you
 2) Find the latest version available for the library.
 3) Download the `termstylist.h` file.
 4) Copy `termstylist.h` into your project.
+5) Include the header in your project. 
+
+```cpp
+#include "termstylist.h"
+```
 
 # Usage (Default Syntax)
 
@@ -45,7 +56,7 @@ The ANSI escape codes are split into 6 categories:
 
 TermStylist uses `ostream` overloads with a function that returns an output stream containing the string of the ANSI escape code.
 
-**Remember to reset your attributes/colours using the Reset syntax (i.e., `termstylist::RESET_Default`) or the default syntax correlated to the colour type you're using (i.e., `termstylist::FG_Default`).
+**Note:** Remember to reset your attributes/colours using the Reset syntax (i.e., `termstylist::RESET_Default`) or the default syntax correlated to the colour type you're using (i.e., `termstylist::FG_Default`).
 
 --- 
 
@@ -164,7 +175,7 @@ TermStylist allows the user to access the ANSI escape code strings from the stru
 
 **When accessing the objects' members, be sure to use the dot operator (i.e., `termstylist::EO_ATTRS.ATTRS_Bold`).
 
-Note: EO means "External Object", denoting that it is used only in external files and not within the library's namespace.
+**Note:** EO means "External Object", denoting that it is used only in external files and not within the library's namespace.
 
 1. Attributes (accessed via `termstylist::EO_ATTRS`)
 2. Reset (accessed via `termstylist::EO_RESET`)
