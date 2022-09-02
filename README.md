@@ -172,7 +172,7 @@ To use background colours (256 colours), the syntax is `termstylist::BG256_0-256
 
 # Usage (Creating an Object)
 
-You may opt to create your own objects from the structs to lessen the verboseness or if you prefer to access the ANSI escape codes that way.
+You may opt to create your own objects from the structs to minimize the verboseness or if you prefer to access the ANSI escape codes that way.
 
 1) Attributes (object created via `termstylist::Attributes <object name>`)
 2) Reset (object created via `termstylist::Reset <object name>`)
