@@ -2,9 +2,10 @@
 1) [TermStylist](#termstylist)
 2) [Installation](#installation)
 3) [Usage (Default Syntax)](#usage-default-syntax)
-4) [Usage (Objects Syntax)](#usage-objects-syntax)
-5) [Examples](#examples)
-6) [License](#license)
+4) [Usage (Creating an Object](#usage-creating-an-object)
+5) [Usage (TermStylist Objects Syntax)](#usage-termstylist-objects-syntax)
+6) [Examples](#examples)
+7) [License](#license)
 
 # 🎨 TermStylist
 
@@ -169,11 +170,24 @@ To use foreground colours (256 colours), the syntax is `termstylist::FG256_0-256
 
 To use background colours (256 colours), the syntax is `termstylist::BG256_0-256`, where the number after the underscore correlates to one of the 256 background colours (i.e., 0, 1, 2, etc).
 
-# Usage (Objects Syntax)
+# Usage (Creating an Object)
 
-TermStylist allows the user to access the ANSI escape code strings from the structs via the created objects. They are contained within an unnamed namespace in the library header. It is useful if you want to create your own customizations with the ANSI escape code strings in your projects. 
+You may opt to create your own objects from the structs to lessen the verboseness or if you prefer to access the ANSI escape codes that way.
 
-**When accessing the objects' members, be sure to use the dot operator (i.e., `termstylist::EO_ATTRS.ATTRS_Bold`).
+1) Attributes (object created via `termstylist::Attributes <object name>`)
+2) Reset (object created via `termstylist::Reset <object name>`)
+3) Foreground colours - 8/16 colours (object created via `termstylist::FGColours816 <object name>`)
+4) Background colours - 8/16 colours (object created via `termstylist::BGColours816 <object name>`)
+5) Foreground colours - 256 colours (object created via `termstylist::FGColours256 <object name>`)
+6) Background colours - 256 colours (object created via `termstylist::BGColours256 <object name>`)
+
+You can access the objects' members via the dot operator (i.e., `<object name>.<member>`)
+
+# Usage (TermStylist Objects Syntax)
+
+TermStylist allows the user to access the ANSI escape code strings from the structs via its own created objects. They are contained within an unnamed namespace in the library header. It's useful if you don't want to create an object yourself, but it might not be depending on your use case. 
+
+You can access the objects' members via the dot operator (i.e., `termstylist::EO_ATTRS.ATTRS_Bold`).
 
 **Note:** EO means "External Object", denoting that it is used only in external files and not within the library's namespace.
 
@@ -251,7 +265,7 @@ int main() {
 }
 ```
 
-**Accessing via objects**
+**Accessing via objects (TermStylist syntax)**
 
 ```cpp
 #include "termstylist.h"
@@ -296,6 +310,76 @@ int main() {
     Colour col;
 
     std::cout << col.bgLightMagenta << "I am light magenta!" << col.bgDefault << '\n';
+
+    return 0;
+}
+```
+
+**Accessing via objects (Your own created object)**
+
+```cpp
+#include "termstylist.h"
+#include <iostream>
+
+int main() {
+    termstylist::Attributes atr;
+    termstylist::Reset re;
+
+    std::cout << atr.ATTRS_Bold << "I am bold!" << re.RESET_Default << '\n';
+
+    return 0;
+}
+```
+
+```cpp
+#include "termstylist.h"
+#include <iostream>
+
+int main() {
+    termstylist::FGColours816 fg16;
+
+    std::cout << fg16.FG_Yellow << "I am yellow!" << f16.FG_Default << '\n';
+
+    return 0;
+}
+```
+
+```cpp
+#include "termstylist.h"
+#include <iostream>
+
+int main() {
+    termstylist::BGColours816 bg16;
+
+    std::cout << bg16.BG_BoldRed << "I am bold red!" << bg16.BG_Default << '\n';
+
+    return 0;
+}
+```
+
+```cpp
+#include "termstylist.h"
+#include <iostream>
+
+int main() {
+    termstylist::FGColours256 fg256;
+    termstylist::FGColours816 fg;
+
+    std::cout << fg256.FG256_2 << "2" << fg.FG_Default << '\n';
+    
+    return 0;
+}
+```
+
+```cpp
+#include "termstylist.h"
+#include <iostream>
+
+int main() {
+    termstylist::BGColours256 bg256;
+    termstylist::Reset re;
+
+    std::cout << bg256.BG256_204 << "204" << re.RESET_Default << '\n';
 
     return 0;
 }
