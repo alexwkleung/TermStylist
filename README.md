@@ -181,22 +181,22 @@ You may opt to create your own objects from the structs to lessen the verbosenes
 5) Foreground colours - 256 colours (object created via `termstylist::FGColours256 <object name>`)
 6) Background colours - 256 colours (object created via `termstylist::BGColours256 <object name>`)
 
-You can access the objects' members via the dot operator (i.e., `<object name>.<member>`)
+You can access the objects' members via the dot operator (i.e., `<object name>.<member>`).
 
 # Usage (TermStylist Objects Syntax)
 
 TermStylist allows the user to access the ANSI escape code strings from the structs via its own created objects. They are contained within an unnamed namespace in the library header. It's useful if you don't want to create an object yourself, but it might not be depending on your use case. 
 
-You can access the objects' members via the dot operator (i.e., `termstylist::EO_ATTRS.ATTRS_Bold`).
+You can access the objects' members via the dot operator (i.e., `termstylist::EO_ATTRS.<member>`).
 
 **Note:** EO means "External Object", denoting that it is used only in external files and not within the library's namespace.
 
-1. Attributes (accessed via `termstylist::EO_ATTRS`)
-2. Reset (accessed via `termstylist::EO_RESET`)
-3. Foreground colours - 8/16 colours (accessed via `termstylist::EO_FG816`)
-4. Background colours - 8/16 colours (accessed via `termstylist::EO_BG816`)
-5. Foreground colours - 256 colours (accessed via `termstylist::EO_FG256`)
-6. Background colours - 256 colours (accessed via `termstylist::EO_BG256`)
+1. Attributes (object accessed via `termstylist::EO_ATTRS.<member>`)
+2. Reset (object accessed via `termstylist::EO_RESET.<member>`)
+3. Foreground colours - 8/16 colours (object accessed via `termstylist::EO_FG816.<member>`)
+4. Background colours - 8/16 colours (object accessed via `termstylist::EO_BG816.<member>`)
+5. Foreground colours - 256 colours (object accessed via `termstylist::EO_FG256.<member>`)
+6. Background colours - 256 colours (object accessed via `termstylist::EO_BG256.<member>`)
 
 # Examples 
 
