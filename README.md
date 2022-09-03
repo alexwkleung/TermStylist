@@ -24,12 +24,12 @@ Clone the repository.
 git clone <SSH/HTTPS URL>
 ```
 
-Go to the directory `TermStylist/include` and copy `termstylist.h` into your project.
+Go to the directory `TermStylist/include` and copy `termstylist.h` into your project - preferrably in an `include` folder.
 
 Include the header in your project.
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 ```
 
 **Alternatively:**
@@ -41,7 +41,7 @@ Include the header in your project.
 5) Include the header in your project. 
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 ```
 
 # Usage (Default Syntax)
@@ -203,7 +203,7 @@ You can access the objects' members via the dot operator (i.e., `termstylist::EO
 **Attributes**
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -216,7 +216,7 @@ int main() {
 **Foreground colours - 8/16 colours**
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -229,7 +229,7 @@ int main() {
 **Background colours - 8/16 colours**
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -242,7 +242,7 @@ int main() {
 **Foreground colours - 256 colours**
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -255,7 +255,7 @@ int main() {
 **Background colours - 256 colours**
 
 ```cpp 
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -268,7 +268,7 @@ int main() {
 **Accessing via objects (TermStylist syntax)**
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -279,7 +279,7 @@ int main() {
 ```
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 std::ostream &boldCyan(std::ostream &out) {
@@ -296,7 +296,7 @@ int main() {
 ```
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 #include <string>
 
@@ -318,7 +318,7 @@ int main() {
 **Accessing via objects (Your own created object)**
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -332,7 +332,7 @@ int main() {
 ```
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -345,7 +345,7 @@ int main() {
 ```
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -358,7 +358,7 @@ int main() {
 ```
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
@@ -372,7 +372,7 @@ int main() {
 ```
 
 ```cpp
-#include "termstylist.h"
+#include "include/termstylist.h"
 #include <iostream>
 
 int main() {
