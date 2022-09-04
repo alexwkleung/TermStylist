@@ -110,6 +110,23 @@ void Test_Attributes::TEST_ATTRS_REVERSE() {
     }
 }
 
+//test: attr clear
+void Test_Attributes::TEST_ATTRS_CLEAR() {
+    std::ostringstream ATTRS__CLEAR;
+
+    ATTRS__CLEAR << termstylist::ATTRS_Clear;
+
+    std::cout << termstylist::FG_LightYellow << "termstylist::ATTRS_Clear " << termstylist::FG_White << this->shouldEqual << termstylist::FG_LightYellow << "\\033c " << termstylist::FG_White << this->endBreak;
+
+    if(ATTRS__CLEAR.str() == "\033c") {
+        std::cout << TEST_SUCCESS;
+        countSuccess++;
+    } else {
+        std::cerr << TEST_FAILURE;
+        countFailure++;
+    }
+}
+
 /* * * * * * * * * * * * * *
 *                          *
 *       TEST RESET         *
@@ -10120,6 +10137,7 @@ int main() {
     T_ATTRS.TEST_ATTRS_DIM();
     T_ATTRS.TEST_ATTRS_UNDERLINE();
     T_ATTRS.TEST_ATTRS_REVERSE();
+    T_ATTRS.TEST_ATTRS_CLEAR();
 
     //object T_RESET of Test_Reset class
     Test_Reset T_RESET;

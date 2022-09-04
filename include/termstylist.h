@@ -1,6 +1,7 @@
 /*
 * TermStylist - A header-only terminal colours library.
 * By @alexwkleung on GitHub
+* https://github.com/alexwkleung/TermStylist
 * MIT License.
 */
 
@@ -18,6 +19,7 @@ namespace termstylist {
             const std::string ATTRS_Dim = "\033[2m"; //2
             const std::string ATTRS_Underline = "\033[4m"; //4
             const std::string ATTRS_Reverse = "\033[7m"; //7
+            const std::string ATTRS_Clear = "\033c"; //c
     };
 
     //reset
@@ -716,6 +718,14 @@ namespace termstylist {
     template<typename ATTRSReverse>
     std::basic_ostream<ATTRSReverse> & ATTRS_Reverse(std::basic_ostream<ATTRSReverse> &os) {
         os << obj_internal::ATTRS.ATTRS_Reverse;
+
+        return os;
+    }
+
+    //c: attr clear
+    template<typename ATTRSClear>
+    std::basic_ostream<ATTRSClear> & ATTRS_Clear(std::basic_ostream<ATTRSClear> &os) {
+        os << obj_internal::ATTRS.ATTRS_Clear;
 
         return os;
     }

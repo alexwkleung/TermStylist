@@ -61,6 +61,7 @@ class Test_Attributes : protected Misc {
         void TEST_ATTRS_DIM();
         void TEST_ATTRS_UNDERLINE();
         void TEST_ATTRS_REVERSE();
+        void TEST_ATTRS_CLEAR();
 };
 
 //class test reset

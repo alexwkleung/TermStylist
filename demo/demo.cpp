@@ -11,7 +11,7 @@ int main() {
     std::cout << termstylist::ATTRS_Reverse << "Reverse" << termstylist::RESET_Reverse << " ";
 
     std::cout << '\n' << '\n';
-    
+
     //foreground colours (8 colours)
     std::cout << termstylist::FG_Default << "FG Default" << " ";
     std::cout << termstylist::FG_Black << "FG Black" << termstylist::FG_Default << " ";
