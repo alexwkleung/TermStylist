@@ -641,22 +641,22 @@ namespace termstylist {
     //NOTE: in short, namespace obj_internal is not meant for use outside of namespace termstylist
     namespace obj_internal {
         //object ATTRS of Attributes struct
-        Attributes ATTRS;
+        Attributes inline ATTRS;
 
         //object RESET of Reset struct
-        Reset RESET;
+        Reset inline RESET;
 
         //object FG816 of FGColours816 struct
-        FGColours816 FG816;
+        FGColours816 inline FG816;
 
         //object BG816 of BGColours816 struct
-        BGColours816 BG816;
+        BGColours816 inline BG816;
 
         //object FG256 of FGColours256 struct
-        FGColours256 FG256;
+        FGColours256 inline FG256;
 
         //object BG256 of BGColours256 struct
-        BGColours256 BG256;
+        BGColours256 inline BG256;
     }
 
     //this unnamed namespace holds created objects from structs.
