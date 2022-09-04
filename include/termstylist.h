@@ -1,3 +1,9 @@
+/*
+* TermStylist - A header-only terminal colours library.
+* By @alexwkleung on GitHub
+* MIT License.
+*/
+
 #ifndef TERMSTYLIST_H
 #define TERMSTYLIST_H
 
