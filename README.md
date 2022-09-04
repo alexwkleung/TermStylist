@@ -67,6 +67,7 @@ TermStylist uses `ostream` overloads with a function that returns an output stre
 2) Dim (`termstylist::ATTRS_Dim`)
 3) Underline (`termstylist::ATTRS_Underline`)
 4) Reverse (`termstylist::ATTRS_Reverse`)
+5) Clear (`termstylist::ATTRS_Clear`)
 
 **Reset:**
 
