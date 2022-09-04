@@ -35,10 +35,10 @@ Include the header in your project.
 **Alternatively:**
 
 1) Go to releases on the right-hand side of this repository.
-2) Find the latest version available for the library.
+2) Find the latest version available for the library (MUST be at least v1.2.0).
 3) Download the `termstylist.h` file.
-4) Copy `termstylist.h` into your project.
-5) Include the header in your project. 
+4) Copy `termstylist.h` into the `include` directory of your project.
+5) Include the header in your project
 
 ```cpp
 #include "include/termstylist.h"
