@@ -1,20 +1,29 @@
 # Table of Contents
 1) [TermStylist](#termstylist)
-2) [Installation](#installation)
-3) [Usage (Default Syntax)](#usage-default-syntax)
-4) [Usage (Creating an Object](#usage-creating-an-object)
-5) [Usage (TermStylist Objects Syntax)](#usage-termstylist-objects-syntax)
-6) [Examples](#examples)
-7) [License](#license)
+2) [Dependencies](#dependencies)
+3) [Installation](#installation)
+4) [Usage (Default Syntax)](#usage-default-syntax)
+5) [Usage (Creating an Object](#usage-creating-an-object)
+6) [Usage (TermStylist Objects Syntax)](#usage-termstylist-objects-syntax)
+7) [Examples](#examples)
+8) [License](#license)
 
 # 🎨 TermStylist
 
 ![](img/demo.png)
 *Screenshot above is running demo.cpp in iTerm2.*
 
-TermStylist is a terminal colours library that is header-only. Feel free to submit any issues or improvements.
+TermStylist is a terminal colours library that is header-only. 
+
+Feel free to submit any issues or improvements.
 
 Enjoy!
+
+# Dependencies 
+
+No external dependencies are needed in order to use TermStylist.
+
+**However**, you need to make sure your terminal supports both ANSI escape codes and at the minimum, 8/16 colours. A terminal that supports both ANSI escape codes and up to 256 colours would be preferred, although not necessary. This will vary depending on your OS platform, but there are tons of good terminal emulators that have proper colour support out of the box. 
 
 # Installation
 
@@ -58,6 +67,8 @@ The ANSI escape code strings are split into 6 categories:
 TermStylist uses `ostream` overloads with a function that returns an output stream containing the string of the ANSI escape code.
 
 **Note:** Remember to reset your attributes/colours using the Reset syntax (i.e., `termstylist::RESET_Default`) or the default syntax correlated to the colour type you're using (i.e., `termstylist::FG_Default`).
+
+If you need compatibility for terminals that don't support 256 colours, then you should use the syntax for 8/16 colours which is the standard. Using the syntax for 256 colours usually won't be necessary unless you really need a specific colour in there.
 
 --- 
 
