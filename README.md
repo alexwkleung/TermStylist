@@ -21,9 +21,29 @@ Enjoy!
 
 # Dependencies 
 
-No external dependencies are needed in order to use TermStylist.
+No external dependencies are needed in order to use TermStylist. 
 
-**However**, you need to make sure your terminal supports both ANSI escape codes and at the minimum, 8/16 colours. A terminal that supports both ANSI escape codes and up to 256 colours would be preferred, although not necessary. This will vary depending on your OS platform, but there are tons of good terminal emulators that have proper colour support out of the box. 
+C++17 is the minimum version you can use since TermStylist has inline variables to prevent duplicate symbols across multiple files due to the internal objects. Now if you need to support an older version, then you may have to rework this part in the header. If necessary, I can tweak the library to make it compatible with older versions.
+
+The internal objects look like this (removed comments):
+
+```cpp
+namespace obj_internal {
+    Attributes inline ATTRS;
+
+    Reset inline RESET;
+
+    FGColours816 inline FG816;
+
+    BGColours816 inline BG816;
+
+    FGColours256 inline FG256;
+
+    BGColours256 inline BG256;
+}
+```
+
+**Also**, you need to make sure your terminal supports both ANSI escape codes and at the minimum, 8/16 colours. A terminal that supports both ANSI escape codes and up to 256 colours would be preferred, although not necessary. This will vary depending on your OS platform, but there are tons of good terminal emulators that have proper colour support out of the box. 
 
 # Installation
 
